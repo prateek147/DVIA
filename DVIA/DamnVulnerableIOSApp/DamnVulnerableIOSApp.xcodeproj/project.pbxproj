@@ -1,0 +1,1022 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		223B7CAD97A748F58BD827A8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE13008725BD49A0AC0ED80A /* libPods.a */; };
+		6E1729C91870968F00C162DB /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729C81870968F00C162DB /* MenuViewController.m */; };
+		6E1729CA1870968F00C162DB /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729C81870968F00C162DB /* MenuViewController.m */; };
+		6E1729D018709F3700C162DB /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729CF18709F3700C162DB /* LearnViewController.m */; };
+		6E1729D118709F3700C162DB /* LearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729CF18709F3700C162DB /* LearnViewController.m */; };
+		6E1729D61870A6A800C162DB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729D51870A6A800C162DB /* HomeViewController.m */; };
+		6E1729D71870A6A800C162DB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729D51870A6A800C162DB /* HomeViewController.m */; };
+		6E1729DA1870A8C200C162DB /* InsecureDataStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729D91870A8C200C162DB /* InsecureDataStorageVC.m */; };
+		6E1729DB1870A8C200C162DB /* InsecureDataStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729D91870A8C200C162DB /* InsecureDataStorageVC.m */; };
+		6E1729DE187167A400C162DB /* InsecureDataStorageVulnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729DD187167A400C162DB /* InsecureDataStorageVulnVC.m */; };
+		6E1729DF187167A400C162DB /* InsecureDataStorageVulnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729DD187167A400C162DB /* InsecureDataStorageVulnVC.m */; };
+		6E1729E518716BE700C162DB /* PDKeychainBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729E218716BE700C162DB /* PDKeychainBindings.m */; };
+		6E1729E618716BE700C162DB /* PDKeychainBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729E218716BE700C162DB /* PDKeychainBindings.m */; };
+		6E1729E718716BE700C162DB /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729E418716BE700C162DB /* PDKeychainBindingsController.m */; };
+		6E1729E818716BE700C162DB /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729E418716BE700C162DB /* PDKeychainBindingsController.m */; };
+		6E1729EC1871743700C162DB /* DamnVulnerableAppUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729EB1871743700C162DB /* DamnVulnerableAppUtilities.m */; };
+		6E1729ED1871743700C162DB /* DamnVulnerableAppUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729EB1871743700C162DB /* DamnVulnerableAppUtilities.m */; };
+		6E1729F11871749200C162DB /* GenericWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729F01871749200C162DB /* GenericWebViewVC.m */; };
+		6E1729F21871749200C162DB /* GenericWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729F01871749200C162DB /* GenericWebViewVC.m */; };
+		6E1729F61871844200C162DB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729F41871844200C162DB /* Model.xcdatamodeld */; };
+		6E1729F71871844200C162DB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729F41871844200C162DB /* Model.xcdatamodeld */; };
+		6E1729FA1871848A00C162DB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729F91871848A00C162DB /* User.m */; };
+		6E1729FB1871848A00C162DB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1729F91871848A00C162DB /* User.m */; };
+		6E1729FD1871914100C162DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1729FC1871914100C162DB /* CoreData.framework */; };
+		6E172A021873343800C162DB /* JailbreakDetectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E172A011873343800C162DB /* JailbreakDetectionVC.m */; };
+		6E172A031873343800C162DB /* JailbreakDetectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E172A011873343800C162DB /* JailbreakDetectionVC.m */; };
+		6E172A071873532800C162DB /* RuntimeManipulationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E172A061873532800C162DB /* RuntimeManipulationVC.m */; };
+		6E172A081873532800C162DB /* RuntimeManipulationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E172A061873532800C162DB /* RuntimeManipulationVC.m */; };
+		6E172A0F1873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E172A0E1873597500C162DB /* RuntimeManipulationDetailsVC.m */; };
+		6E172A101873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E172A0E1873597500C162DB /* RuntimeManipulationDetailsVC.m */; };
+		6E3742651873FBB000843DD1 /* main-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742631873FBB000843DD1 /* main-bg.png */; };
+		6E3742661873FBB000843DD1 /* main-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742631873FBB000843DD1 /* main-bg.png */; };
+		6E3742671873FBB000843DD1 /* main-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742641873FBB000843DD1 /* main-bg@2x.png */; };
+		6E3742681873FBB000843DD1 /* main-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742641873FBB000843DD1 /* main-bg@2x.png */; };
+		6E37426C1874129D00843DD1 /* ApplicationPatchingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37426B1874129D00843DD1 /* ApplicationPatchingVC.m */; };
+		6E37426D1874129D00843DD1 /* ApplicationPatchingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37426B1874129D00843DD1 /* ApplicationPatchingVC.m */; };
+		6E37427018742CFC00843DD1 /* ApplicationPatchingDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37426F18742CFC00843DD1 /* ApplicationPatchingDetailsVC.m */; };
+		6E37427118742CFC00843DD1 /* ApplicationPatchingDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37426F18742CFC00843DD1 /* ApplicationPatchingDetailsVC.m */; };
+		6E37427518749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37427418749FEA00843DD1 /* TransportLayerProtectionVC.m */; };
+		6E37427618749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E37427418749FEA00843DD1 /* TransportLayerProtectionVC.m */; };
+		6E3742791874A18300843DD1 /* card-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742771874A18300843DD1 /* card-bg.png */; };
+		6E37427A1874A18300843DD1 /* card-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742771874A18300843DD1 /* card-bg.png */; };
+		6E37427B1874A18300843DD1 /* card-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742781874A18300843DD1 /* card-bg@2x.png */; };
+		6E37427C1874A18300843DD1 /* card-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742781874A18300843DD1 /* card-bg@2x.png */; };
+		6E5157C0188E9A4E0072DDD6 /* App-icon-60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5157BE188E9A4E0072DDD6 /* App-icon-60x60.png */; };
+		6E5157C1188E9A4E0072DDD6 /* App-icon-60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5157BE188E9A4E0072DDD6 /* App-icon-60x60.png */; };
+		6E5157C2188E9A4E0072DDD6 /* AppIcon-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5157BF188E9A4E0072DDD6 /* AppIcon-60x60@2x.png */; };
+		6E5157C3188E9A4E0072DDD6 /* AppIcon-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5157BF188E9A4E0072DDD6 /* AppIcon-60x60@2x.png */; };
+		6E5157C7188E9A6D0072DDD6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5157C4188E9A6D0072DDD6 /* Default.png */; };
+		6E5157C8188E9A6D0072DDD6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5157C4188E9A6D0072DDD6 /* Default.png */; };
+		6E5157C9188E9A6D0072DDD6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5157C5188E9A6D0072DDD6 /* Default@2x.png */; };
+		6E5157CA188E9A6D0072DDD6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5157C5188E9A6D0072DDD6 /* Default@2x.png */; };
+		6E5A1AE3187AADA800FAECA6 /* slider-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE1187AADA800FAECA6 /* slider-bg.png */; };
+		6E5A1AE4187AADA800FAECA6 /* slider-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE1187AADA800FAECA6 /* slider-bg.png */; };
+		6E5A1AE5187AADA800FAECA6 /* slider-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE2187AADA800FAECA6 /* slider-bg@2x.png */; };
+		6E5A1AE6187AADA800FAECA6 /* slider-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE2187AADA800FAECA6 /* slider-bg@2x.png */; };
+		6E5A1AE9187AAF6400FAECA6 /* slider-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE7187AAF6400FAECA6 /* slider-active.png */; };
+		6E5A1AEA187AAF6400FAECA6 /* slider-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE7187AAF6400FAECA6 /* slider-active.png */; };
+		6E5A1AEB187AAF6400FAECA6 /* slider-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE8187AAF6400FAECA6 /* slider-active@2x.png */; };
+		6E5A1AEC187AAF6400FAECA6 /* slider-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE8187AAF6400FAECA6 /* slider-active@2x.png */; };
+		6E5A1AF0187AB41100FAECA6 /* BrokenCryptographyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AEF187AB41100FAECA6 /* BrokenCryptographyVC.m */; };
+		6E5A1AF1187AB41100FAECA6 /* BrokenCryptographyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AEF187AB41100FAECA6 /* BrokenCryptographyVC.m */; };
+		6E5A1B04187AB88700FAECA6 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AF6187AB88700FAECA6 /* RNCryptor.m */; };
+		6E5A1B05187AB88700FAECA6 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AF6187AB88700FAECA6 /* RNCryptor.m */; };
+		6E5A1B06187AB88700FAECA6 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AF9187AB88700FAECA6 /* RNCryptorEngine.m */; };
+		6E5A1B07187AB88700FAECA6 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AF9187AB88700FAECA6 /* RNCryptorEngine.m */; };
+		6E5A1B08187AB88700FAECA6 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AFB187AB88700FAECA6 /* RNDecryptor.m */; };
+		6E5A1B09187AB88700FAECA6 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AFB187AB88700FAECA6 /* RNDecryptor.m */; };
+		6E5A1B0A187AB88700FAECA6 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AFD187AB88700FAECA6 /* RNEncryptor.m */; };
+		6E5A1B0B187AB88700FAECA6 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AFD187AB88700FAECA6 /* RNEncryptor.m */; };
+		6E5A1B0C187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AFF187AB88700FAECA6 /* RNOpenSSLCryptor.m */; };
+		6E5A1B0D187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1AFF187AB88700FAECA6 /* RNOpenSSLCryptor.m */; };
+		6E5A1B0E187AB88700FAECA6 /* RNOpenSSLDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1B01187AB88700FAECA6 /* RNOpenSSLDecryptor.m */; };
+		6E5A1B0F187AB88700FAECA6 /* RNOpenSSLDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1B01187AB88700FAECA6 /* RNOpenSSLDecryptor.m */; };
+		6E5A1B10187AB88700FAECA6 /* RNOpenSSLEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1B03187AB88700FAECA6 /* RNOpenSSLEncryptor.m */; };
+		6E5A1B11187AB88700FAECA6 /* RNOpenSSLEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1B03187AB88700FAECA6 /* RNOpenSSLEncryptor.m */; };
+		6E5A1B14187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1B13187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.m */; };
+		6E5A1B15187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5A1B13187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.m */; };
+		6E623A0B187815610060AADA /* ClientSideInjectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E623A0A187815610060AADA /* ClientSideInjectionVC.m */; };
+		6E623A0C187815610060AADA /* ClientSideInjectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E623A0A187815610060AADA /* ClientSideInjectionVC.m */; };
+		6E623A0F1878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E623A0E1878187F0060AADA /* ClientSideInjectionDetailsVC.m */; };
+		6E623A101878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E623A0E1878187F0060AADA /* ClientSideInjectionDetailsVC.m */; };
+		6E9BA75C188015CC0016714B /* header-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75A188015CC0016714B /* header-bg.png */; };
+		6E9BA75D188015CC0016714B /* header-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75A188015CC0016714B /* header-bg.png */; };
+		6E9BA75E188015CC0016714B /* header-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75B188015CC0016714B /* header-bg@2x.png */; };
+		6E9BA75F188015CC0016714B /* header-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75B188015CC0016714B /* header-bg@2x.png */; };
+		6E9BA762188018B30016714B /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA760188018B30016714B /* menu-icon.png */; };
+		6E9BA763188018B30016714B /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA760188018B30016714B /* menu-icon.png */; };
+		6E9BA764188018B30016714B /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA761188018B30016714B /* menu-icon@2x.png */; };
+		6E9BA765188018B30016714B /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA761188018B30016714B /* menu-icon@2x.png */; };
+		6EB7B3BF18899DCD00A4F353 /* SolutionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB7B3BE18899DCD00A4F353 /* SolutionsViewController.m */; };
+		6EB7B3C018899DCD00A4F353 /* SolutionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB7B3BE18899DCD00A4F353 /* SolutionsViewController.m */; };
+		6EFED8A41870848E00FEFCB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFED8A31870848E00FEFCB1 /* Foundation.framework */; };
+		6EFED8A61870848E00FEFCB1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFED8A51870848E00FEFCB1 /* CoreGraphics.framework */; };
+		6EFED8A81870848E00FEFCB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFED8A71870848E00FEFCB1 /* UIKit.framework */; };
+		6EFED8AE1870848E00FEFCB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EFED8AC1870848E00FEFCB1 /* InfoPlist.strings */; };
+		6EFED8B01870848E00FEFCB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFED8AF1870848E00FEFCB1 /* main.m */; };
+		6EFED8B41870848E00FEFCB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFED8B31870848E00FEFCB1 /* AppDelegate.m */; };
+		6EFED8B71870848E00FEFCB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFED8B51870848E00FEFCB1 /* Main.storyboard */; };
+		6EFED8BC1870848E00FEFCB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EFED8BB1870848E00FEFCB1 /* Images.xcassets */; };
+		6EFED8C31870848E00FEFCB1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFED8C21870848E00FEFCB1 /* XCTest.framework */; };
+		6EFED8C41870848E00FEFCB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFED8A31870848E00FEFCB1 /* Foundation.framework */; };
+		6EFED8C51870848E00FEFCB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFED8A71870848E00FEFCB1 /* UIKit.framework */; };
+		6EFED8CD1870848E00FEFCB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EFED8CB1870848E00FEFCB1 /* InfoPlist.strings */; };
+		6EFED8CF1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EFED8C61870848E00FEFCB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EFED8981870848E00FEFCB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EFED89F1870848E00FEFCB1;
+			remoteInfo = DamnVulnerableIOSApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A69DA2CF1374EFAA03FE629 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6E1729C71870968F00C162DB /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		6E1729C81870968F00C162DB /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		6E1729CE18709F3700C162DB /* LearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LearnViewController.h; path = "View Controllers/LearnViewController.h"; sourceTree = "<group>"; };
+		6E1729CF18709F3700C162DB /* LearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LearnViewController.m; path = "View Controllers/LearnViewController.m"; sourceTree = "<group>"; };
+		6E1729D218709FAA00C162DB /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		6E1729D41870A6A800C162DB /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = "View Controllers/HomeViewController.h"; sourceTree = "<group>"; };
+		6E1729D51870A6A800C162DB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = "View Controllers/HomeViewController.m"; sourceTree = "<group>"; };
+		6E1729D81870A8C200C162DB /* InsecureDataStorageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InsecureDataStorageVC.h; path = "View Controllers/InsecureDataStorageVC.h"; sourceTree = "<group>"; };
+		6E1729D91870A8C200C162DB /* InsecureDataStorageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InsecureDataStorageVC.m; path = "View Controllers/InsecureDataStorageVC.m"; sourceTree = "<group>"; };
+		6E1729DC187167A400C162DB /* InsecureDataStorageVulnVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InsecureDataStorageVulnVC.h; path = "View Controllers/InsecureDataStorageVulnVC.h"; sourceTree = "<group>"; };
+		6E1729DD187167A400C162DB /* InsecureDataStorageVulnVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InsecureDataStorageVulnVC.m; path = "View Controllers/InsecureDataStorageVulnVC.m"; sourceTree = "<group>"; };
+		6E1729E118716BE700C162DB /* PDKeychainBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDKeychainBindings.h; path = "Third Party Classes/PDKeychainBindings.h"; sourceTree = "<group>"; };
+		6E1729E218716BE700C162DB /* PDKeychainBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDKeychainBindings.m; path = "Third Party Classes/PDKeychainBindings.m"; sourceTree = "<group>"; };
+		6E1729E318716BE700C162DB /* PDKeychainBindingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDKeychainBindingsController.h; path = "Third Party Classes/PDKeychainBindingsController.h"; sourceTree = "<group>"; };
+		6E1729E418716BE700C162DB /* PDKeychainBindingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDKeychainBindingsController.m; path = "Third Party Classes/PDKeychainBindingsController.m"; sourceTree = "<group>"; };
+		6E1729EA1871743700C162DB /* DamnVulnerableAppUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DamnVulnerableAppUtilities.h; sourceTree = "<group>"; };
+		6E1729EB1871743700C162DB /* DamnVulnerableAppUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DamnVulnerableAppUtilities.m; sourceTree = "<group>"; };
+		6E1729EF1871749200C162DB /* GenericWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericWebViewVC.h; path = "View Controllers/GenericWebViewVC.h"; sourceTree = "<group>"; };
+		6E1729F01871749200C162DB /* GenericWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericWebViewVC.m; path = "View Controllers/GenericWebViewVC.m"; sourceTree = "<group>"; };
+		6E1729F51871844200C162DB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6E1729F81871848A00C162DB /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Model/User.h; sourceTree = "<group>"; };
+		6E1729F91871848A00C162DB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/User.m; sourceTree = "<group>"; };
+		6E1729FC1871914100C162DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6E172A001873343800C162DB /* JailbreakDetectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JailbreakDetectionVC.h; path = "View Controllers/JailbreakDetectionVC.h"; sourceTree = "<group>"; };
+		6E172A011873343800C162DB /* JailbreakDetectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JailbreakDetectionVC.m; path = "View Controllers/JailbreakDetectionVC.m"; sourceTree = "<group>"; };
+		6E172A051873532800C162DB /* RuntimeManipulationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimeManipulationVC.h; path = "View Controllers/RuntimeManipulationVC.h"; sourceTree = "<group>"; };
+		6E172A061873532800C162DB /* RuntimeManipulationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimeManipulationVC.m; path = "View Controllers/RuntimeManipulationVC.m"; sourceTree = "<group>"; };
+		6E172A0D1873597500C162DB /* RuntimeManipulationDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeManipulationDetailsVC.h; sourceTree = "<group>"; };
+		6E172A0E1873597500C162DB /* RuntimeManipulationDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeManipulationDetailsVC.m; sourceTree = "<group>"; };
+		6E3742631873FBB000843DD1 /* main-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "main-bg.png"; path = "Resources/main-bg.png"; sourceTree = "<group>"; };
+		6E3742641873FBB000843DD1 /* main-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "main-bg@2x.png"; path = "Resources/main-bg@2x.png"; sourceTree = "<group>"; };
+		6E37426A1874129D00843DD1 /* ApplicationPatchingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationPatchingVC.h; path = "View Controllers/ApplicationPatchingVC.h"; sourceTree = "<group>"; };
+		6E37426B1874129D00843DD1 /* ApplicationPatchingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationPatchingVC.m; path = "View Controllers/ApplicationPatchingVC.m"; sourceTree = "<group>"; };
+		6E37426E18742CFC00843DD1 /* ApplicationPatchingDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApplicationPatchingDetailsVC.h; path = "View Controllers/ApplicationPatchingDetailsVC.h"; sourceTree = "<group>"; };
+		6E37426F18742CFC00843DD1 /* ApplicationPatchingDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApplicationPatchingDetailsVC.m; path = "View Controllers/ApplicationPatchingDetailsVC.m"; sourceTree = "<group>"; };
+		6E37427318749FEA00843DD1 /* TransportLayerProtectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransportLayerProtectionVC.h; path = "View Controllers/TransportLayerProtectionVC.h"; sourceTree = "<group>"; };
+		6E37427418749FEA00843DD1 /* TransportLayerProtectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransportLayerProtectionVC.m; path = "View Controllers/TransportLayerProtectionVC.m"; sourceTree = "<group>"; };
+		6E3742771874A18300843DD1 /* card-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-bg.png"; path = "Resources/card-bg.png"; sourceTree = "<group>"; };
+		6E3742781874A18300843DD1 /* card-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-bg@2x.png"; path = "Resources/card-bg@2x.png"; sourceTree = "<group>"; };
+		6E5157BE188E9A4E0072DDD6 /* App-icon-60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "App-icon-60x60.png"; path = "Resources/App-icon-60x60.png"; sourceTree = "<group>"; };
+		6E5157BF188E9A4E0072DDD6 /* AppIcon-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon-60x60@2x.png"; path = "Resources/AppIcon-60x60@2x.png"; sourceTree = "<group>"; };
+		6E5157C4188E9A6D0072DDD6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		6E5157C5188E9A6D0072DDD6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
+		6E5A1AE1187AADA800FAECA6 /* slider-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-bg.png"; path = "Resources/slider-bg.png"; sourceTree = "<group>"; };
+		6E5A1AE2187AADA800FAECA6 /* slider-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-bg@2x.png"; path = "Resources/slider-bg@2x.png"; sourceTree = "<group>"; };
+		6E5A1AE7187AAF6400FAECA6 /* slider-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-active.png"; path = "Resources/slider-active.png"; sourceTree = "<group>"; };
+		6E5A1AE8187AAF6400FAECA6 /* slider-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-active@2x.png"; path = "Resources/slider-active@2x.png"; sourceTree = "<group>"; };
+		6E5A1AEE187AB41100FAECA6 /* BrokenCryptographyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrokenCryptographyVC.h; path = "View Controllers/BrokenCryptographyVC.h"; sourceTree = "<group>"; };
+		6E5A1AEF187AB41100FAECA6 /* BrokenCryptographyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrokenCryptographyVC.m; path = "View Controllers/BrokenCryptographyVC.m"; sourceTree = "<group>"; };
+		6E5A1AF4187AB88700FAECA6 /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RNCryptor-Prefix.pch"; path = "Third Party Classes/RNCryptor/RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
+		6E5A1AF5187AB88700FAECA6 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNCryptor.h; path = "Third Party Classes/RNCryptor/RNCryptor.h"; sourceTree = "<group>"; };
+		6E5A1AF6187AB88700FAECA6 /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNCryptor.m; path = "Third Party Classes/RNCryptor/RNCryptor.m"; sourceTree = "<group>"; };
+		6E5A1AF7187AB88700FAECA6 /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RNCryptor+Private.h"; path = "Third Party Classes/RNCryptor/RNCryptor+Private.h"; sourceTree = "<group>"; };
+		6E5A1AF8187AB88700FAECA6 /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNCryptorEngine.h; path = "Third Party Classes/RNCryptor/RNCryptorEngine.h"; sourceTree = "<group>"; };
+		6E5A1AF9187AB88700FAECA6 /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNCryptorEngine.m; path = "Third Party Classes/RNCryptor/RNCryptorEngine.m"; sourceTree = "<group>"; };
+		6E5A1AFA187AB88700FAECA6 /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNDecryptor.h; path = "Third Party Classes/RNCryptor/RNDecryptor.h"; sourceTree = "<group>"; };
+		6E5A1AFB187AB88700FAECA6 /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNDecryptor.m; path = "Third Party Classes/RNCryptor/RNDecryptor.m"; sourceTree = "<group>"; };
+		6E5A1AFC187AB88700FAECA6 /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNEncryptor.h; path = "Third Party Classes/RNCryptor/RNEncryptor.h"; sourceTree = "<group>"; };
+		6E5A1AFD187AB88700FAECA6 /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNEncryptor.m; path = "Third Party Classes/RNCryptor/RNEncryptor.m"; sourceTree = "<group>"; };
+		6E5A1AFE187AB88700FAECA6 /* RNOpenSSLCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNOpenSSLCryptor.h; path = "Third Party Classes/RNCryptor/RNOpenSSLCryptor.h"; sourceTree = "<group>"; };
+		6E5A1AFF187AB88700FAECA6 /* RNOpenSSLCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNOpenSSLCryptor.m; path = "Third Party Classes/RNCryptor/RNOpenSSLCryptor.m"; sourceTree = "<group>"; };
+		6E5A1B00187AB88700FAECA6 /* RNOpenSSLDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNOpenSSLDecryptor.h; path = "Third Party Classes/RNCryptor/RNOpenSSLDecryptor.h"; sourceTree = "<group>"; };
+		6E5A1B01187AB88700FAECA6 /* RNOpenSSLDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNOpenSSLDecryptor.m; path = "Third Party Classes/RNCryptor/RNOpenSSLDecryptor.m"; sourceTree = "<group>"; };
+		6E5A1B02187AB88700FAECA6 /* RNOpenSSLEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNOpenSSLEncryptor.h; path = "Third Party Classes/RNCryptor/RNOpenSSLEncryptor.h"; sourceTree = "<group>"; };
+		6E5A1B03187AB88700FAECA6 /* RNOpenSSLEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNOpenSSLEncryptor.m; path = "Third Party Classes/RNCryptor/RNOpenSSLEncryptor.m"; sourceTree = "<group>"; };
+		6E5A1B12187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrokenCryptographyDetailsVC.h; path = "View Controllers/BrokenCryptographyDetailsVC.h"; sourceTree = "<group>"; };
+		6E5A1B13187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrokenCryptographyDetailsVC.m; path = "View Controllers/BrokenCryptographyDetailsVC.m"; sourceTree = "<group>"; };
+		6E623A09187815610060AADA /* ClientSideInjectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientSideInjectionVC.h; path = "View Controllers/ClientSideInjectionVC.h"; sourceTree = "<group>"; };
+		6E623A0A187815610060AADA /* ClientSideInjectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClientSideInjectionVC.m; path = "View Controllers/ClientSideInjectionVC.m"; sourceTree = "<group>"; };
+		6E623A0D1878187F0060AADA /* ClientSideInjectionDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientSideInjectionDetailsVC.h; path = "View Controllers/ClientSideInjectionDetailsVC.h"; sourceTree = "<group>"; };
+		6E623A0E1878187F0060AADA /* ClientSideInjectionDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClientSideInjectionDetailsVC.m; path = "View Controllers/ClientSideInjectionDetailsVC.m"; sourceTree = "<group>"; };
+		6E9BA75A188015CC0016714B /* header-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header-bg.png"; path = "Resources/header-bg.png"; sourceTree = "<group>"; };
+		6E9BA75B188015CC0016714B /* header-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header-bg@2x.png"; path = "Resources/header-bg@2x.png"; sourceTree = "<group>"; };
+		6E9BA760188018B30016714B /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-icon.png"; path = "Resources/menu-icon.png"; sourceTree = "<group>"; };
+		6E9BA761188018B30016714B /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-icon@2x.png"; path = "Resources/menu-icon@2x.png"; sourceTree = "<group>"; };
+		6EB7B3BD18899DCD00A4F353 /* SolutionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SolutionsViewController.h; path = "View Controllers/SolutionsViewController.h"; sourceTree = "<group>"; };
+		6EB7B3BE18899DCD00A4F353 /* SolutionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SolutionsViewController.m; path = "View Controllers/SolutionsViewController.m"; sourceTree = "<group>"; };
+		6EFED8A01870848E00FEFCB1 /* DamnVulnerableIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DamnVulnerableIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFED8A31870848E00FEFCB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6EFED8A51870848E00FEFCB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6EFED8A71870848E00FEFCB1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6EFED8AB1870848E00FEFCB1 /* DamnVulnerableIOSApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DamnVulnerableIOSApp-Info.plist"; sourceTree = "<group>"; };
+		6EFED8AD1870848E00FEFCB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6EFED8AF1870848E00FEFCB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EFED8B11870848E00FEFCB1 /* DamnVulnerableIOSApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DamnVulnerableIOSApp-Prefix.pch"; sourceTree = "<group>"; };
+		6EFED8B21870848E00FEFCB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6EFED8B31870848E00FEFCB1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6EFED8B61870848E00FEFCB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EFED8BB1870848E00FEFCB1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6EFED8C11870848E00FEFCB1 /* DamnVulnerableIOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DamnVulnerableIOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFED8C21870848E00FEFCB1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6EFED8CA1870848E00FEFCB1 /* DamnVulnerableIOSAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DamnVulnerableIOSAppTests-Info.plist"; sourceTree = "<group>"; };
+		6EFED8CC1870848E00FEFCB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DamnVulnerableIOSAppTests.m; sourceTree = "<group>"; };
+		FE13008725BD49A0AC0ED80A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EFED89D1870848E00FEFCB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1729FD1871914100C162DB /* CoreData.framework in Frameworks */,
+				6EFED8A61870848E00FEFCB1 /* CoreGraphics.framework in Frameworks */,
+				6EFED8A81870848E00FEFCB1 /* UIKit.framework in Frameworks */,
+				6EFED8A41870848E00FEFCB1 /* Foundation.framework in Frameworks */,
+				223B7CAD97A748F58BD827A8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFED8BE1870848E00FEFCB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EFED8C31870848E00FEFCB1 /* XCTest.framework in Frameworks */,
+				6EFED8C51870848E00FEFCB1 /* UIKit.framework in Frameworks */,
+				6EFED8C41870848E00FEFCB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E1729CB18709F0300C162DB /* Vulnerabilities */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A1AED187AB3FA00FAECA6 /* Broken Cryptography */,
+				6E623A08187815410060AADA /* Client Side Injection */,
+				6E37427218749FC500843DD1 /* Transport Layer Protection */,
+				6E3742691874128200843DD1 /* Application Patching */,
+				6E172A041873530A00C162DB /* Runtime Manipulation */,
+				6E1729FF1873341300C162DB /* Jailbreak Detection */,
+				6E1729FE187333E200C162DB /* Insecure Data Storage */,
+			);
+			name = Vulnerabilities;
+			sourceTree = "<group>";
+		};
+		6E1729CC18709F1000C162DB /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				6E1729CE18709F3700C162DB /* LearnViewController.h */,
+				6E1729CF18709F3700C162DB /* LearnViewController.m */,
+			);
+			name = Learn;
+			sourceTree = "<group>";
+		};
+		6E1729D31870A69500C162DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6E1729D41870A6A800C162DB /* HomeViewController.h */,
+				6E1729D51870A6A800C162DB /* HomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		6E1729E018716BBD00C162DB /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A1AF2187AB56400FAECA6 /* RNCryptor */,
+				6E5A1AF3187AB56C00FAECA6 /* PDKeychainBindings */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		6E1729E91871741F00C162DB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6E1729EA1871743700C162DB /* DamnVulnerableAppUtilities.h */,
+				6E1729EB1871743700C162DB /* DamnVulnerableAppUtilities.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		6E1729EE1871747000C162DB /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				6E1729EF1871749200C162DB /* GenericWebViewVC.h */,
+				6E1729F01871749200C162DB /* GenericWebViewVC.m */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
+		6E1729F3187183E400C162DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E1729F41871844200C162DB /* Model.xcdatamodeld */,
+				6E1729F81871848A00C162DB /* User.h */,
+				6E1729F91871848A00C162DB /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6E1729FE187333E200C162DB /* Insecure Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				6E1729D81870A8C200C162DB /* InsecureDataStorageVC.h */,
+				6E1729D91870A8C200C162DB /* InsecureDataStorageVC.m */,
+				6E1729DC187167A400C162DB /* InsecureDataStorageVulnVC.h */,
+				6E1729DD187167A400C162DB /* InsecureDataStorageVulnVC.m */,
+			);
+			name = "Insecure Data Storage";
+			sourceTree = "<group>";
+		};
+		6E1729FF1873341300C162DB /* Jailbreak Detection */ = {
+			isa = PBXGroup;
+			children = (
+				6E172A001873343800C162DB /* JailbreakDetectionVC.h */,
+				6E172A011873343800C162DB /* JailbreakDetectionVC.m */,
+			);
+			name = "Jailbreak Detection";
+			sourceTree = "<group>";
+		};
+		6E172A041873530A00C162DB /* Runtime Manipulation */ = {
+			isa = PBXGroup;
+			children = (
+				6E172A051873532800C162DB /* RuntimeManipulationVC.h */,
+				6E172A061873532800C162DB /* RuntimeManipulationVC.m */,
+				6E172A0D1873597500C162DB /* RuntimeManipulationDetailsVC.h */,
+				6E172A0E1873597500C162DB /* RuntimeManipulationDetailsVC.m */,
+			);
+			name = "Runtime Manipulation";
+			sourceTree = "<group>";
+		};
+		6E3742621873FB8900843DD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E5157C4188E9A6D0072DDD6 /* Default.png */,
+				6E5157C5188E9A6D0072DDD6 /* Default@2x.png */,
+				6E5157BE188E9A4E0072DDD6 /* App-icon-60x60.png */,
+				6E5157BF188E9A4E0072DDD6 /* AppIcon-60x60@2x.png */,
+				6E5A1AE7187AAF6400FAECA6 /* slider-active.png */,
+				6E9BA760188018B30016714B /* menu-icon.png */,
+				6E9BA761188018B30016714B /* menu-icon@2x.png */,
+				6E9BA75A188015CC0016714B /* header-bg.png */,
+				6E9BA75B188015CC0016714B /* header-bg@2x.png */,
+				6E5A1AE8187AAF6400FAECA6 /* slider-active@2x.png */,
+				6E5A1AE1187AADA800FAECA6 /* slider-bg.png */,
+				6E5A1AE2187AADA800FAECA6 /* slider-bg@2x.png */,
+				6E3742771874A18300843DD1 /* card-bg.png */,
+				6E3742781874A18300843DD1 /* card-bg@2x.png */,
+				6E3742631873FBB000843DD1 /* main-bg.png */,
+				6E3742641873FBB000843DD1 /* main-bg@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6E3742691874128200843DD1 /* Application Patching */ = {
+			isa = PBXGroup;
+			children = (
+				6E37426A1874129D00843DD1 /* ApplicationPatchingVC.h */,
+				6E37426B1874129D00843DD1 /* ApplicationPatchingVC.m */,
+				6E37426E18742CFC00843DD1 /* ApplicationPatchingDetailsVC.h */,
+				6E37426F18742CFC00843DD1 /* ApplicationPatchingDetailsVC.m */,
+			);
+			name = "Application Patching";
+			sourceTree = "<group>";
+		};
+		6E37427218749FC500843DD1 /* Transport Layer Protection */ = {
+			isa = PBXGroup;
+			children = (
+				6E37427318749FEA00843DD1 /* TransportLayerProtectionVC.h */,
+				6E37427418749FEA00843DD1 /* TransportLayerProtectionVC.m */,
+			);
+			name = "Transport Layer Protection";
+			sourceTree = "<group>";
+		};
+		6E5A1AED187AB3FA00FAECA6 /* Broken Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A1AEE187AB41100FAECA6 /* BrokenCryptographyVC.h */,
+				6E5A1AEF187AB41100FAECA6 /* BrokenCryptographyVC.m */,
+				6E5A1B12187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.h */,
+				6E5A1B13187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.m */,
+			);
+			name = "Broken Cryptography";
+			sourceTree = "<group>";
+		};
+		6E5A1AF2187AB56400FAECA6 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				6E5A1AF4187AB88700FAECA6 /* RNCryptor-Prefix.pch */,
+				6E5A1AF5187AB88700FAECA6 /* RNCryptor.h */,
+				6E5A1AF6187AB88700FAECA6 /* RNCryptor.m */,
+				6E5A1AF7187AB88700FAECA6 /* RNCryptor+Private.h */,
+				6E5A1AF8187AB88700FAECA6 /* RNCryptorEngine.h */,
+				6E5A1AF9187AB88700FAECA6 /* RNCryptorEngine.m */,
+				6E5A1AFA187AB88700FAECA6 /* RNDecryptor.h */,
+				6E5A1AFB187AB88700FAECA6 /* RNDecryptor.m */,
+				6E5A1AFC187AB88700FAECA6 /* RNEncryptor.h */,
+				6E5A1AFD187AB88700FAECA6 /* RNEncryptor.m */,
+				6E5A1AFE187AB88700FAECA6 /* RNOpenSSLCryptor.h */,
+				6E5A1AFF187AB88700FAECA6 /* RNOpenSSLCryptor.m */,
+				6E5A1B00187AB88700FAECA6 /* RNOpenSSLDecryptor.h */,
+				6E5A1B01187AB88700FAECA6 /* RNOpenSSLDecryptor.m */,
+				6E5A1B02187AB88700FAECA6 /* RNOpenSSLEncryptor.h */,
+				6E5A1B03187AB88700FAECA6 /* RNOpenSSLEncryptor.m */,
+			);
+			name = RNCryptor;
+			sourceTree = "<group>";
+		};
+		6E5A1AF3187AB56C00FAECA6 /* PDKeychainBindings */ = {
+			isa = PBXGroup;
+			children = (
+				6E1729E118716BE700C162DB /* PDKeychainBindings.h */,
+				6E1729E218716BE700C162DB /* PDKeychainBindings.m */,
+				6E1729E318716BE700C162DB /* PDKeychainBindingsController.h */,
+				6E1729E418716BE700C162DB /* PDKeychainBindingsController.m */,
+			);
+			name = PDKeychainBindings;
+			sourceTree = "<group>";
+		};
+		6E623A08187815410060AADA /* Client Side Injection */ = {
+			isa = PBXGroup;
+			children = (
+				6E623A09187815610060AADA /* ClientSideInjectionVC.h */,
+				6E623A0A187815610060AADA /* ClientSideInjectionVC.m */,
+				6E623A0D1878187F0060AADA /* ClientSideInjectionDetailsVC.h */,
+				6E623A0E1878187F0060AADA /* ClientSideInjectionDetailsVC.m */,
+			);
+			name = "Client Side Injection";
+			sourceTree = "<group>";
+		};
+		6EB7B3BC18899DB000A4F353 /* Solutions */ = {
+			isa = PBXGroup;
+			children = (
+				6EB7B3BD18899DCD00A4F353 /* SolutionsViewController.h */,
+				6EB7B3BE18899DCD00A4F353 /* SolutionsViewController.m */,
+			);
+			name = Solutions;
+			sourceTree = "<group>";
+		};
+		6EFED8971870848E00FEFCB1 = {
+			isa = PBXGroup;
+			children = (
+				6EFED8A91870848E00FEFCB1 /* DamnVulnerableIOSApp */,
+				6EFED8C81870848E00FEFCB1 /* DamnVulnerableIOSAppTests */,
+				6EFED8A21870848E00FEFCB1 /* Frameworks */,
+				6EFED8A11870848E00FEFCB1 /* Products */,
+				0A69DA2CF1374EFAA03FE629 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		6EFED8A11870848E00FEFCB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EFED8A01870848E00FEFCB1 /* DamnVulnerableIOSApp.app */,
+				6EFED8C11870848E00FEFCB1 /* DamnVulnerableIOSAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EFED8A21870848E00FEFCB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E1729FC1871914100C162DB /* CoreData.framework */,
+				6EFED8A31870848E00FEFCB1 /* Foundation.framework */,
+				6EFED8A51870848E00FEFCB1 /* CoreGraphics.framework */,
+				6EFED8A71870848E00FEFCB1 /* UIKit.framework */,
+				6EFED8C21870848E00FEFCB1 /* XCTest.framework */,
+				FE13008725BD49A0AC0ED80A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EFED8A91870848E00FEFCB1 /* DamnVulnerableIOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				6EFED8B21870848E00FEFCB1 /* AppDelegate.h */,
+				6EFED8B31870848E00FEFCB1 /* AppDelegate.m */,
+				6E1729F3187183E400C162DB /* Model */,
+				6E1729EE1871747000C162DB /* WebView */,
+				6E1729E91871741F00C162DB /* Utilities */,
+				6E1729E018716BBD00C162DB /* Vendor */,
+				6E1729D31870A69500C162DB /* Home */,
+				6EB7B3BC18899DB000A4F353 /* Solutions */,
+				6E1729CC18709F1000C162DB /* Learn */,
+				6E1729CB18709F0300C162DB /* Vulnerabilities */,
+				6EFED8B51870848E00FEFCB1 /* Main.storyboard */,
+				6E1729C71870968F00C162DB /* MenuViewController.h */,
+				6E1729C81870968F00C162DB /* MenuViewController.m */,
+				6EFED8BB1870848E00FEFCB1 /* Images.xcassets */,
+				6EFED8AA1870848E00FEFCB1 /* Supporting Files */,
+			);
+			path = DamnVulnerableIOSApp;
+			sourceTree = "<group>";
+		};
+		6EFED8AA1870848E00FEFCB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E3742621873FB8900843DD1 /* Resources */,
+				6EFED8AB1870848E00FEFCB1 /* DamnVulnerableIOSApp-Info.plist */,
+				6EFED8AC1870848E00FEFCB1 /* InfoPlist.strings */,
+				6EFED8AF1870848E00FEFCB1 /* main.m */,
+				6EFED8B11870848E00FEFCB1 /* DamnVulnerableIOSApp-Prefix.pch */,
+				6E1729D218709FAA00C162DB /* Constants.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EFED8C81870848E00FEFCB1 /* DamnVulnerableIOSAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */,
+				6EFED8C91870848E00FEFCB1 /* Supporting Files */,
+			);
+			path = DamnVulnerableIOSAppTests;
+			sourceTree = "<group>";
+		};
+		6EFED8C91870848E00FEFCB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EFED8CA1870848E00FEFCB1 /* DamnVulnerableIOSAppTests-Info.plist */,
+				6EFED8CB1870848E00FEFCB1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EFED89F1870848E00FEFCB1 /* DamnVulnerableIOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EFED8D21870848E00FEFCB1 /* Build configuration list for PBXNativeTarget "DamnVulnerableIOSApp" */;
+			buildPhases = (
+				77FBA1E923F942ECA740CF55 /* Check Pods Manifest.lock */,
+				6EFED89C1870848E00FEFCB1 /* Sources */,
+				6EFED89D1870848E00FEFCB1 /* Frameworks */,
+				6EFED89E1870848E00FEFCB1 /* Resources */,
+				BE10B9DD240348FE88F81A7E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DamnVulnerableIOSApp;
+			productName = DamnVulnerableIOSApp;
+			productReference = 6EFED8A01870848E00FEFCB1 /* DamnVulnerableIOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EFED8C01870848E00FEFCB1 /* DamnVulnerableIOSAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EFED8D51870848E00FEFCB1 /* Build configuration list for PBXNativeTarget "DamnVulnerableIOSAppTests" */;
+			buildPhases = (
+				6EFED8BD1870848E00FEFCB1 /* Sources */,
+				6EFED8BE1870848E00FEFCB1 /* Frameworks */,
+				6EFED8BF1870848E00FEFCB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EFED8C71870848E00FEFCB1 /* PBXTargetDependency */,
+			);
+			name = DamnVulnerableIOSAppTests;
+			productName = DamnVulnerableIOSAppTests;
+			productReference = 6EFED8C11870848E00FEFCB1 /* DamnVulnerableIOSAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EFED8981870848E00FEFCB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = HighAltitudeHacks.com;
+				TargetAttributes = {
+					6EFED8C01870848E00FEFCB1 = {
+						TestTargetID = 6EFED89F1870848E00FEFCB1;
+					};
+				};
+			};
+			buildConfigurationList = 6EFED89B1870848E00FEFCB1 /* Build configuration list for PBXProject "DamnVulnerableIOSApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EFED8971870848E00FEFCB1;
+			productRefGroup = 6EFED8A11870848E00FEFCB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EFED89F1870848E00FEFCB1 /* DamnVulnerableIOSApp */,
+				6EFED8C01870848E00FEFCB1 /* DamnVulnerableIOSAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EFED89E1870848E00FEFCB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E5157C2188E9A4E0072DDD6 /* AppIcon-60x60@2x.png in Resources */,
+				6E5157C7188E9A6D0072DDD6 /* Default.png in Resources */,
+				6E9BA75E188015CC0016714B /* header-bg@2x.png in Resources */,
+				6EFED8BC1870848E00FEFCB1 /* Images.xcassets in Resources */,
+				6E9BA764188018B30016714B /* menu-icon@2x.png in Resources */,
+				6E5A1AE9187AAF6400FAECA6 /* slider-active.png in Resources */,
+				6E5A1AE3187AADA800FAECA6 /* slider-bg.png in Resources */,
+				6E9BA75C188015CC0016714B /* header-bg.png in Resources */,
+				6E3742651873FBB000843DD1 /* main-bg.png in Resources */,
+				6E3742791874A18300843DD1 /* card-bg.png in Resources */,
+				6EFED8AE1870848E00FEFCB1 /* InfoPlist.strings in Resources */,
+				6E5A1AEB187AAF6400FAECA6 /* slider-active@2x.png in Resources */,
+				6E5A1AE5187AADA800FAECA6 /* slider-bg@2x.png in Resources */,
+				6EFED8B71870848E00FEFCB1 /* Main.storyboard in Resources */,
+				6E9BA762188018B30016714B /* menu-icon.png in Resources */,
+				6E5157C0188E9A4E0072DDD6 /* App-icon-60x60.png in Resources */,
+				6E5157C9188E9A6D0072DDD6 /* Default@2x.png in Resources */,
+				6E37427B1874A18300843DD1 /* card-bg@2x.png in Resources */,
+				6E3742671873FBB000843DD1 /* main-bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFED8BF1870848E00FEFCB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9BA75F188015CC0016714B /* header-bg@2x.png in Resources */,
+				6EFED8CD1870848E00FEFCB1 /* InfoPlist.strings in Resources */,
+				6E9BA75D188015CC0016714B /* header-bg.png in Resources */,
+				6E5157C8188E9A6D0072DDD6 /* Default.png in Resources */,
+				6E5A1AEC187AAF6400FAECA6 /* slider-active@2x.png in Resources */,
+				6E5A1AEA187AAF6400FAECA6 /* slider-active.png in Resources */,
+				6E3742681873FBB000843DD1 /* main-bg@2x.png in Resources */,
+				6E9BA765188018B30016714B /* menu-icon@2x.png in Resources */,
+				6E37427A1874A18300843DD1 /* card-bg.png in Resources */,
+				6E5157CA188E9A6D0072DDD6 /* Default@2x.png in Resources */,
+				6E9BA763188018B30016714B /* menu-icon.png in Resources */,
+				6E5A1AE4187AADA800FAECA6 /* slider-bg.png in Resources */,
+				6E3742661873FBB000843DD1 /* main-bg.png in Resources */,
+				6E5157C1188E9A4E0072DDD6 /* App-icon-60x60.png in Resources */,
+				6E5157C3188E9A4E0072DDD6 /* AppIcon-60x60@2x.png in Resources */,
+				6E5A1AE6187AADA800FAECA6 /* slider-bg@2x.png in Resources */,
+				6E37427C1874A18300843DD1 /* card-bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77FBA1E923F942ECA740CF55 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE10B9DD240348FE88F81A7E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EFED89C1870848E00FEFCB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB7B3BF18899DCD00A4F353 /* SolutionsViewController.m in Sources */,
+				6E172A0F1873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */,
+				6E37427518749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
+				6E5A1B0C187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */,
+				6E5A1B10187AB88700FAECA6 /* RNOpenSSLEncryptor.m in Sources */,
+				6E1729FA1871848A00C162DB /* User.m in Sources */,
+				6EFED8B41870848E00FEFCB1 /* AppDelegate.m in Sources */,
+				6E1729D018709F3700C162DB /* LearnViewController.m in Sources */,
+				6E37426C1874129D00843DD1 /* ApplicationPatchingVC.m in Sources */,
+				6E5A1B0A187AB88700FAECA6 /* RNEncryptor.m in Sources */,
+				6E5A1B04187AB88700FAECA6 /* RNCryptor.m in Sources */,
+				6E1729DA1870A8C200C162DB /* InsecureDataStorageVC.m in Sources */,
+				6E1729F11871749200C162DB /* GenericWebViewVC.m in Sources */,
+				6E5A1B14187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.m in Sources */,
+				6E5A1B08187AB88700FAECA6 /* RNDecryptor.m in Sources */,
+				6E1729DE187167A400C162DB /* InsecureDataStorageVulnVC.m in Sources */,
+				6E1729E718716BE700C162DB /* PDKeychainBindingsController.m in Sources */,
+				6EFED8B01870848E00FEFCB1 /* main.m in Sources */,
+				6E172A071873532800C162DB /* RuntimeManipulationVC.m in Sources */,
+				6E623A0F1878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */,
+				6E5A1AF0187AB41100FAECA6 /* BrokenCryptographyVC.m in Sources */,
+				6E172A021873343800C162DB /* JailbreakDetectionVC.m in Sources */,
+				6E5A1B0E187AB88700FAECA6 /* RNOpenSSLDecryptor.m in Sources */,
+				6E1729E518716BE700C162DB /* PDKeychainBindings.m in Sources */,
+				6E1729D61870A6A800C162DB /* HomeViewController.m in Sources */,
+				6E1729EC1871743700C162DB /* DamnVulnerableAppUtilities.m in Sources */,
+				6E1729C91870968F00C162DB /* MenuViewController.m in Sources */,
+				6E37427018742CFC00843DD1 /* ApplicationPatchingDetailsVC.m in Sources */,
+				6E5A1B06187AB88700FAECA6 /* RNCryptorEngine.m in Sources */,
+				6E623A0B187815610060AADA /* ClientSideInjectionVC.m in Sources */,
+				6E1729F61871844200C162DB /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFED8BD1870848E00FEFCB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1729F21871749200C162DB /* GenericWebViewVC.m in Sources */,
+				6E1729ED1871743700C162DB /* DamnVulnerableAppUtilities.m in Sources */,
+				6E5A1B0B187AB88700FAECA6 /* RNEncryptor.m in Sources */,
+				6EB7B3C018899DCD00A4F353 /* SolutionsViewController.m in Sources */,
+				6E1729E618716BE700C162DB /* PDKeychainBindings.m in Sources */,
+				6E623A101878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */,
+				6E5A1B09187AB88700FAECA6 /* RNDecryptor.m in Sources */,
+				6E5A1AF1187AB41100FAECA6 /* BrokenCryptographyVC.m in Sources */,
+				6E5A1B07187AB88700FAECA6 /* RNCryptorEngine.m in Sources */,
+				6EFED8CF1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m in Sources */,
+				6E172A101873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */,
+				6E1729D118709F3700C162DB /* LearnViewController.m in Sources */,
+				6E172A031873343800C162DB /* JailbreakDetectionVC.m in Sources */,
+				6E5A1B0D187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */,
+				6E5A1B05187AB88700FAECA6 /* RNCryptor.m in Sources */,
+				6E37427618749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
+				6E172A081873532800C162DB /* RuntimeManipulationVC.m in Sources */,
+				6E1729E818716BE700C162DB /* PDKeychainBindingsController.m in Sources */,
+				6E5A1B11187AB88700FAECA6 /* RNOpenSSLEncryptor.m in Sources */,
+				6E1729CA1870968F00C162DB /* MenuViewController.m in Sources */,
+				6E1729D71870A6A800C162DB /* HomeViewController.m in Sources */,
+				6E623A0C187815610060AADA /* ClientSideInjectionVC.m in Sources */,
+				6E1729FB1871848A00C162DB /* User.m in Sources */,
+				6E1729DB1870A8C200C162DB /* InsecureDataStorageVC.m in Sources */,
+				6E5A1B15187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.m in Sources */,
+				6E37426D1874129D00843DD1 /* ApplicationPatchingVC.m in Sources */,
+				6E1729F71871844200C162DB /* Model.xcdatamodeld in Sources */,
+				6E1729DF187167A400C162DB /* InsecureDataStorageVulnVC.m in Sources */,
+				6E37427118742CFC00843DD1 /* ApplicationPatchingDetailsVC.m in Sources */,
+				6E5A1B0F187AB88700FAECA6 /* RNOpenSSLDecryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EFED8C71870848E00FEFCB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EFED89F1870848E00FEFCB1 /* DamnVulnerableIOSApp */;
+			targetProxy = 6EFED8C61870848E00FEFCB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EFED8AC1870848E00FEFCB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EFED8AD1870848E00FEFCB1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6EFED8B51870848E00FEFCB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EFED8B61870848E00FEFCB1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6EFED8CB1870848E00FEFCB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EFED8CC1870848E00FEFCB1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EFED8D01870848E00FEFCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		6EFED8D11870848E00FEFCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EFED8D31870848E00FEFCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A69DA2CF1374EFAA03FE629 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
+				INFOPLIST_FILE = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8C0FC447-BB94-4338-9839-32005B8E7835";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6EFED8D41870848E00FEFCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A69DA2CF1374EFAA03FE629 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
+				INFOPLIST_FILE = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8C0FC447-BB94-4338-9839-32005B8E7835";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6EFED8D61870848E00FEFCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DamnVulnerableIOSApp.app/DamnVulnerableIOSApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DamnVulnerableIOSAppTests/DamnVulnerableIOSAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6EFED8D71870848E00FEFCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DamnVulnerableIOSApp.app/DamnVulnerableIOSApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
+				INFOPLIST_FILE = "DamnVulnerableIOSAppTests/DamnVulnerableIOSAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EFED89B1870848E00FEFCB1 /* Build configuration list for PBXProject "DamnVulnerableIOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EFED8D01870848E00FEFCB1 /* Debug */,
+				6EFED8D11870848E00FEFCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EFED8D21870848E00FEFCB1 /* Build configuration list for PBXNativeTarget "DamnVulnerableIOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EFED8D31870848E00FEFCB1 /* Debug */,
+				6EFED8D41870848E00FEFCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EFED8D51870848E00FEFCB1 /* Build configuration list for PBXNativeTarget "DamnVulnerableIOSAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EFED8D61870848E00FEFCB1 /* Debug */,
+				6EFED8D71870848E00FEFCB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6E1729F41871844200C162DB /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6E1729F51871844200C162DB /* Model.xcdatamodel */,
+			);
+			currentVersion = 6E1729F51871844200C162DB /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6EFED8981870848E00FEFCB1 /* Project object */;
+}
