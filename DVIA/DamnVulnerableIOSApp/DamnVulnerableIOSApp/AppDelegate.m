@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
@@ -20,6 +21,10 @@
     // Override point for customization after application launch.
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"header-bg"] forBarMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    //Initialize parse
+    [Parse setApplicationId:kParseAppId
+                  clientKey:kParseClientKey];
     
     return YES;
 }

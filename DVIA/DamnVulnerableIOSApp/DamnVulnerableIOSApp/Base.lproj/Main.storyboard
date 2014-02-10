@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynB-ZH-GFB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3539" y="771"/>
+            <point key="canvasLocation" x="-3189" y="597"/>
         </scene>
         <!--Home View Controller - Damn Vulnerable IOS App-->
         <scene sceneID="nuF-a7-Av2">
@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="61" width="320" height="405"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Damn Vulnerable IOS App (DVIA) is an IOS application that is damn vulnerable. Its main goal is to provide a platform to mobile security enthusiasts/professionals to test their IOS penetration testing skills in a legal environment. This application covers all the common vulnerabilities found in IOS applications (following OWASP top 10 mobile risks) and contains several challenges that the user can try.This project is developed and maintained by @prateekg147.  The vulnerabilities and solutions covered in this app are tested upto IOS 7.0.4.                                                              </mutableString>
+                                <string key="text">Damn Vulnerable IOS App (DVIA) is an IOS application that is damn vulnerable. Its main goal is to provide a platform to mobile security enthusiasts/professionals to test their IOS penetration testing skills in a legal environment. This application covers all the common vulnerabilities found in IOS applications (following OWASP top 10 mobile risks) and contains several challenges that the user can try.This project is developed and maintained by @prateekg147.  The vulnerabilities and solutions covered in this app are tested upto IOS 7.0.4.                                                              </string>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -96,7 +96,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vii-W6-ROi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3090" y="2324"/>
+            <point key="canvasLocation" x="-3090" y="2366"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="2Z5-HA-fFn">

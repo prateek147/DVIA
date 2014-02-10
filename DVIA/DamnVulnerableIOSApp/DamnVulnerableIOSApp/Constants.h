@@ -13,6 +13,10 @@
 #define kRowHeight 44.0
 #define kCellFont [UIFont fontWithName:@"Avenir-Roman" size:14.0];
 
+//Parse Constants
+#define kParseAppId @"UaaSszBfQVE6Jt1QrwZ4SPiY822TAulkoEDTHJyf"
+#define kParseClientKey @"R8fRtBGNuDSCwezz5poKIxEHuRxvsFZFJnDrubX0"
+
 //Article URL's
 #define kHomePage @"http://damnvulnerableiosapp.com"
 #define kSolutionsPage @"http://damnvulnerableiosapp.com/#solutions"
