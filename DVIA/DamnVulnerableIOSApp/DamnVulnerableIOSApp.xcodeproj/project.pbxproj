@@ -100,6 +100,8 @@
 		6E63B64518A8F89C00B438A0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B64418A8F89C00B438A0 /* Security.framework */; };
 		6E63B64718A8F8A200B438A0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B64618A8F8A200B438A0 /* StoreKit.framework */; };
 		6E63B64918A8F8BA00B438A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B64818A8F8BA00B438A0 /* SystemConfiguration.framework */; };
+		6E63B64E18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B64D18A8FE0800B438A0 /* FBMissingSymbols.m */; };
+		6E63B64F18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B64D18A8FE0800B438A0 /* FBMissingSymbols.m */; };
 		6E9BA75C188015CC0016714B /* header-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75A188015CC0016714B /* header-bg.png */; };
 		6E9BA75D188015CC0016714B /* header-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75A188015CC0016714B /* header-bg.png */; };
 		6E9BA75E188015CC0016714B /* header-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75B188015CC0016714B /* header-bg@2x.png */; };
@@ -218,6 +220,8 @@
 		6E63B64418A8F89C00B438A0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6E63B64618A8F8A200B438A0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		6E63B64818A8F8BA00B438A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6E63B64A18A8FD9500B438A0 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		6E63B64D18A8FE0800B438A0 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
 		6E9BA75A188015CC0016714B /* header-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header-bg.png"; path = "Resources/header-bg.png"; sourceTree = "<group>"; };
 		6E9BA75B188015CC0016714B /* header-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header-bg@2x.png"; path = "Resources/header-bg@2x.png"; sourceTree = "<group>"; };
 		6E9BA760188018B30016714B /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-icon.png"; path = "Resources/menu-icon.png"; sourceTree = "<group>"; };
@@ -513,6 +517,7 @@
 		6EFED8A21870848E00FEFCB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E63B64A18A8FD9500B438A0 /* Accounts.framework */,
 				6E63B64818A8F8BA00B438A0 /* SystemConfiguration.framework */,
 				6E63B64618A8F8A200B438A0 /* StoreKit.framework */,
 				6E63B64418A8F89C00B438A0 /* Security.framework */,
@@ -537,6 +542,7 @@
 			children = (
 				6EFED8B21870848E00FEFCB1 /* AppDelegate.h */,
 				6EFED8B31870848E00FEFCB1 /* AppDelegate.m */,
+				6E63B64D18A8FE0800B438A0 /* FBMissingSymbols.m */,
 				6E1729F3187183E400C162DB /* Model */,
 				6E1729EE1871747000C162DB /* WebView */,
 				6E1729E91871741F00C162DB /* Utilities */,
@@ -773,6 +779,7 @@
 				6E172A021873343800C162DB /* JailbreakDetectionVC.m in Sources */,
 				6E5A1B0E187AB88700FAECA6 /* RNOpenSSLDecryptor.m in Sources */,
 				6E1729E518716BE700C162DB /* PDKeychainBindings.m in Sources */,
+				6E63B64E18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */,
 				6E1729D61870A6A800C162DB /* HomeViewController.m in Sources */,
 				6E1729EC1871743700C162DB /* DamnVulnerableAppUtilities.m in Sources */,
 				6E1729C91870968F00C162DB /* MenuViewController.m in Sources */,
@@ -800,6 +807,7 @@
 				6E172A101873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */,
 				6E1729D118709F3700C162DB /* LearnViewController.m in Sources */,
 				6E172A031873343800C162DB /* JailbreakDetectionVC.m in Sources */,
+				6E63B64F18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */,
 				6E5A1B0D187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */,
 				6E5A1B05187AB88700FAECA6 /* RNCryptor.m in Sources */,
 				6E37427618749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
@@ -952,7 +960,7 @@
 				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
 				INFOPLIST_FILE = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -976,7 +984,7 @@
 				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
 				INFOPLIST_FILE = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
