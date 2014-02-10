@@ -10,6 +10,8 @@
 
 @interface MenuViewController ()
 
+@property (strong, nonatomic) IBOutlet UITableView *menuTableView;
+
 @end
 
 @implementation MenuViewController
@@ -17,11 +19,11 @@
 - (IBAction)unwindToMenuViewController:(UIStoryboardSegue *)segue { }
 
 -(void)viewDidLoad{
-    [self.view setBackgroundColor:
+    [self.menuTableView setBackgroundColor:
      [UIColor colorWithPatternImage:
       [UIImage imageNamed:
     	@"slider-bg"]]];
-   }
+}
 
 
 /*
