@@ -102,6 +102,10 @@
 		6E63B64918A8F8BA00B438A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B64818A8F8BA00B438A0 /* SystemConfiguration.framework */; };
 		6E63B64E18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B64D18A8FE0800B438A0 /* FBMissingSymbols.m */; };
 		6E63B64F18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B64D18A8FE0800B438A0 /* FBMissingSymbols.m */; };
+		6E63B65318AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65218AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m */; };
+		6E63B65418AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65218AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m */; };
+		6E63B65718AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65618AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m */; };
+		6E63B65818AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65618AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m */; };
 		6E9BA75C188015CC0016714B /* header-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75A188015CC0016714B /* header-bg.png */; };
 		6E9BA75D188015CC0016714B /* header-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75A188015CC0016714B /* header-bg.png */; };
 		6E9BA75E188015CC0016714B /* header-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75B188015CC0016714B /* header-bg@2x.png */; };
@@ -222,6 +226,10 @@
 		6E63B64818A8F8BA00B438A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6E63B64A18A8FD9500B438A0 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		6E63B64D18A8FE0800B438A0 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
+		6E63B65118AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityDecisionViaUntrustedInputVC.h; path = "View Controllers/SecurityDecisionViaUntrustedInputVC.h"; sourceTree = "<group>"; };
+		6E63B65218AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityDecisionViaUntrustedInputVC.m; path = "View Controllers/SecurityDecisionViaUntrustedInputVC.m"; sourceTree = "<group>"; };
+		6E63B65518AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityDecisionViaUntrustedInputDetailsVC.h; path = "View Controllers/SecurityDecisionViaUntrustedInputDetailsVC.h"; sourceTree = "<group>"; };
+		6E63B65618AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityDecisionViaUntrustedInputDetailsVC.m; path = "View Controllers/SecurityDecisionViaUntrustedInputDetailsVC.m"; sourceTree = "<group>"; };
 		6E9BA75A188015CC0016714B /* header-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header-bg.png"; path = "Resources/header-bg.png"; sourceTree = "<group>"; };
 		6E9BA75B188015CC0016714B /* header-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header-bg@2x.png"; path = "Resources/header-bg@2x.png"; sourceTree = "<group>"; };
 		6E9BA760188018B30016714B /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-icon.png"; path = "Resources/menu-icon.png"; sourceTree = "<group>"; };
@@ -288,6 +296,7 @@
 		6E1729CB18709F0300C162DB /* Vulnerabilities */ = {
 			isa = PBXGroup;
 			children = (
+				6E63B65018AA319700B438A0 /* SecurityDecisionsViaUntrustedInput */,
 				6E5A1AED187AB3FA00FAECA6 /* Broken Cryptography */,
 				6E623A08187815410060AADA /* Client Side Injection */,
 				6E37427218749FC500843DD1 /* Transport Layer Protection */,
@@ -482,6 +491,17 @@
 				6E623A0E1878187F0060AADA /* ClientSideInjectionDetailsVC.m */,
 			);
 			name = "Client Side Injection";
+			sourceTree = "<group>";
+		};
+		6E63B65018AA319700B438A0 /* SecurityDecisionsViaUntrustedInput */ = {
+			isa = PBXGroup;
+			children = (
+				6E63B65118AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.h */,
+				6E63B65218AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m */,
+				6E63B65518AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.h */,
+				6E63B65618AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m */,
+			);
+			name = SecurityDecisionsViaUntrustedInput;
 			sourceTree = "<group>";
 		};
 		6EB7B3BC18899DB000A4F353 /* Solutions */ = {
@@ -763,7 +783,9 @@
 				6E1729FA1871848A00C162DB /* User.m in Sources */,
 				6EFED8B41870848E00FEFCB1 /* AppDelegate.m in Sources */,
 				6E1729D018709F3700C162DB /* LearnViewController.m in Sources */,
+				6E63B65718AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m in Sources */,
 				6E37426C1874129D00843DD1 /* ApplicationPatchingVC.m in Sources */,
+				6E63B65318AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m in Sources */,
 				6E5A1B0A187AB88700FAECA6 /* RNEncryptor.m in Sources */,
 				6E5A1B04187AB88700FAECA6 /* RNCryptor.m in Sources */,
 				6E1729DA1870A8C200C162DB /* InsecureDataStorageVC.m in Sources */,
@@ -797,12 +819,14 @@
 				6E1729F21871749200C162DB /* GenericWebViewVC.m in Sources */,
 				6E1729ED1871743700C162DB /* DamnVulnerableAppUtilities.m in Sources */,
 				6E5A1B0B187AB88700FAECA6 /* RNEncryptor.m in Sources */,
+				6E63B65418AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m in Sources */,
 				6EB7B3C018899DCD00A4F353 /* SolutionsViewController.m in Sources */,
 				6E1729E618716BE700C162DB /* PDKeychainBindings.m in Sources */,
 				6E623A101878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */,
 				6E5A1B09187AB88700FAECA6 /* RNDecryptor.m in Sources */,
 				6E5A1AF1187AB41100FAECA6 /* BrokenCryptographyVC.m in Sources */,
 				6E5A1B07187AB88700FAECA6 /* RNCryptorEngine.m in Sources */,
+				6E63B65818AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m in Sources */,
 				6EFED8CF1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m in Sources */,
 				6E172A101873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */,
 				6E1729D118709F3700C162DB /* LearnViewController.m in Sources */,

@@ -30,7 +30,41 @@
     [testObject saveInBackground];
     return YES;
 }
-							
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{   NSString *urlString = [url absoluteString];
+    if (!([urlString rangeOfString:@"/call_number/"].location == NSNotFound)) {
+        NSDictionary *param = [self getParameters:url];
+        if([param objectForKey:@"phone"]!= nil){
+            [[[UIAlertView alloc] initWithTitle:@"Success" message:[NSString stringWithFormat:@"Calling %@ without validation. Ring Ring !",[param objectForKey:@"phone"]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        }
+        return YES;
+      }
+    return NO;
+}
+
+//Converts parameters from url into NSDictionary
+-(NSDictionary*) getParameters:(NSURL*)url{
+    NSMutableDictionary *parameters=[[NSMutableDictionary alloc] init];
+    NSString *urlString = [url absoluteString];
+    NSArray *components = [urlString componentsSeparatedByString:@"?"];
+    NSString *query = [components lastObject];
+    NSArray *queryElements = [query componentsSeparatedByString:@"&"];
+    for (NSString *element in queryElements) {
+        NSArray *keyVal = [element componentsSeparatedByString:@"="];
+        if (keyVal.count > 0) {
+            NSString *variableKey = [keyVal objectAtIndex:0];
+            NSString *value = (keyVal.count == 2) ? [keyVal lastObject] : nil;
+            if(variableKey!=nil && value!=nil)
+                [parameters setObject:value forKey:variableKey];
+        }
+    }
+    return parameters;
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
