@@ -56,7 +56,7 @@
 }
 
 -(void)makeSignUpCall {
-    PFObject *user = [PFObject objectWithClassName:@"User"];
+    PFObject *user = [PFObject objectWithClassName:@"Person"];
     user[@"name"] = self.nameTextField.text;
     user[@"password"] = self.passwordTextField.text;
     user[@"phone"] = self.phoneNoTextField.text;
@@ -77,7 +77,6 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
-    [self makeSignUpCall];
     return YES;
 }
 
