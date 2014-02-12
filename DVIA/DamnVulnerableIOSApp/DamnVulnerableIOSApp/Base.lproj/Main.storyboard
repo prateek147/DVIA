@@ -572,6 +572,7 @@
                         <outlet property="pasteboardView" destination="fTJ-Nw-CtG" id="UEL-t7-Wi3"/>
                         <outlet property="phoneNoTextField" destination="J2b-s6-aXL" id="zoN-bK-g56"/>
                         <outlet property="screenshotView" destination="2zb-xD-FKf" id="WIf-3H-nrP"/>
+                        <outlet property="signUpButton" destination="5bz-Tv-0q6" id="E8L-FX-Qhg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8u6-CV-zSg" userLabel="First Responder" sceneMemberID="firstResponder"/>

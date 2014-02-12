@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNoTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+
 
 - (IBAction)signUpTapped:(id)sender;
 
@@ -56,6 +58,7 @@
 }
 
 -(void)makeSignUpCall {
+    [self.signUpButton setTitle:@"Signing Up ..." forState:UIControlStateNormal];
     PFObject *user = [PFObject objectWithClassName:@"Person"];
     user[@"name"] = self.nameTextField.text;
     user[@"password"] = self.passwordTextField.text;
@@ -63,8 +66,11 @@
     user[@"email"] = self.emailTextField.text;
     NSLog(@"user saved: %@", user.description);
     [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [self.signUpButton setTitle:@"Sign Up" forState:UIControlStateNormal];
         if(succeeded){
+            [[[UIAlertView alloc] initWithTitle:@"Success" message:@"User signed up successfully, look for the logs now" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
             NSLog(@"Saved user info: %@",user.description);
+            
         }
     }];
 }
