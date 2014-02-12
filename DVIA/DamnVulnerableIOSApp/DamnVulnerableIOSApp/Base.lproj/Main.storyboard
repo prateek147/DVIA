@@ -10,7 +10,7 @@
             <objects>
                 <viewController id="lzA-Dt-4Ld" customClass="ECSlidingViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XUv-D4-1Kk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -28,7 +28,7 @@
             <objects>
                 <viewController id="b1c-3n-h6B" customClass="HomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MpD-9u-Bph">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" id="2O2-fF-ciO">
@@ -103,7 +103,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="MenuViewController" id="kk6-9r-3SC" customClass="MenuViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Vuj-ml-I4R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" red="0.99900205289999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -254,6 +254,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="hQK-DD-b5f" kind="custom" customClass="ECSlidingSegue" id="Nc1-T2-arl"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="hmH-pW-4Mc" rowHeight="57" style="IBUITableViewCellStyleDefault" id="Syn-HB-Ba3">
                                         <rect key="frame" x="0.0" y="377" width="320" height="57"/>
@@ -431,14 +434,51 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rY-v0-J5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4310" y="-2364"/>
+            <point key="canvasLocation" x="-6504" y="-2672"/>
+        </scene>
+        <!--Sensitive Information DisclosureVC-->
+        <scene sceneID="OS3-SQ-PvC">
+            <objects>
+                <viewController id="hQK-DD-b5f" customClass="SensitiveInformationDisclosureVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="215-Ne-7Sp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lyl-OO-S3t">
+                                <rect key="frame" x="0.0" y="143" width="320" height="196"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hQK-DD-b5f" id="rHx-xa-iBG"/>
+                                    <outlet property="delegate" destination="hQK-DD-b5f" id="Tds-Wy-Juf"/>
+                                </connections>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="This kind of vulnerability occurs when sensitive data is leaked accidentally by the application." id="hdJ-Qb-lCe">
+                                <rect key="frame" x="0.0" y="66" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <navigationItem title="Insecure Data Storage" id="uO1-1b-Aip">
+                    <barButtonItem key="leftBarButtonItem" title="Menu" id="fME-81-FUu"/>
+                </navigationItem>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TO4-tJ-nK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6103" y="-3036"/>
         </scene>
         <!--Table View Controller - Settings-->
         <scene sceneID="lHf-CR-AlI">
             <objects>
                 <tableViewController storyboardIdentifier="SettingsViewController" id="o1Q-7N-iz3" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oJL-od-90X">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -485,11 +525,11 @@
             <objects>
                 <viewController id="Bok-o5-Bvx" customClass="LearnViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sUu-hk-U2A">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="dzq-fI-HUg">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -535,11 +575,11 @@
             <objects>
                 <viewController id="hdK-Th-JDv" customClass="InsecureDataStorageVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Vc-Nw-7eH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="UDh-cZ-LfT">
-                                <rect key="frame" x="0.0" y="64" width="320" height="206"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="118"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Insecure Data Storage is a vulnerability which occurs when sensitive data is stored locally on the device without proper protection.</string>
@@ -547,7 +587,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Z93-1J-ulX">
-                                <rect key="frame" x="0.0" y="233" width="320" height="284"/>
+                                <rect key="frame" x="0.0" y="233" width="320" height="196"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -583,14 +623,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FgB-ln-fGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="5I1-Yi-xdt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-2005" y="-1482"/>
+            <point key="canvasLocation" x="-2009" y="-1478"/>
         </scene>
         <!--Insecure Data Storage VulnVC - Insecure Data Storage-->
         <scene sceneID="fX0-2Z-F4K">
             <objects>
                 <viewController id="i23-yJ-Lii" customClass="InsecureDataStorageVulnVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3a6-pB-tb7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view hidden="YES" contentMode="scaleToFill" id="IGj-sI-pMt">
@@ -846,11 +886,11 @@
             <objects>
                 <viewController storyboardIdentifier="GenericWebViewVC" id="1tI-It-y9H" customClass="GenericWebViewVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eGZ-yE-0Vw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="CNV-no-tM5">
-                                <rect key="frame" x="0.0" y="62" width="320" height="506"/>
+                                <rect key="frame" x="0.0" y="62" width="320" height="418"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -872,7 +912,7 @@
             <objects>
                 <viewController id="38B-u5-VEf" customClass="JailbreakDetectionVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lD0-NS-JeB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="iad-vT-0eV">
@@ -1007,7 +1047,7 @@
             <objects>
                 <viewController id="mwg-RL-cKq" customClass="RuntimeManipulationVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4S-Qg-Pea">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2EJ-8G-Owd">
@@ -1099,7 +1139,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" usesAttributedText="YES" id="QaD-Lc-ggK">
-                                <rect key="frame" x="0.0" y="64" width="321" height="225"/>
+                                <rect key="frame" x="0.0" y="64" width="321" height="137"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
@@ -1134,7 +1174,7 @@
             <objects>
                 <viewController id="8XW-Hq-qOZ" customClass="RuntimeManipulationDetailsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Uh-tP-kW0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" id="e1L-1v-aYU">
@@ -1189,7 +1229,7 @@
             <objects>
                 <viewController id="5xJ-MS-CJp" customClass="RuntimeManipulationSuccessVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ozZ-aN-NO2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations !! You have successfully bypassed the authentication check." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="me1-hN-sDs">
@@ -1286,11 +1326,11 @@
             <objects>
                 <viewController id="g9c-Ju-vFC" customClass="ApplicationPatchingVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IFp-rO-8Ad">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="ROO-6M-akc">
-                                <rect key="frame" x="0.0" y="2" width="320" height="222.5"/>
+                                <rect key="frame" x="0.0" y="2" width="320" height="188"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">The advantage of patching an application is that once a change has been made in the application’s binary, its permanent. Try various challenges to patch this application mentioned under Start Challenge.</string>
@@ -1349,7 +1389,7 @@
             <objects>
                 <viewController id="LcH-cs-8Cs" customClass="ApplicationPatchingDetailsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aPm-xq-Afj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j4c-63-2B0">
@@ -1514,7 +1554,7 @@
             <objects>
                 <viewController id="8OJ-Y1-Yvl" customClass="RuntimeManipulationSuccessVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BpI-LP-APf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qrp-Xo-Wje">
@@ -1539,7 +1579,7 @@
             <objects>
                 <viewController id="cvs-xS-bXH" customClass="TransportLayerProtectionVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="COV-qk-Ymm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zDk-Q4-rql">
@@ -1796,7 +1836,7 @@
             <objects>
                 <viewController id="eNU-b7-cLC" customClass="JailbreakDetectionVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aCa-qm-HIy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" usesAttributedText="YES" id="kht-h5-qJw">
@@ -1850,7 +1890,7 @@
             <objects>
                 <viewController id="oQ8-T6-Zmx" customClass="ClientSideInjectionVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QDh-dG-hxd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="aDC-2R-vpR">
@@ -1900,7 +1940,7 @@
             <objects>
                 <viewController id="6wT-54-kzu" customClass="ClientSideInjectionDetailsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HdE-yM-3XP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="yI5-or-cNK">
@@ -2046,7 +2086,7 @@
             <objects>
                 <viewController id="vMb-g6-RuC" customClass="BrokenCryptographyVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XN0-GQ-mwc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="nMv-3h-NFf">
@@ -2107,7 +2147,7 @@
             <objects>
                 <viewController id="n3R-8V-gzK" customClass="BrokenCryptographyDetailsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Wf-mu-93M">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="dh4-JG-8E4">
@@ -2257,11 +2297,11 @@
             <objects>
                 <viewController id="APd-u4-s6y" customClass="SolutionsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NlR-FI-H1d">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="h7u-XF-zMC">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -2362,19 +2402,19 @@
             <objects>
                 <viewController id="BpK-Iw-f4O" customClass="SecurityDecisionViaUntrustedInputVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fWa-Ad-0Px">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="lab-mo-aFc">
-                                <rect key="frame" x="2" y="22" width="320" height="169"/>
+                                <rect key="frame" x="2" y="66" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">This kind of vulnerability occurs when sensitive actions are performed without proper validation of the input or authorization check on the user.</string>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yZY-a6-hf3">
-                                <rect key="frame" x="85" y="213" width="150" height="22"/>
+                                <rect key="frame" x="85" y="183" width="150" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="START CHALLENGE">
@@ -2405,11 +2445,11 @@
             <objects>
                 <viewController id="hUT-z6-4mp" customClass="SecurityDecisionsViaUntrustedInputDetailsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wdN-Rh-gnF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="2DX-mX-dV8">
-                                <rect key="frame" x="0.0" y="-1" width="320" height="569"/>
+                                <rect key="frame" x="0.0" y="-89" width="320" height="569"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number to call " textAlignment="center" minimumFontSize="17" id="Pzp-Jb-tV4">
@@ -2539,6 +2579,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
