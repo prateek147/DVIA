@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef enum {
+    SensInfoLogs = 0,
+    SensInfoScreenshot,
+    SensInfoPasteboard,
+} SensInfoVulnType;
 
 @interface SensitiveInformationDisclosureDetailsVC : UIViewController
+
 
 @property (nonatomic,assign) NSInteger vulnCode;
 
