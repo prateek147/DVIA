@@ -479,7 +479,7 @@
                 </navigationItem>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TO4-tJ-nK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5810" y="-3420"/>
+            <point key="canvasLocation" x="-5923" y="-3421"/>
         </scene>
         <!--Sensitive Information Disclosure DetailsVC - Sensitive Information Disclosure-->
         <scene sceneID="8yf-CE-DMF">
@@ -489,8 +489,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="g1h-CQ-Vwj" customClass="UIScrollView">
-                                <rect key="frame" x="-2" y="0.0" width="325" height="474"/>
+                            <view hidden="YES" contentMode="scaleToFill" id="g1h-CQ-Vwj" customClass="UIScrollView">
+                                <rect key="frame" x="-3" y="3" width="325" height="474"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter dummy name here" minimumFontSize="17" id="ldh-sy-gUF">
@@ -557,6 +557,44 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="2zb-xD-FKf" customClass="UIScrollView">
+                                <rect key="frame" x="-2" y="59" width="325" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What is your pet's name ?" minimumFontSize="17" id="LAr-li-iUM">
+                                        <rect key="frame" x="11" y="312" width="299" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Wck-vk-5qk" id="ls7-DD-hmV"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ltb-iK-07U">
+                                        <rect key="frame" x="88" y="331" width="148" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="1WP-Cj-ajS">
+                                        <rect key="frame" x="13" y="7" width="297" height="281"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <mutableString key="text">One of the features of IOS is that it takes a screenshot of the application when it enters into background. This screenshot is then shown to the user when user opens the app again while the app is loaded into the background. This is done in order to provide a seamless experience. However, sometimes the screenshot may contain important information and since the screenshot is stored in the applicaton sandbox without proper protection, it can be obtained quite easily. Your task is to fill some data in the text field below, then take the app into the background and find the application screenshot showing the data entered in these text fields.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Please answer this security question." id="jSX-rX-ces">
+                                        <rect key="frame" x="14" y="281" width="297" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -576,37 +614,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8u6-CV-zSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view hidden="YES" contentMode="scaleToFill" id="2zb-xD-FKf">
-                    <rect key="frame" x="0.0" y="0.0" width="325" height="170"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text here gets saved in Keychain" minimumFontSize="17" id="LAr-li-iUM">
-                            <rect key="frame" x="20" y="95" width="299" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ltb-iK-07U">
-                            <rect key="frame" x="88" y="130" width="148" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Save in Keychain">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="saveInKeychainTapped:" destination="i23-yJ-Lii" eventType="touchUpInside" id="lRT-98-ngN"/>
-                            </connections>
-                        </button>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="1WP-Cj-ajS">
-                            <rect key="frame" x="20" y="7" width="297" height="75"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <string key="text">The input entered here is saved in the keychain. Your task is to dump the keychain information in your device and find this value.</string>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                </view>
                 <view hidden="YES" contentMode="scaleToFill" id="fTJ-Nw-CtG">
                     <rect key="frame" x="0.0" y="0.0" width="325" height="404"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -644,7 +651,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-5414" y="-3431"/>
+            <point key="canvasLocation" x="-5452" y="-3659"/>
         </scene>
         <!--Table View Controller - Settings-->
         <scene sceneID="lHf-CR-AlI">

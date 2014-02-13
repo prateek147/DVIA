@@ -11,15 +11,14 @@
 @interface SensitiveInformationDisclosureDetailsVC () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *logsView;
-@property (weak, nonatomic) IBOutlet UIView *screenshotView;
-@property (weak, nonatomic) IBOutlet UIView *pasteboardView;
+@property (weak, nonatomic) IBOutlet UIScrollView *screenshotView;
+@property (weak, nonatomic) IBOutlet UIScrollView *pasteboardView;
 @property (nonatomic,strong) NSArray *vulnerabilities;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNoTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
-
 
 - (IBAction)signUpTapped:(id)sender;
 
@@ -40,6 +39,8 @@
 {
     [super viewDidLoad];
     [self.logsView setContentSize:CGSizeMake(320.0, 700.0)];
+    [self.screenshotView setContentSize:CGSizeMake(320.0, 1000.0)];
+
     [DamnVulnerableAppUtilities addCommonBackgroundImageToViewController:self];
     switch (self.vulnCode) {
         case SensInfoLogs:

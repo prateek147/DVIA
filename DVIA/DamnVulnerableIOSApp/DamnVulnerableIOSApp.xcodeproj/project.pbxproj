@@ -998,8 +998,8 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Prateek Gianchandani (9WJU7EAEE3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Prateek Gianchandani (9WJU7EAEE3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Prateek/Documents/IOS\\ Projects/DVIA/DVIA/DamnVulnerableIOSApp",
@@ -1010,7 +1010,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "F0C52F3D-2BBF-45E4-9E69-1A3209B31C91";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1022,8 +1022,8 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Prateek Gianchandani (9WJU7EAEE3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Prateek Gianchandani (9WJU7EAEE3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Prateek/Documents/IOS\\ Projects/DVIA/DVIA/DamnVulnerableIOSApp",
@@ -1034,7 +1034,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "F0C52F3D-2BBF-45E4-9E69-1A3209B31C91";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

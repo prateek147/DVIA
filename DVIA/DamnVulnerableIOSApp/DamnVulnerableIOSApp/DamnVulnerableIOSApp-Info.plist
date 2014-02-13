@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>HighAltitudeHacks.com.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.highaltitudehacks.dvia</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -23,12 +23,12 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>None</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>dvia</string>
 			</array>
-			<key>CFBundleTypeRole</key>
-			<string>None</string>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
