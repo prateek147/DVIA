@@ -11,6 +11,7 @@ typedef enum {
     SensInfoLogs = 0,
     SensInfoScreenshot,
     SensInfoPasteboard,
+    SensInfoKeystrokeLogging,
 } SensInfoVulnType;
 
 @interface SensitiveInformationDisclosureDetailsVC : UIViewController

@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *logsView;
 @property (weak, nonatomic) IBOutlet UIScrollView *screenshotView;
 @property (weak, nonatomic) IBOutlet UIScrollView *pasteboardView;
+@property (weak, nonatomic) IBOutlet UIScrollView *keystrokeView;
 @property (nonatomic,strong) NSArray *vulnerabilities;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
@@ -41,6 +42,8 @@
     [self.logsView setContentSize:CGSizeMake(320.0, 700.0)];
     [self.screenshotView setContentSize:CGSizeMake(320.0, 700.0)];
     [self.pasteboardView setContentSize:CGSizeMake(320.0, 700.0)];
+    [self.keystrokeView setContentSize:CGSizeMake(320.0, 700.0)];
+
     [DamnVulnerableAppUtilities addCommonBackgroundImageToViewController:self];
     switch (self.vulnCode) {
         case SensInfoLogs:
@@ -52,6 +55,8 @@
         case SensInfoScreenshot:
             [self.screenshotView setHidden:NO];
             break;
+        case SensInfoKeystrokeLogging:
+            [self.keystrokeView setHidden:NO];
         default:
             break;
     }
