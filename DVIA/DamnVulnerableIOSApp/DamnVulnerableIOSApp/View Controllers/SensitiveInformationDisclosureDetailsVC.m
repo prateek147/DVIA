@@ -40,7 +40,7 @@
     [super viewDidLoad];
     [self.logsView setContentSize:CGSizeMake(320.0, 700.0)];
     [self.screenshotView setContentSize:CGSizeMake(320.0, 700.0)];
-
+    [self.pasteboardView setContentSize:CGSizeMake(320.0, 700.0)];
     [DamnVulnerableAppUtilities addCommonBackgroundImageToViewController:self];
     switch (self.vulnCode) {
         case SensInfoLogs:

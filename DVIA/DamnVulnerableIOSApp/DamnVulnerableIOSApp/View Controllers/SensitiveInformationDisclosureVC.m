@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     self.vulnerabilities = [NSArray arrayWithObjects:@"Device Logs",@"App Screenshot",@"Pasteboard",nil];
+     self.vulnerabilities = [NSArray arrayWithObjects:@"Device Logs",@"App Screenshot",@"Pasteboard",@"Keystroke logging",nil];
     [self.slidingViewController.topViewController.view addGestureRecognizer:self.slidingViewController.panGesture];
     [DamnVulnerableAppUtilities addCommonBackgroundImageToViewController:self];
      self.navigationController.navigationBar.tintColor = kNavigationTintColor;
