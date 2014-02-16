@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-3189" y="597"/>
         </scene>
-        <!--Home View Controller - Damn Vulnerable IOS App-->
+        <!--Home View Controller - Damn Vulnerable iOS App-->
         <scene sceneID="nuF-a7-Av2">
             <objects>
                 <viewController id="b1c-3n-h6B" customClass="HomeViewController" sceneMemberID="viewController">
@@ -66,7 +66,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Damn Vulnerable IOS App" id="hqj-QZ-fh7">
+                    <navigationItem key="navigationItem" title="Damn Vulnerable iOS App" id="hqj-QZ-fh7">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="JFP-6i-u5n">
                             <color key="tintColor" red="0.87450980389999999" green="0.72941176470000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -1352,7 +1352,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">All native IOS applications are written in Objective-C which is a runtime oriented language. This feature makes all native applications vulnerable to runtime analysis and manipulation. Your task is to bypass the login check in the challenge below using runtime manipulation techniques .</string>
+                                        <string key="content">All native iOS applications are written in Objective-C which is a runtime oriented language. This feature makes all native applications vulnerable to runtime analysis and manipulation. Your task is to bypass the login check in the challenge below using runtime manipulation techniques .</string>
                                         <attributes>
                                             <font key="NSFont" size="16" name="Avenir-Roman"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
