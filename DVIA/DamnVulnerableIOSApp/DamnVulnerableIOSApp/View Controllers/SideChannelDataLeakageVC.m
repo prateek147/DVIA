@@ -65,7 +65,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"pushSensInfoDetailsVC"]){
-        SensitiveInformationDisclosureDetailsVC *vc = segue.destinationViewController;
+        SideChannelDataLeakageDetailsVC  *vc = segue.destinationViewController;
         vc.vulnCode = self.vulnCode;
     }
 }

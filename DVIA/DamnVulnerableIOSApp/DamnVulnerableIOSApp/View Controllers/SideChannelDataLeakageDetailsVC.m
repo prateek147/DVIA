@@ -8,7 +8,7 @@
 
 #import "SideChannelDataLeakageDetailsVC.h"
 
-@interface SensitiveInformationDisclosureDetailsVC () <UITextFieldDelegate>
+@interface SideChannelDataLeakageDetailsVC () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *logsView;
 @property (weak, nonatomic) IBOutlet UIScrollView *screenshotView;
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation SensitiveInformationDisclosureDetailsVC
+@implementation SideChannelDataLeakageDetailsVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

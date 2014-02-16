@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="61" width="320" height="405"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Damn Vulnerable iOS App (DVIA) is an iOS application that is damn vulnerable. Its main goal is to provide a platform to mobile security enthusiasts/professionals to test their iOS penetration testing skills in a legal environment. This application covers all the common vulnerabilities found in iOS applications (following OWASP top 10 mobile risks) and contains several challenges that the user can try.This project is developed and maintained by @prateekg147.  The vulnerabilities and solutions covered in this app are tested upto IOS 7.0.4.                                                              </string>
+                                <mutableString key="text">Damn Vulnerable iOS App (DVIA) is an iOS application that is damn vulnerable. Its main goal is to provide a platform to mobile security enthusiasts/professionals to test their iOS penetration testing skills in a legal environment. This application covers all the common vulnerabilities found in iOS applications (following OWASP top 10 mobile risks) and contains several challenges that the user can try. This project is developed and maintained by @prateekg147.  The vulnerabilities and solutions covered in this app are tested upto iOS 7.0.4.                                                              </mutableString>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -109,7 +109,7 @@
                         <color key="separatorColor" red="0.99900205289999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="DamnVulnerableIOSApp.com" footerTitle="Version 2.0" id="I6U-Jm-85w">
+                            <tableViewSection headerTitle="DamnVulnerableIOSApp.com" footerTitle="Version 1.1" id="I6U-Jm-85w">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pZG-f5-3Vp" style="IBUITableViewCellStyleDefault" id="Dvv-bd-LHt">
                                         <rect key="frame" x="0.0" y="55" width="320" height="44"/>
@@ -139,7 +139,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Learn IOS Application Security" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="beY-51-3rD">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Learn iOS Application Security" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="beY-51-3rD">
                                                     <rect key="frame" x="15" y="0.0" width="270" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
@@ -258,44 +258,8 @@
                                             <segue destination="GdO-rP-xfa" kind="custom" customClass="ECSlidingSegue" id="azp-D1-EXA"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="hmH-pW-4Mc" rowHeight="57" style="IBUITableViewCellStyleDefault" id="Syn-HB-Ba3">
-                                        <rect key="frame" x="0.0" y="377" width="320" height="57"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Syn-HB-Ba3" id="fPD-yq-1Zg">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="57"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Poor Authorization &amp; Authentication" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hmH-pW-4Mc">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="57"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="mas-fh-P7l" style="IBUITableViewCellStyleDefault" id="Mfa-bI-zHJ">
-                                        <rect key="frame" x="0.0" y="434" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mfa-bI-zHJ" id="tRd-Wg-C8X">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Improper Session handling" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mas-fh-P7l">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="X3Y-5h-hTA" style="IBUITableViewCellStyleDefault" id="FLD-74-1XI">
-                                        <rect key="frame" x="0.0" y="478" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="377" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FLD-74-1XI" id="hBw-lb-unz">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -316,7 +280,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="RNx-Du-rjR" style="IBUITableViewCellStyleDefault" id="IhX-9i-Um9">
-                                        <rect key="frame" x="0.0" y="522" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="421" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IhX-9i-Um9" id="xYL-5Z-kgN">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -337,7 +301,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="hmL-qA-NuZ" style="IBUITableViewCellStyleDefault" id="2JJ-4b-3ag">
-                                        <rect key="frame" x="0.0" y="566" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="465" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2JJ-4b-3ag" id="vqs-Id-Fx7">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -358,7 +322,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="gfY-ay-QQi" style="IBUITableViewCellStyleDefault" id="BuV-bu-jzn">
-                                        <rect key="frame" x="0.0" y="610" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="509" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BuV-bu-jzn" id="Ozm-y0-6lC">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -379,7 +343,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="EXB-C6-g7L" style="IBUITableViewCellStyleDefault" id="qU7-1c-9iQ">
-                                        <rect key="frame" x="0.0" y="654" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="553" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qU7-1c-9iQ" id="xKs-B5-VSv">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -400,7 +364,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="UPn-Li-bSO" style="IBUITableViewCellStyleDefault" id="csF-PL-KmO">
-                                        <rect key="frame" x="0.0" y="698" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="597" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="csF-PL-KmO" id="ggi-X0-Fcg">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -2075,7 +2039,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Damn Vulnerable IOS Application was born from the need to have a tool where a user can test their IOS penetration testing skills in a safe and legal environment.Also, this application can be used by mobile security enthusiasts and students to learn or review the basics of mobile application security.</string>
+                                        <string key="content">Damn Vulnerable iOS Application was born from the need to have a tool where a user can test their iOS penetration testing skills in a safe and legal environment.Also, this application can be used by mobile security enthusiasts and students to learn or review the basics of mobile application security.</string>
                                         <attributes>
                                             <font key="NSFont" size="16" name="Avenir-Roman"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>

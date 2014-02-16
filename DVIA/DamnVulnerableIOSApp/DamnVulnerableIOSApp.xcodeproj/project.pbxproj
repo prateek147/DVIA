@@ -292,7 +292,7 @@
 		6E1729CB18709F0300C162DB /* Vulnerabilities */ = {
 			isa = PBXGroup;
 			children = (
-				6E63B65918AAA62600B438A0 /* SensitiveInformationDisclosure */,
+				6E63B65918AAA62600B438A0 /* SideChannelDataLeakage */,
 				6E63B65018AA319700B438A0 /* SecurityDecisionsViaUntrustedInput */,
 				6E5A1AED187AB3FA00FAECA6 /* Broken Cryptography */,
 				6E623A08187815410060AADA /* Client Side Injection */,
@@ -497,7 +497,7 @@
 			name = SecurityDecisionsViaUntrustedInput;
 			sourceTree = "<group>";
 		};
-		6E63B65918AAA62600B438A0 /* SensitiveInformationDisclosure */ = {
+		6E63B65918AAA62600B438A0 /* SideChannelDataLeakage */ = {
 			isa = PBXGroup;
 			children = (
 				6E63B65A18AAA8B800B438A0 /* SideChannelDataLeakageVC.h */,
@@ -505,7 +505,7 @@
 				6E63B65E18AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.h */,
 				6E63B65F18AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m */,
 			);
-			name = SensitiveInformationDisclosure;
+			name = SideChannelDataLeakage;
 			sourceTree = "<group>";
 		};
 		6EB7B3BC18899DB000A4F353 /* Solutions */ = {

@@ -14,7 +14,7 @@ typedef enum {
     SensInfoKeystrokeLogging,
 } SensInfoVulnType;
 
-@interface SensitiveInformationDisclosureDetailsVC : UIViewController
+@interface SideChannelDataLeakageDetailsVC : UIViewController
 
 
 @property (nonatomic,assign) NSInteger vulnCode;
