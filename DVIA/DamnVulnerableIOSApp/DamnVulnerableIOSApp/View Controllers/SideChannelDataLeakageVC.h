@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SensitiveInformationDisclosureVC : UIViewController
+@interface SideChannelDataLeakageVC : UIViewController
 
 @end

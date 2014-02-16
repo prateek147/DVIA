@@ -12,7 +12,7 @@
 #import "AppDelegate.h"
 #import "User.h"
 
-@interface InsecureDataStorageVulnVC ()
+@interface InsecureDataStorageVulnVC () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *userDefaultsView;
 @property (weak, nonatomic) IBOutlet UIView *keychainView;
@@ -121,6 +121,11 @@
     }else{
         [DamnVulnerableAppUtilities showAlertWithMessage:@"Data saved in Core Data"];
     }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
 }
 
 @end

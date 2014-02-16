@@ -6,18 +6,18 @@
 //  Copyright (c) 2014 HighAltitudeHacks.com. All rights reserved.
 //
 
-#import "SensitiveInformationDisclosureVC.h"
-#import "SensitiveInformationDisclosureDetailsVC.h"
+#import "SideChannelDataLeakageVC.h"
+#import "SideChannelDataLeakageDetailsVC.h"
 #import "UIViewController+ECSlidingViewController.h"
 
-@interface SensitiveInformationDisclosureVC () <UITableViewDataSource,UITableViewDelegate>
+@interface SideChannelDataLeakageVC () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,strong) NSArray *vulnerabilities;
 @property (nonatomic,assign) NSInteger vulnCode;
 
 @end
 
-@implementation SensitiveInformationDisclosureVC
+@implementation SideChannelDataLeakageVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

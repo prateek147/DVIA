@@ -98,10 +98,10 @@
 		6E63B65418AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65218AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m */; };
 		6E63B65718AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65618AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m */; };
 		6E63B65818AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65618AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m */; };
-		6E63B65C18AAA8B800B438A0 /* SensitiveInformationDisclosureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65B18AAA8B800B438A0 /* SensitiveInformationDisclosureVC.m */; };
-		6E63B65D18AAA8B800B438A0 /* SensitiveInformationDisclosureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65B18AAA8B800B438A0 /* SensitiveInformationDisclosureVC.m */; };
-		6E63B66018AAAA0600B438A0 /* SensitiveInformationDisclosureDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65F18AAAA0600B438A0 /* SensitiveInformationDisclosureDetailsVC.m */; };
-		6E63B66118AAAA0600B438A0 /* SensitiveInformationDisclosureDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65F18AAAA0600B438A0 /* SensitiveInformationDisclosureDetailsVC.m */; };
+		6E63B65C18AAA8B800B438A0 /* SideChannelDataLeakageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65B18AAA8B800B438A0 /* SideChannelDataLeakageVC.m */; };
+		6E63B65D18AAA8B800B438A0 /* SideChannelDataLeakageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65B18AAA8B800B438A0 /* SideChannelDataLeakageVC.m */; };
+		6E63B66018AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65F18AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m */; };
+		6E63B66118AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E63B65F18AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m */; };
 		6E9BA75C188015CC0016714B /* header-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75A188015CC0016714B /* header-bg.png */; };
 		6E9BA75D188015CC0016714B /* header-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75A188015CC0016714B /* header-bg.png */; };
 		6E9BA75E188015CC0016714B /* header-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9BA75B188015CC0016714B /* header-bg@2x.png */; };
@@ -222,10 +222,10 @@
 		6E63B65218AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityDecisionViaUntrustedInputVC.m; path = "View Controllers/SecurityDecisionViaUntrustedInputVC.m"; sourceTree = "<group>"; };
 		6E63B65518AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecurityDecisionViaUntrustedInputDetailsVC.h; path = "View Controllers/SecurityDecisionViaUntrustedInputDetailsVC.h"; sourceTree = "<group>"; };
 		6E63B65618AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecurityDecisionViaUntrustedInputDetailsVC.m; path = "View Controllers/SecurityDecisionViaUntrustedInputDetailsVC.m"; sourceTree = "<group>"; };
-		6E63B65A18AAA8B800B438A0 /* SensitiveInformationDisclosureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensitiveInformationDisclosureVC.h; path = "View Controllers/SensitiveInformationDisclosureVC.h"; sourceTree = "<group>"; };
-		6E63B65B18AAA8B800B438A0 /* SensitiveInformationDisclosureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensitiveInformationDisclosureVC.m; path = "View Controllers/SensitiveInformationDisclosureVC.m"; sourceTree = "<group>"; };
-		6E63B65E18AAAA0600B438A0 /* SensitiveInformationDisclosureDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensitiveInformationDisclosureDetailsVC.h; path = "View Controllers/SensitiveInformationDisclosureDetailsVC.h"; sourceTree = "<group>"; };
-		6E63B65F18AAAA0600B438A0 /* SensitiveInformationDisclosureDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensitiveInformationDisclosureDetailsVC.m; path = "View Controllers/SensitiveInformationDisclosureDetailsVC.m"; sourceTree = "<group>"; };
+		6E63B65A18AAA8B800B438A0 /* SideChannelDataLeakageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideChannelDataLeakageVC.h; path = "View Controllers/SideChannelDataLeakageVC.h"; sourceTree = "<group>"; };
+		6E63B65B18AAA8B800B438A0 /* SideChannelDataLeakageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideChannelDataLeakageVC.m; path = "View Controllers/SideChannelDataLeakageVC.m"; sourceTree = "<group>"; };
+		6E63B65E18AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideChannelDataLeakageDetailsVC.h; path = "View Controllers/SideChannelDataLeakageDetailsVC.h"; sourceTree = "<group>"; };
+		6E63B65F18AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideChannelDataLeakageDetailsVC.m; path = "View Controllers/SideChannelDataLeakageDetailsVC.m"; sourceTree = "<group>"; };
 		6E9BA75A188015CC0016714B /* header-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header-bg.png"; path = "Resources/header-bg.png"; sourceTree = "<group>"; };
 		6E9BA75B188015CC0016714B /* header-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header-bg@2x.png"; path = "Resources/header-bg@2x.png"; sourceTree = "<group>"; };
 		6E9BA760188018B30016714B /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-icon.png"; path = "Resources/menu-icon.png"; sourceTree = "<group>"; };
@@ -500,10 +500,10 @@
 		6E63B65918AAA62600B438A0 /* SensitiveInformationDisclosure */ = {
 			isa = PBXGroup;
 			children = (
-				6E63B65A18AAA8B800B438A0 /* SensitiveInformationDisclosureVC.h */,
-				6E63B65B18AAA8B800B438A0 /* SensitiveInformationDisclosureVC.m */,
-				6E63B65E18AAAA0600B438A0 /* SensitiveInformationDisclosureDetailsVC.h */,
-				6E63B65F18AAAA0600B438A0 /* SensitiveInformationDisclosureDetailsVC.m */,
+				6E63B65A18AAA8B800B438A0 /* SideChannelDataLeakageVC.h */,
+				6E63B65B18AAA8B800B438A0 /* SideChannelDataLeakageVC.m */,
+				6E63B65E18AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.h */,
+				6E63B65F18AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m */,
 			);
 			name = SensitiveInformationDisclosure;
 			sourceTree = "<group>";
@@ -771,7 +771,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E63B65C18AAA8B800B438A0 /* SensitiveInformationDisclosureVC.m in Sources */,
+				6E63B65C18AAA8B800B438A0 /* SideChannelDataLeakageVC.m in Sources */,
 				6EB7B3BF18899DCD00A4F353 /* SolutionsViewController.m in Sources */,
 				6E172A0F1873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */,
 				6E37427518749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
@@ -795,7 +795,7 @@
 				6E172A071873532800C162DB /* RuntimeManipulationVC.m in Sources */,
 				6E623A0F1878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */,
 				6E5A1AF0187AB41100FAECA6 /* BrokenCryptographyVC.m in Sources */,
-				6E63B66018AAAA0600B438A0 /* SensitiveInformationDisclosureDetailsVC.m in Sources */,
+				6E63B66018AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m in Sources */,
 				6E172A021873343800C162DB /* JailbreakDetectionVC.m in Sources */,
 				6E5A1B0E187AB88700FAECA6 /* RNOpenSSLDecryptor.m in Sources */,
 				6E1729E518716BE700C162DB /* PDKeychainBindings.m in Sources */,
@@ -823,7 +823,7 @@
 				6E623A101878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */,
 				6E5A1B09187AB88700FAECA6 /* RNDecryptor.m in Sources */,
 				6E5A1AF1187AB41100FAECA6 /* BrokenCryptographyVC.m in Sources */,
-				6E63B65D18AAA8B800B438A0 /* SensitiveInformationDisclosureVC.m in Sources */,
+				6E63B65D18AAA8B800B438A0 /* SideChannelDataLeakageVC.m in Sources */,
 				6E5A1B07187AB88700FAECA6 /* RNCryptorEngine.m in Sources */,
 				6E63B65818AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m in Sources */,
 				6EFED8CF1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m in Sources */,
@@ -836,7 +836,7 @@
 				6E37427618749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
 				6E172A081873532800C162DB /* RuntimeManipulationVC.m in Sources */,
 				6E1729E818716BE700C162DB /* PDKeychainBindingsController.m in Sources */,
-				6E63B66118AAAA0600B438A0 /* SensitiveInformationDisclosureDetailsVC.m in Sources */,
+				6E63B66118AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m in Sources */,
 				6E5A1B11187AB88700FAECA6 /* RNOpenSSLEncryptor.m in Sources */,
 				6E1729CA1870968F00C162DB /* MenuViewController.m in Sources */,
 				6E1729D71870A6A800C162DB /* HomeViewController.m in Sources */,

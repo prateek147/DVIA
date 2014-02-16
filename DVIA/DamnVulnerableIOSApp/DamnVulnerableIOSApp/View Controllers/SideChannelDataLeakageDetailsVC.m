@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HighAltitudeHacks.com. All rights reserved.
 //
 
-#import "SensitiveInformationDisclosureDetailsVC.h"
+#import "SideChannelDataLeakageDetailsVC.h"
 
 @interface SensitiveInformationDisclosureDetailsVC () <UITextFieldDelegate>
 

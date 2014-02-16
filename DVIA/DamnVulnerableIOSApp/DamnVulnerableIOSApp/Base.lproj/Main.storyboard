@@ -436,10 +436,10 @@
             </objects>
             <point key="canvasLocation" x="-6504" y="-2672"/>
         </scene>
-        <!--Sensitive Information DisclosureVC - Side Channel Data Leakage-->
+        <!--Side Channel Data LeakageVC - Side Channel Data Leakage-->
         <scene sceneID="OS3-SQ-PvC">
             <objects>
-                <viewController id="hQK-DD-b5f" customClass="SensitiveInformationDisclosureVC" sceneMemberID="viewController">
+                <viewController id="hQK-DD-b5f" customClass="SideChannelDataLeakageVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="215-Ne-7Sp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -481,10 +481,10 @@
             </objects>
             <point key="canvasLocation" x="-5923" y="-3421"/>
         </scene>
-        <!--Sensitive Information Disclosure DetailsVC - Side Channel Data Leakage-->
+        <!--Side Channel Data Leakage DetailsVC - Side Channel Data Leakage-->
         <scene sceneID="8yf-CE-DMF">
             <objects>
-                <viewController id="Wck-vk-5qk" customClass="SensitiveInformationDisclosureDetailsVC" sceneMemberID="viewController">
+                <viewController id="Wck-vk-5qk" customClass="SideChannelDataLeakageDetailsVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8R7-vV-82N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -850,6 +850,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i23-yJ-Lii" id="HXA-Sn-CWV"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EO0-R1-zlc">
                                         <rect key="frame" x="88" y="130" width="148" height="44"/>
@@ -881,6 +884,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i23-yJ-Lii" id="6oo-7j-WG3"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nRK-aJ-LvF">
                                         <rect key="frame" x="67" y="208" width="195" height="44"/>
@@ -911,12 +917,18 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i23-yJ-Lii" id="ATw-tL-z98"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" id="93h-ff-fBO">
                                         <rect key="frame" x="10" y="139" width="304" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i23-yJ-Lii" id="47z-mf-H24"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ukN-qC-Hwz">
                                         <rect key="frame" x="93" y="177" width="139" height="44"/>
@@ -967,6 +979,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="nameTextField:" destination="i23-yJ-Lii" eventType="touchUpInside" id="qpU-hu-YCC"/>
+                                            <outlet property="delegate" destination="i23-yJ-Lii" id="plP-Iu-wFJ"/>
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="14" id="HZE-kD-QeE">
@@ -974,18 +987,27 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i23-yJ-Lii" id="Wmt-bf-ZZO"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phone" minimumFontSize="14" id="AFB-2V-GKB">
                                         <rect key="frame" x="28" y="223" width="272" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i23-yJ-Lii" id="uXP-Vb-hBE"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" id="daz-Yi-mLj">
                                         <rect key="frame" x="28" y="264" width="272" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i23-yJ-Lii" id="x9l-Y9-jtv"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
