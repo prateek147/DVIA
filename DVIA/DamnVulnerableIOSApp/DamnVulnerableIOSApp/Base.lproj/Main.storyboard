@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="lzA-Dt-4Ld">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
@@ -470,7 +470,7 @@
                                         <rect key="frame" x="11" y="0.0" width="297" height="210"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">iOS by default logs every input that you enter in a text field on the device. This is done to assist the user in autocorrecting information once the user logs in again. It is therefore essential for developers to disable autocorrect on text fields that may contain require sensitive data. Text fields that are set as secure in the application don't log keystrokes. Your task is to enter some dummy name in the text field below and then find this name in the keystroke logs saved on the device.</string>
+                                        <mutableString key="text">iOS by default logs every input that you enter in a text field on the device unless the text field is not set as Secure. This is done to assist the user in autocorrecting the value once the user enters any input in the text field. It is therefore essential for developers to disable autocorrect on text fields that may contain require sensitive data. Text fields that are set as secure in the application don't log keystrokes. Your task is to enter some dummy name in the text field below and then find this name in the keystroke logs saved on the device.</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -605,10 +605,10 @@
                                         </state>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="1WP-Cj-ajS">
-                                        <rect key="frame" x="13" y="7" width="297" height="281"/>
+                                        <rect key="frame" x="13" y="7" width="297" height="290"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">One of the features of iOS is that it takes a screenshot of the application when it enters into background. This screenshot is then shown to the user when user opens the app again while the app is loaded into the background. This is done in order to provide a seamless experience. However, sometimes the screenshot may contain important information and since the screenshot is stored in the applicaton sandbox without proper protection, it can be obtained quite easily. Your task is to fill some data in the text field below, then take the app into the background and find the application screenshot showing the data entered in these text fields.</string>
+                                        <mutableString key="text">One of the features of iOS is that it takes a screenshot of the application when it enters into background. This screenshot is then shown for some time when user taps on the app again to bring it to foreground while the app content is loaded into the background. This is done in order to provide a seamless experience. However, sometimes the screenshot may contain important information and since the screenshot is stored in the applicaton sandbox without proper protection, it can be obtained quite easily. Your task is to fill some data in the text field below, then take the app into the background and find the application screenshot showing the data entered in these text fields.</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
