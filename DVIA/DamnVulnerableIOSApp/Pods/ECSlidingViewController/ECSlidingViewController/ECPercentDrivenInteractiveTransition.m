@@ -25,18 +25,25 @@
 
 @interface ECPercentDrivenInteractiveTransition ()
 @property (nonatomic, assign) id<UIViewControllerContextTransitioning> transitionContext;
+@property (nonatomic, assign) BOOL isActive;
+- (void)removeAnimationsRecursively:(CALayer *)layer;
 @end
 
 @implementation ECPercentDrivenInteractiveTransition
 
 - (void)startInteractiveTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
+    self.isActive = YES;
     self.transitionContext = transitionContext;
     
+    CALayer *containerLayer = [self.transitionContext containerView].layer;
+    [self removeAnimationsRecursively:containerLayer];
     [self.animationController animateTransition:transitionContext];
     [self updateInteractiveTransition:0];
 }
 
 - (void)updateInteractiveTransition:(CGFloat)percentComplete {
+    if (!self.isActive) return;
+    
     [self.transitionContext updateInteractiveTransition:_percentComplete];
     
     CGFloat boundedPercentage;
@@ -56,6 +63,8 @@
 }
 
 - (void)cancelInteractiveTransition {
+    if (!self.isActive) return;
+    
     [self.transitionContext cancelInteractiveTransition];
     
     CADisplayLink *displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(reversePausedAnimation:)];
@@ -63,6 +72,9 @@
 }
 
 - (void)finishInteractiveTransition {
+    if (!self.isActive) return;
+    self.isActive = NO;
+    
     [self.transitionContext finishInteractiveTransition];
     
     CALayer *layer = [self.transitionContext containerView].layer;
@@ -89,9 +101,21 @@
     [self updateInteractiveTransition:self.percentComplete];
     
     if (_percentComplete == 0.0) {
+        self.isActive = NO;
         CALayer *layer = [self.transitionContext containerView].layer;
         [layer removeAllAnimations];
         layer.speed = 1.0;
+    }
+}
+
+#pragma mark - Private
+
+- (void)removeAnimationsRecursively:(CALayer *)layer {
+    if (layer.sublayers.count > 0) {
+        for (CALayer *subLayer in layer.sublayers) {
+            [subLayer removeAllAnimations];
+            [self removeAnimationsRecursively:subLayer];
+        }
     }
 }
 
