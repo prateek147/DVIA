@@ -430,7 +430,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Side Channel Data Leakage" id="C7H-iW-YG0">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="wVB-Tz-FQ7"/>
+                        <barButtonItem key="leftBarButtonItem" title="Menu" style="done" id="f7p-TS-BcR">
+                            <connections>
+                                <segue destination="jhx-E4-9Cj" kind="unwind" unwindAction="unwindToMenuViewController:" id="dlj-sz-lYd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -442,6 +446,7 @@
                     <barButtonItem key="leftBarButtonItem" title="Menu" id="fME-81-FUu"/>
                 </navigationItem>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TO4-tJ-nK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="jhx-E4-9Cj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-5923" y="-3421"/>
         </scene>
@@ -470,7 +475,7 @@
                                         <rect key="frame" x="11" y="0.0" width="297" height="256"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">iOS by default logs every input that you enter in a text field on the device unless the text field is not set as Secure. This is done to assist the user in autocorrecting the value once the user enters any input in the text field. It is therefore essential for developers to disable autocorrect on text fields that may contain require sensitive data. Text fields that are set as secure in the application don't log keystrokes. Your task is to enter some dummy name in the text field below and then find this name in the keystroke logs saved on the device.</mutableString>
+                                        <string key="text">iOS by default logs every input that you enter in a text field on the device unless the text field is not set as Secure. This is done to assist the user in autocorrecting the value once the user enters any input in the text field. It is therefore essential for developers to disable autocorrect on text fields that may contain require sensitive data. Text fields that are set as secure in the application don't log keystrokes. Your task is to enter some dummy name in the text field below and then find this name in the keystroke logs saved on the device.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -608,7 +613,7 @@
                                         <rect key="frame" x="13" y="7" width="297" height="290"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">One of the features of iOS is that it takes a screenshot of the application when it enters into background. This screenshot is then shown for some time when user taps on the app again to bring it to foreground while the app content is loaded in the background. This is done in order to provide a seamless experience. However, sometimes the screenshot may contain important information and since the screenshot is stored in the applicaton sandbox without proper protection, it can be obtained quite easily. Your task is to fill some data in the text field below, then take the app into the background and find the application screenshot showing the data entered in this text field.</mutableString>
+                                        <string key="text">One of the features of iOS is that it takes a screenshot of the application when it enters into background. This screenshot is then shown for some time when user taps on the app again to bring it to foreground while the app content is loaded in the background. This is done in order to provide a seamless experience. However, sometimes the screenshot may contain important information and since the screenshot is stored in the applicaton sandbox without proper protection, it can be obtained quite easily. Your task is to fill some data in the text field below, then take the app into the background and find the application screenshot showing the data entered in this text field.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -627,7 +632,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Side Channel Data Leakage" id="DhV-OA-yjo"/>
+                    <navigationItem key="navigationItem" title="Side Channel Data Leakage" id="pmP-74-x6l"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -1786,7 +1791,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Transport layer protection is a very important factor for applications that deal with client-server interactions. Your task is to intercept the information being sent over the network when the "Send" button is tapped. For intercepting request over HTTPS, you are free to assume that you may have physical access to the device for some time.</string>
-                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wNC-Ih-KTv">
@@ -1814,7 +1819,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a fake Card Holder's Name" minimumFontSize="17" id="H2A-ER-G87">
-                                        <rect key="frame" x="29" y="290" width="268" height="30"/>
+                                        <rect key="frame" x="29" y="289" width="268" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.1529411765" green="0.1215686275" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
@@ -1862,7 +1867,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Transport Layer Protection" id="GHe-4e-bu2">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Z5t-R1-rBv">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" style="done" id="Z5t-R1-rBv">
                             <connections>
                                 <segue destination="DxV-z0-kKV" kind="unwind" unwindAction="unwindToMenuViewController:" id="5z4-jt-vaS"/>
                             </connections>

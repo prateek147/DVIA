@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "UIViewController+ECSlidingViewController.h"
 
 @interface MenuViewController ()
 
