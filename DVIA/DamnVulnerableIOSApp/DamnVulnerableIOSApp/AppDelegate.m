@@ -30,16 +30,7 @@
     testObject[@"foo"] = @"bar";
     [testObject saveInBackground];
     
-    PFQuery *query = [PFQuery queryWithClassName:@"Tutorials"];
-    
-    // Retrieve the object by id
-    [query getObjectInBackgroundWithId:@"K4VnZubvAs" block:^(PFObject *tutorials, NSError *error) {
-        
-        NSLog(@"Object is %@",[tutorials objectForKey:@"links"]);
-        [[Model sharedModel] setTutorials:tutorials];
-        
-    }];
-    
+    [self fetchTutorials];
     return YES;
 }
 
@@ -156,6 +147,20 @@
     /*
      Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
      */
+}
+
+-(void)fetchTutorials{
+    PFQuery *query = [PFQuery queryWithClassName:@"Tutorials"];
+    
+    // Retrieve the object by id
+    [query getObjectInBackgroundWithId:@"K4VnZubvAs" block:^(PFObject *tutorials, NSError *error) {
+        
+        NSLog(@"Object is %@",[tutorials objectForKey:@"links"]);
+        [[Model sharedModel] setTutorials:tutorials];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"Tutorials_Loaded" object:self];
+        
+    }];
+
 }
 
 @end

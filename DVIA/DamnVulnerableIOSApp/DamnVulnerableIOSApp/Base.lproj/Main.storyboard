@@ -698,7 +698,7 @@
             </objects>
             <point key="canvasLocation" x="-4576" y="-1594"/>
         </scene>
-        <!--Learn View Controller - Learn IOS Application Security-->
+        <!--Learn View Controller - Learn iOS Application Security-->
         <scene sceneID="ewU-ds-QhC">
             <objects>
                 <viewController id="Bok-o5-Bvx" customClass="LearnViewController" sceneMemberID="viewController">
@@ -719,7 +719,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Learn IOS Application Security" id="oUi-XP-Trq">
+                    <navigationItem key="navigationItem" title="Learn iOS Application Security" id="oUi-XP-Trq">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="7FG-Gk-wDf">
                             <connections>
                                 <segue destination="Rhr-0t-BwO" kind="unwind" unwindAction="unwindToMenuViewController:" id="kga-y6-ZuU"/>
