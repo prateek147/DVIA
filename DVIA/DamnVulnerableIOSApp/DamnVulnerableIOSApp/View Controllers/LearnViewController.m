@@ -78,8 +78,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     CGSize size = [[self.allTutorials objectAtIndex:indexPath.row] sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Avenir-Roman" size:14.0]}];
-    cell.textLabel.numberOfLines = size.width/290.0 + 1;
-    [cell.textLabel setFont:[UIFont fontWithName:@"Avenir-Roman" size:14.0]];
+    cell.textLabel.numberOfLines = size.width/cell.textLabel.frame.size.width + 1;
+    [cell.textLabel setFont:[UIFont fontWithName:@"Avenir-Roman" size:15.0]];
     cell.textLabel.text = [self.allTutorials objectAtIndex:indexPath.row];
     return cell;
 }
@@ -87,7 +87,7 @@
 #pragma  mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CGSize size = [[self.allTutorials objectAtIndex:indexPath.row] sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Avenir-Roman" size:14.0]}];
+    CGSize size = [[self.allTutorials objectAtIndex:indexPath.row] sizeWithAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Avenir-Roman" size:15.0]}];
     return (size.width/290.0 + 1)*25;
 }
 
