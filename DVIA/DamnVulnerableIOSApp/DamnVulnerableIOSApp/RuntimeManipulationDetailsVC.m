@@ -7,11 +7,15 @@
 //
 
 #import "RuntimeManipulationDetailsVC.h"
+#import "DamnVulnerableAppUtilities.h"
 
 @interface RuntimeManipulationDetailsVC ()
 
 @property (strong, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (nonatomic,strong) NSString *urlToLoad;
+
+- (IBAction)readTutorialTapped:(id)sender;
 
 @end
 
@@ -29,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.urlToLoad = @"http://highaltitudehacks.com/2013/11/08/ios-application-security-part-21-arm-and-gdb-basics";
     [DamnVulnerableAppUtilities addCommonBackgroundImageToViewController:self];
 	// Do any additional setup after loading the view.
 }
@@ -74,6 +79,10 @@
 
 -(void)showLoginFailureAlert {
     [[[UIAlertView alloc] initWithTitle:@"Oops" message:@"Incorrect Username or Password" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+}
+
+- (IBAction)readTutorialTapped:(id)sender {
+[DamnVulnerableAppUtilities pushWebVCWithURL:self.urlToLoad viewController:self];
 }
 
 @end
