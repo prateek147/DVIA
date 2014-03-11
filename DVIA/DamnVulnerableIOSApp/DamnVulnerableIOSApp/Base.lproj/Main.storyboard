@@ -109,7 +109,7 @@
                         <color key="separatorColor" red="0.99900205289999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="DamnVulnerableIOSApp.com" footerTitle="Version 1.1" id="I6U-Jm-85w">
+                            <tableViewSection headerTitle="DamnVulnerableIOSApp.com" footerTitle="Version 1.2" id="I6U-Jm-85w">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pZG-f5-3Vp" style="IBUITableViewCellStyleDefault" id="Dvv-bd-LHt">
                                         <rect key="frame" x="0.0" y="55" width="320" height="44"/>
