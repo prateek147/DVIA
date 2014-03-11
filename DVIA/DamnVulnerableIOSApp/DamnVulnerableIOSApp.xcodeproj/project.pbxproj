@@ -71,6 +71,10 @@
 		6E37427C1874A18300843DD1 /* card-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742781874A18300843DD1 /* card-bg@2x.png */; };
 		6E4933BF18CF09C90099CD74 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4933BE18CF09C90099CD74 /* Model.m */; };
 		6E4933C018CF09C90099CD74 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4933BE18CF09C90099CD74 /* Model.m */; };
+		6E4933C418CF274C0099CD74 /* SFAntiPiracy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4933C318CF274C0099CD74 /* SFAntiPiracy.m */; };
+		6E4933C518CF274C0099CD74 /* SFAntiPiracy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4933C318CF274C0099CD74 /* SFAntiPiracy.m */; };
+		6E4933C918CF34320099CD74 /* PiracyDetectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4933C818CF34320099CD74 /* PiracyDetectionVC.m */; };
+		6E4933CA18CF34320099CD74 /* PiracyDetectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4933C818CF34320099CD74 /* PiracyDetectionVC.m */; };
 		6E5A1AE3187AADA800FAECA6 /* slider-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE1187AADA800FAECA6 /* slider-bg.png */; };
 		6E5A1AE4187AADA800FAECA6 /* slider-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE1187AADA800FAECA6 /* slider-bg.png */; };
 		6E5A1AE5187AADA800FAECA6 /* slider-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE2187AADA800FAECA6 /* slider-bg@2x.png */; };
@@ -209,6 +213,10 @@
 		6E3742781874A18300843DD1 /* card-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-bg@2x.png"; path = "Resources/card-bg@2x.png"; sourceTree = "<group>"; };
 		6E4933BD18CF09C90099CD74 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = Model/Model.h; sourceTree = "<group>"; };
 		6E4933BE18CF09C90099CD74 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = Model/Model.m; sourceTree = "<group>"; };
+		6E4933C218CF274C0099CD74 /* SFAntiPiracy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFAntiPiracy.h; path = "Third Party Classes/SFAntiPiracy.h"; sourceTree = "<group>"; };
+		6E4933C318CF274C0099CD74 /* SFAntiPiracy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFAntiPiracy.m; path = "Third Party Classes/SFAntiPiracy.m"; sourceTree = "<group>"; };
+		6E4933C718CF34320099CD74 /* PiracyDetectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PiracyDetectionVC.h; path = "View Controllers/PiracyDetectionVC.h"; sourceTree = "<group>"; };
+		6E4933C818CF34320099CD74 /* PiracyDetectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PiracyDetectionVC.m; path = "View Controllers/PiracyDetectionVC.m"; sourceTree = "<group>"; };
 		6E5A1AE1187AADA800FAECA6 /* slider-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-bg.png"; path = "Resources/slider-bg.png"; sourceTree = "<group>"; };
 		6E5A1AE2187AADA800FAECA6 /* slider-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-bg@2x.png"; path = "Resources/slider-bg@2x.png"; sourceTree = "<group>"; };
 		6E5A1AE7187AAF6400FAECA6 /* slider-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-active.png"; path = "Resources/slider-active.png"; sourceTree = "<group>"; };
@@ -323,6 +331,7 @@
 		6E1729CB18709F0300C162DB /* Vulnerabilities */ = {
 			isa = PBXGroup;
 			children = (
+				6E4933C618CF34110099CD74 /* Piracy Detection */,
 				6E63B65918AAA62600B438A0 /* SideChannelDataLeakage */,
 				6E63B65018AA319700B438A0 /* SecurityDecisionsViaUntrustedInput */,
 				6E5A1AED187AB3FA00FAECA6 /* Broken Cryptography */,
@@ -357,6 +366,7 @@
 		6E1729E018716BBD00C162DB /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				6E4933C118CF27370099CD74 /* SFAntiPiracy */,
 				6E5A1AF2187AB56400FAECA6 /* RNCryptor */,
 				6E5A1AF3187AB56C00FAECA6 /* PDKeychainBindings */,
 			);
@@ -470,6 +480,24 @@
 				6E37427418749FEA00843DD1 /* TransportLayerProtectionVC.m */,
 			);
 			name = "Transport Layer Protection";
+			sourceTree = "<group>";
+		};
+		6E4933C118CF27370099CD74 /* SFAntiPiracy */ = {
+			isa = PBXGroup;
+			children = (
+				6E4933C218CF274C0099CD74 /* SFAntiPiracy.h */,
+				6E4933C318CF274C0099CD74 /* SFAntiPiracy.m */,
+			);
+			name = SFAntiPiracy;
+			sourceTree = "<group>";
+		};
+		6E4933C618CF34110099CD74 /* Piracy Detection */ = {
+			isa = PBXGroup;
+			children = (
+				6E4933C718CF34320099CD74 /* PiracyDetectionVC.h */,
+				6E4933C818CF34320099CD74 /* PiracyDetectionVC.m */,
+			);
+			name = "Piracy Detection";
 			sourceTree = "<group>";
 		};
 		6E5A1AED187AB3FA00FAECA6 /* Broken Cryptography */ = {
@@ -833,10 +861,12 @@
 			files = (
 				6E63B65C18AAA8B800B438A0 /* SideChannelDataLeakageVC.m in Sources */,
 				6EB7B3BF18899DCD00A4F353 /* SolutionsViewController.m in Sources */,
+				6E4933C418CF274C0099CD74 /* SFAntiPiracy.m in Sources */,
 				6E172A0F1873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */,
 				6E37427518749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
 				6E5A1B0C187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */,
 				6E5A1B10187AB88700FAECA6 /* RNOpenSSLEncryptor.m in Sources */,
+				6E4933C918CF34320099CD74 /* PiracyDetectionVC.m in Sources */,
 				6E1729FA1871848A00C162DB /* User.m in Sources */,
 				6EFED8B41870848E00FEFCB1 /* AppDelegate.m in Sources */,
 				6E1729D018709F3700C162DB /* LearnViewController.m in Sources */,
@@ -894,6 +924,7 @@
 				6E172A031873343800C162DB /* JailbreakDetectionVC.m in Sources */,
 				6E63B64F18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */,
 				6E5A1B0D187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */,
+				6E4933C518CF274C0099CD74 /* SFAntiPiracy.m in Sources */,
 				6E5A1B05187AB88700FAECA6 /* RNCryptor.m in Sources */,
 				6E37427618749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
 				6E172A081873532800C162DB /* RuntimeManipulationVC.m in Sources */,
@@ -910,6 +941,7 @@
 				6E1729F71871844200C162DB /* Model.xcdatamodeld in Sources */,
 				6E1729DF187167A400C162DB /* InsecureDataStorageVulnVC.m in Sources */,
 				6E37427118742CFC00843DD1 /* ApplicationPatchingDetailsVC.m in Sources */,
+				6E4933CA18CF34320099CD74 /* PiracyDetectionVC.m in Sources */,
 				6E5A1B0F187AB88700FAECA6 /* RNOpenSSLDecryptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

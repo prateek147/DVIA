@@ -109,4 +109,9 @@ if (!TARGET_IPHONE_SIMULATOR){
     return NO;
 }
 
+- (IBAction)killApplicationTapped:(id)sender {
+    exit(-1);
+}
+
+
 @end
