@@ -69,6 +69,8 @@
 		6E37427A1874A18300843DD1 /* card-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742771874A18300843DD1 /* card-bg.png */; };
 		6E37427B1874A18300843DD1 /* card-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742781874A18300843DD1 /* card-bg@2x.png */; };
 		6E37427C1874A18300843DD1 /* card-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E3742781874A18300843DD1 /* card-bg@2x.png */; };
+		6E4933BF18CF09C90099CD74 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4933BE18CF09C90099CD74 /* Model.m */; };
+		6E4933C018CF09C90099CD74 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4933BE18CF09C90099CD74 /* Model.m */; };
 		6E5A1AE3187AADA800FAECA6 /* slider-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE1187AADA800FAECA6 /* slider-bg.png */; };
 		6E5A1AE4187AADA800FAECA6 /* slider-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE1187AADA800FAECA6 /* slider-bg.png */; };
 		6E5A1AE5187AADA800FAECA6 /* slider-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E5A1AE2187AADA800FAECA6 /* slider-bg@2x.png */; };
@@ -205,6 +207,8 @@
 		6E37427418749FEA00843DD1 /* TransportLayerProtectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransportLayerProtectionVC.m; path = "View Controllers/TransportLayerProtectionVC.m"; sourceTree = "<group>"; };
 		6E3742771874A18300843DD1 /* card-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-bg.png"; path = "Resources/card-bg.png"; sourceTree = "<group>"; };
 		6E3742781874A18300843DD1 /* card-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "card-bg@2x.png"; path = "Resources/card-bg@2x.png"; sourceTree = "<group>"; };
+		6E4933BD18CF09C90099CD74 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = Model/Model.h; sourceTree = "<group>"; };
+		6E4933BE18CF09C90099CD74 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = Model/Model.m; sourceTree = "<group>"; };
 		6E5A1AE1187AADA800FAECA6 /* slider-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-bg.png"; path = "Resources/slider-bg.png"; sourceTree = "<group>"; };
 		6E5A1AE2187AADA800FAECA6 /* slider-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-bg@2x.png"; path = "Resources/slider-bg@2x.png"; sourceTree = "<group>"; };
 		6E5A1AE7187AAF6400FAECA6 /* slider-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-active.png"; path = "Resources/slider-active.png"; sourceTree = "<group>"; };
@@ -383,6 +387,8 @@
 				6E1729F41871844200C162DB /* Model.xcdatamodeld */,
 				6E1729F81871848A00C162DB /* User.h */,
 				6E1729F91871848A00C162DB /* User.m */,
+				6E4933BD18CF09C90099CD74 /* Model.h */,
+				6E4933BE18CF09C90099CD74 /* Model.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -860,6 +866,7 @@
 				6E37427018742CFC00843DD1 /* ApplicationPatchingDetailsVC.m in Sources */,
 				6E5A1B06187AB88700FAECA6 /* RNCryptorEngine.m in Sources */,
 				6E623A0B187815610060AADA /* ClientSideInjectionVC.m in Sources */,
+				6E4933BF18CF09C90099CD74 /* Model.m in Sources */,
 				6E1729F61871844200C162DB /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -871,6 +878,7 @@
 				6E1729F21871749200C162DB /* GenericWebViewVC.m in Sources */,
 				6E1729ED1871743700C162DB /* DamnVulnerableAppUtilities.m in Sources */,
 				6E5A1B0B187AB88700FAECA6 /* RNEncryptor.m in Sources */,
+				6E4933C018CF09C90099CD74 /* Model.m in Sources */,
 				6E63B65418AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m in Sources */,
 				6EB7B3C018899DCD00A4F353 /* SolutionsViewController.m in Sources */,
 				6E1729E618716BE700C162DB /* PDKeychainBindings.m in Sources */,

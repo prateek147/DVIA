@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "Model.h"
 
 @implementation AppDelegate
 
@@ -28,6 +29,17 @@
     PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
     testObject[@"foo"] = @"bar";
     [testObject saveInBackground];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Tutorials"];
+    
+    // Retrieve the object by id
+    [query getObjectInBackgroundWithId:@"K4VnZubvAs" block:^(PFObject *tutorials, NSError *error) {
+        
+        NSLog(@"Object is %@",[tutorials objectForKey:@"links"]);
+        [[Model sharedModel] setTutorials:tutorials];
+        
+    }];
+    
     return YES;
 }
 
