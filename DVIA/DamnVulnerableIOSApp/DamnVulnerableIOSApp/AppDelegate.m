@@ -26,10 +26,6 @@
     //Initialize parse
     [Parse setApplicationId:kParseAppId
                   clientKey:kParseClientKey];
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    testObject[@"foo"] = @"bar";
-    [testObject saveInBackground];
-    
     [self fetchTutorials];
     return YES;
 }
@@ -154,8 +150,6 @@
     
     // Retrieve the object by id
     [query getObjectInBackgroundWithId:@"K4VnZubvAs" block:^(PFObject *tutorials, NSError *error) {
-        
-        NSLog(@"Object is %@",[tutorials objectForKey:@"links"]);
         [[Model sharedModel] setTutorials:tutorials];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"Tutorials_Loaded" object:self];
         

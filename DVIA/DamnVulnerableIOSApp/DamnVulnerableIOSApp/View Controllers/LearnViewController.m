@@ -92,7 +92,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"Link is %@",[self.allLinks objectAtIndex:indexPath.row]);
     [DamnVulnerableAppUtilities pushWebVCWithURL:[self.allLinks objectAtIndex:indexPath.row] viewController:self];
 }
 
