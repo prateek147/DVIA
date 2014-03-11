@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *callStatusLabel;
 @property (weak, nonatomic) IBOutlet UITextField *callNoTextField;
 
+- (IBAction)readArticleTapped:(id)sender;
+
 @end
 
 @implementation SecurityDecisionsViaUntrustedInputDetailsVC
@@ -47,5 +49,7 @@
     
 }
 
-
+- (IBAction)readArticleTapped:(id)sender {
+    [DamnVulnerableAppUtilities pushWebVCWithURL:kArticleURLSchemes viewController:self];
+}
 @end

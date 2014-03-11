@@ -8,6 +8,7 @@
 
 #import "PiracyDetectionVC.h"
 #import "SFAntiPiracy.h"
+#import "UIViewController+ECSlidingViewController.h"
 
 @interface PiracyDetectionVC ()
 
@@ -29,6 +30,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.slidingViewController.topViewController.view addGestureRecognizer:self.slidingViewController.panGesture];
+    [DamnVulnerableAppUtilities addCommonBackgroundImageToViewController:self];
+    self.navigationController.navigationBar.tintColor = kNavigationTintColor;
 	// Do any additional setup after loading the view.
 }
 
