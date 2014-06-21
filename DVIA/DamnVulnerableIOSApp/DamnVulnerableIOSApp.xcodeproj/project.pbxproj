@@ -105,7 +105,6 @@
 		6E623A0C187815610060AADA /* ClientSideInjectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E623A0A187815610060AADA /* ClientSideInjectionVC.m */; };
 		6E623A0F1878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E623A0E1878187F0060AADA /* ClientSideInjectionDetailsVC.m */; };
 		6E623A101878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E623A0E1878187F0060AADA /* ClientSideInjectionDetailsVC.m */; };
-		6E63B63618A8F85400B438A0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B63518A8F85400B438A0 /* Parse.framework */; };
 		6E63B63718A8F85400B438A0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B63518A8F85400B438A0 /* Parse.framework */; };
 		6E63B63918A8F87600B438A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B63818A8F87600B438A0 /* AudioToolbox.framework */; };
 		6E63B63B18A8F87A00B438A0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B63A18A8F87A00B438A0 /* CFNetwork.framework */; };
@@ -149,6 +148,7 @@
 		6EFED8C51870848E00FEFCB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFED8A71870848E00FEFCB1 /* UIKit.framework */; };
 		6EFED8CD1870848E00FEFCB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EFED8CB1870848E00FEFCB1 /* InfoPlist.strings */; };
 		6EFED8CF1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */; };
+		C91BA9DE1955B85400B75BAC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B63518A8F85400B438A0 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -288,6 +288,7 @@
 		6EFED8CA1870848E00FEFCB1 /* DamnVulnerableIOSAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DamnVulnerableIOSAppTests-Info.plist"; sourceTree = "<group>"; };
 		6EFED8CC1870848E00FEFCB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DamnVulnerableIOSAppTests.m; sourceTree = "<group>"; };
+		C91BA9DC1955B84A00B75BAC /* Parse */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Parse; path = Parse.framework/Versions/1.2.18/Parse; sourceTree = "<group>"; };
 		FE13008725BD49A0AC0ED80A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -296,6 +297,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91BA9DE1955B85400B75BAC /* Parse.framework in Frameworks */,
 				6E63B64918A8F8BA00B438A0 /* SystemConfiguration.framework in Frameworks */,
 				6E63B64718A8F8A200B438A0 /* StoreKit.framework in Frameworks */,
 				6E63B64518A8F89C00B438A0 /* Security.framework in Frameworks */,
@@ -309,7 +311,6 @@
 				6E1729FD1871914100C162DB /* CoreData.framework in Frameworks */,
 				6EFED8A81870848E00FEFCB1 /* UIKit.framework in Frameworks */,
 				6EFED8A41870848E00FEFCB1 /* Foundation.framework in Frameworks */,
-				6E63B63618A8F85400B438A0 /* Parse.framework in Frameworks */,
 				223B7CAD97A748F58BD827A8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,6 +612,7 @@
 		6EFED8A21870848E00FEFCB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C91BA9DC1955B84A00B75BAC /* Parse */,
 				6E63B64A18A8FD9500B438A0 /* Accounts.framework */,
 				6E63B64818A8F8BA00B438A0 /* SystemConfiguration.framework */,
 				6E63B64618A8F8A200B438A0 /* StoreKit.framework */,
@@ -1072,12 +1074,18 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Prateek Gianchandani (9WJU7EAEE3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Prateek/Documents/IOS\\ Projects/DVIA/DVIA/DamnVulnerableIOSApp",
+					/Users/Prateek/Documents/IOS,
+					Projects/DVIA/DVIA/DamnVulnerableIOSApp,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
 				INFOPLIST_FILE = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Parse.framework/Versions/1.2.18",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "CDAC0D9C-111A-400A-AA55-0D0A486FE8BA";
@@ -1096,12 +1104,18 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Prateek Gianchandani (5SN4U5A564)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Prateek/Documents/IOS\\ Projects/DVIA/DVIA/DamnVulnerableIOSApp",
+					/Users/Prateek/Documents/IOS,
+					Projects/DVIA/DVIA/DamnVulnerableIOSApp,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
 				INFOPLIST_FILE = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Parse.framework/Versions/1.2.18",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "BA331F66-5040-4CFF-8D88-F3CA502164A0";
