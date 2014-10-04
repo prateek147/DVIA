@@ -1,1 +1,0 @@
-../../ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.h

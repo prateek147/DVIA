@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		223B7CAD97A748F58BD827A8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE13008725BD49A0AC0ED80A /* libPods.a */; };
 		6E033F5518B1D5E7006F8DAB /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E033F4C18B1D5E7006F8DAB /* menuIcon.png */; };
 		6E033F5618B1D5E7006F8DAB /* menuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E033F4C18B1D5E7006F8DAB /* menuIcon.png */; };
 		6E033F5718B1D5E7006F8DAB /* menuIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E033F4D18B1D5E7006F8DAB /* menuIcon@2x.png */; };
@@ -105,7 +104,6 @@
 		6E623A0C187815610060AADA /* ClientSideInjectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E623A0A187815610060AADA /* ClientSideInjectionVC.m */; };
 		6E623A0F1878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E623A0E1878187F0060AADA /* ClientSideInjectionDetailsVC.m */; };
 		6E623A101878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E623A0E1878187F0060AADA /* ClientSideInjectionDetailsVC.m */; };
-		6E63B63718A8F85400B438A0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B63518A8F85400B438A0 /* Parse.framework */; };
 		6E63B63918A8F87600B438A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B63818A8F87600B438A0 /* AudioToolbox.framework */; };
 		6E63B63B18A8F87A00B438A0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B63A18A8F87A00B438A0 /* CFNetwork.framework */; };
 		6E63B63D18A8F88600B438A0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B63C18A8F88600B438A0 /* CoreLocation.framework */; };
@@ -148,7 +146,20 @@
 		6EFED8C51870848E00FEFCB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFED8A71870848E00FEFCB1 /* UIKit.framework */; };
 		6EFED8CD1870848E00FEFCB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EFED8CB1870848E00FEFCB1 /* InfoPlist.strings */; };
 		6EFED8CF1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */; };
-		C91BA9DE1955B85400B75BAC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B63518A8F85400B438A0 /* Parse.framework */; };
+		F64B879819E02AB8005AB265 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B879719E02AB8005AB265 /* Parse.framework */; };
+		F64B879919E02AB8005AB265 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B879719E02AB8005AB265 /* Parse.framework */; };
+		F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */; };
+		F64B87AF19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */; };
+		F64B87B019E02CB2005AB265 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A419E02CB2005AB265 /* ECSlidingAnimationController.m */; };
+		F64B87B119E02CB2005AB265 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A419E02CB2005AB265 /* ECSlidingAnimationController.m */; };
+		F64B87B219E02CB2005AB265 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A719E02CB2005AB265 /* ECSlidingInteractiveTransition.m */; };
+		F64B87B319E02CB2005AB265 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A719E02CB2005AB265 /* ECSlidingInteractiveTransition.m */; };
+		F64B87B419E02CB2005AB265 /* ECSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A919E02CB2005AB265 /* ECSlidingSegue.m */; };
+		F64B87B519E02CB2005AB265 /* ECSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A919E02CB2005AB265 /* ECSlidingSegue.m */; };
+		F64B87B619E02CB2005AB265 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87AB19E02CB2005AB265 /* ECSlidingViewController.m */; };
+		F64B87B719E02CB2005AB265 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87AB19E02CB2005AB265 /* ECSlidingViewController.m */; };
+		F64B87B819E02CB2005AB265 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87AD19E02CB2005AB265 /* UIViewController+ECSlidingViewController.m */; };
+		F64B87B919E02CB2005AB265 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87AD19E02CB2005AB265 /* UIViewController+ECSlidingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,7 +173,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A69DA2CF1374EFAA03FE629 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		6E033F4C18B1D5E7006F8DAB /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuIcon.png; path = Resources/menuIcon.png; sourceTree = "<group>"; };
 		6E033F4D18B1D5E7006F8DAB /* menuIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menuIcon@2x.png"; path = "Resources/menuIcon@2x.png"; sourceTree = "<group>"; };
 		6E033F4E18B1D5E7006F8DAB /* 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120x120.png; path = Resources/120x120.png; sourceTree = "<group>"; };
@@ -245,7 +255,6 @@
 		6E623A0A187815610060AADA /* ClientSideInjectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClientSideInjectionVC.m; path = "View Controllers/ClientSideInjectionVC.m"; sourceTree = "<group>"; };
 		6E623A0D1878187F0060AADA /* ClientSideInjectionDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientSideInjectionDetailsVC.h; path = "View Controllers/ClientSideInjectionDetailsVC.h"; sourceTree = "<group>"; };
 		6E623A0E1878187F0060AADA /* ClientSideInjectionDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClientSideInjectionDetailsVC.m; path = "View Controllers/ClientSideInjectionDetailsVC.m"; sourceTree = "<group>"; };
-		6E63B63518A8F85400B438A0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		6E63B63818A8F87600B438A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6E63B63A18A8F87A00B438A0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6E63B63C18A8F88600B438A0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -289,6 +298,20 @@
 		6EFED8CC1870848E00FEFCB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DamnVulnerableIOSAppTests.m; sourceTree = "<group>"; };
 		C91BA9DC1955B84A00B75BAC /* Parse */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Parse; path = Parse.framework/Versions/1.2.18/Parse; sourceTree = "<group>"; };
+		F64B879719E02AB8005AB265 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F64B87A119E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECPercentDrivenInteractiveTransition.h; path = "Third Party Classes/ECSlidingViewController/ECPercentDrivenInteractiveTransition.h"; sourceTree = "<group>"; };
+		F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECPercentDrivenInteractiveTransition.m; path = "Third Party Classes/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m"; sourceTree = "<group>"; };
+		F64B87A319E02CB2005AB265 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSlidingAnimationController.h; path = "Third Party Classes/ECSlidingViewController/ECSlidingAnimationController.h"; sourceTree = "<group>"; };
+		F64B87A419E02CB2005AB265 /* ECSlidingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSlidingAnimationController.m; path = "Third Party Classes/ECSlidingViewController/ECSlidingAnimationController.m"; sourceTree = "<group>"; };
+		F64B87A519E02CB2005AB265 /* ECSlidingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSlidingConstants.h; path = "Third Party Classes/ECSlidingViewController/ECSlidingConstants.h"; sourceTree = "<group>"; };
+		F64B87A619E02CB2005AB265 /* ECSlidingInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSlidingInteractiveTransition.h; path = "Third Party Classes/ECSlidingViewController/ECSlidingInteractiveTransition.h"; sourceTree = "<group>"; };
+		F64B87A719E02CB2005AB265 /* ECSlidingInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSlidingInteractiveTransition.m; path = "Third Party Classes/ECSlidingViewController/ECSlidingInteractiveTransition.m"; sourceTree = "<group>"; };
+		F64B87A819E02CB2005AB265 /* ECSlidingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSlidingSegue.h; path = "Third Party Classes/ECSlidingViewController/ECSlidingSegue.h"; sourceTree = "<group>"; };
+		F64B87A919E02CB2005AB265 /* ECSlidingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSlidingSegue.m; path = "Third Party Classes/ECSlidingViewController/ECSlidingSegue.m"; sourceTree = "<group>"; };
+		F64B87AA19E02CB2005AB265 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSlidingViewController.h; path = "Third Party Classes/ECSlidingViewController/ECSlidingViewController.h"; sourceTree = "<group>"; };
+		F64B87AB19E02CB2005AB265 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSlidingViewController.m; path = "Third Party Classes/ECSlidingViewController/ECSlidingViewController.m"; sourceTree = "<group>"; };
+		F64B87AC19E02CB2005AB265 /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ECSlidingViewController.h"; path = "Third Party Classes/ECSlidingViewController/UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
+		F64B87AD19E02CB2005AB265 /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ECSlidingViewController.m"; path = "Third Party Classes/ECSlidingViewController/UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
 		FE13008725BD49A0AC0ED80A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -297,11 +320,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C91BA9DE1955B85400B75BAC /* Parse.framework in Frameworks */,
 				6E63B64918A8F8BA00B438A0 /* SystemConfiguration.framework in Frameworks */,
 				6E63B64718A8F8A200B438A0 /* StoreKit.framework in Frameworks */,
 				6E63B64518A8F89C00B438A0 /* Security.framework in Frameworks */,
 				6E63B64318A8F89700B438A0 /* QuartzCore.framework in Frameworks */,
+				F64B879819E02AB8005AB265 /* Parse.framework in Frameworks */,
 				6E63B64118A8F89300B438A0 /* MobileCoreServices.framework in Frameworks */,
 				6E63B63F18A8F88E00B438A0 /* libz.dylib in Frameworks */,
 				6E63B63D18A8F88600B438A0 /* CoreLocation.framework in Frameworks */,
@@ -311,7 +334,6 @@
 				6E1729FD1871914100C162DB /* CoreData.framework in Frameworks */,
 				6EFED8A81870848E00FEFCB1 /* UIKit.framework in Frameworks */,
 				6EFED8A41870848E00FEFCB1 /* Foundation.framework in Frameworks */,
-				223B7CAD97A748F58BD827A8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +343,7 @@
 			files = (
 				6EFED8C31870848E00FEFCB1 /* XCTest.framework in Frameworks */,
 				6EFED8C51870848E00FEFCB1 /* UIKit.framework in Frameworks */,
-				6E63B63718A8F85400B438A0 /* Parse.framework in Frameworks */,
+				F64B879919E02AB8005AB265 /* Parse.framework in Frameworks */,
 				6EFED8C41870848E00FEFCB1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +389,7 @@
 		6E1729E018716BBD00C162DB /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				F64B879A19E02C7E005AB265 /* ECSlidingVC */,
 				6E4933C118CF27370099CD74 /* SFAntiPiracy */,
 				6E5A1AF2187AB56400FAECA6 /* RNCryptor */,
 				6E5A1AF3187AB56C00FAECA6 /* PDKeychainBindings */,
@@ -591,12 +614,11 @@
 		6EFED8971870848E00FEFCB1 = {
 			isa = PBXGroup;
 			children = (
-				6E63B63518A8F85400B438A0 /* Parse.framework */,
+				F64B879719E02AB8005AB265 /* Parse.framework */,
 				6EFED8A91870848E00FEFCB1 /* DamnVulnerableIOSApp */,
 				6EFED8C81870848E00FEFCB1 /* DamnVulnerableIOSAppTests */,
 				6EFED8A21870848E00FEFCB1 /* Frameworks */,
 				6EFED8A11870848E00FEFCB1 /* Products */,
-				0A69DA2CF1374EFAA03FE629 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -687,6 +709,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F64B879A19E02C7E005AB265 /* ECSlidingVC */ = {
+			isa = PBXGroup;
+			children = (
+				F64B87A119E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.h */,
+				F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */,
+				F64B87A319E02CB2005AB265 /* ECSlidingAnimationController.h */,
+				F64B87A419E02CB2005AB265 /* ECSlidingAnimationController.m */,
+				F64B87A519E02CB2005AB265 /* ECSlidingConstants.h */,
+				F64B87A619E02CB2005AB265 /* ECSlidingInteractiveTransition.h */,
+				F64B87A719E02CB2005AB265 /* ECSlidingInteractiveTransition.m */,
+				F64B87A819E02CB2005AB265 /* ECSlidingSegue.h */,
+				F64B87A919E02CB2005AB265 /* ECSlidingSegue.m */,
+				F64B87AA19E02CB2005AB265 /* ECSlidingViewController.h */,
+				F64B87AB19E02CB2005AB265 /* ECSlidingViewController.m */,
+				F64B87AC19E02CB2005AB265 /* UIViewController+ECSlidingViewController.h */,
+				F64B87AD19E02CB2005AB265 /* UIViewController+ECSlidingViewController.m */,
+			);
+			name = ECSlidingVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -694,11 +736,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EFED8D21870848E00FEFCB1 /* Build configuration list for PBXNativeTarget "DamnVulnerableIOSApp" */;
 			buildPhases = (
-				77FBA1E923F942ECA740CF55 /* Check Pods Manifest.lock */,
 				6EFED89C1870848E00FEFCB1 /* Sources */,
 				6EFED89D1870848E00FEFCB1 /* Frameworks */,
 				6EFED89E1870848E00FEFCB1 /* Resources */,
-				BE10B9DD240348FE88F81A7E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -823,39 +863,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		77FBA1E923F942ECA740CF55 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BE10B9DD240348FE88F81A7E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		6EFED89C1870848E00FEFCB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -864,6 +871,7 @@
 				6E63B65C18AAA8B800B438A0 /* SideChannelDataLeakageVC.m in Sources */,
 				6EB7B3BF18899DCD00A4F353 /* SolutionsViewController.m in Sources */,
 				6E4933C418CF274C0099CD74 /* SFAntiPiracy.m in Sources */,
+				F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */,
 				6E172A0F1873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */,
 				6E37427518749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
 				6E5A1B0C187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */,
@@ -873,8 +881,10 @@
 				6EFED8B41870848E00FEFCB1 /* AppDelegate.m in Sources */,
 				6E1729D018709F3700C162DB /* LearnViewController.m in Sources */,
 				6E63B65718AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m in Sources */,
+				F64B87B619E02CB2005AB265 /* ECSlidingViewController.m in Sources */,
 				6E37426C1874129D00843DD1 /* ApplicationPatchingVC.m in Sources */,
 				6E63B65318AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m in Sources */,
+				F64B87B419E02CB2005AB265 /* ECSlidingSegue.m in Sources */,
 				6E5A1B0A187AB88700FAECA6 /* RNEncryptor.m in Sources */,
 				6E5A1B04187AB88700FAECA6 /* RNCryptor.m in Sources */,
 				6E1729DA1870A8C200C162DB /* InsecureDataStorageVC.m in Sources */,
@@ -891,12 +901,15 @@
 				6E172A021873343800C162DB /* JailbreakDetectionVC.m in Sources */,
 				6E5A1B0E187AB88700FAECA6 /* RNOpenSSLDecryptor.m in Sources */,
 				6E1729E518716BE700C162DB /* PDKeychainBindings.m in Sources */,
+				F64B87B019E02CB2005AB265 /* ECSlidingAnimationController.m in Sources */,
 				6E63B64E18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */,
 				6E1729D61870A6A800C162DB /* HomeViewController.m in Sources */,
 				6E1729EC1871743700C162DB /* DamnVulnerableAppUtilities.m in Sources */,
+				F64B87B819E02CB2005AB265 /* UIViewController+ECSlidingViewController.m in Sources */,
 				6E1729C91870968F00C162DB /* MenuViewController.m in Sources */,
 				6E37427018742CFC00843DD1 /* ApplicationPatchingDetailsVC.m in Sources */,
 				6E5A1B06187AB88700FAECA6 /* RNCryptorEngine.m in Sources */,
+				F64B87B219E02CB2005AB265 /* ECSlidingInteractiveTransition.m in Sources */,
 				6E623A0B187815610060AADA /* ClientSideInjectionVC.m in Sources */,
 				6E4933BF18CF09C90099CD74 /* Model.m in Sources */,
 				6E1729F61871844200C162DB /* Model.xcdatamodeld in Sources */,
@@ -917,23 +930,28 @@
 				6E623A101878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */,
 				6E5A1B09187AB88700FAECA6 /* RNDecryptor.m in Sources */,
 				6E5A1AF1187AB41100FAECA6 /* BrokenCryptographyVC.m in Sources */,
+				F64B87B919E02CB2005AB265 /* UIViewController+ECSlidingViewController.m in Sources */,
 				6E63B65D18AAA8B800B438A0 /* SideChannelDataLeakageVC.m in Sources */,
+				F64B87B719E02CB2005AB265 /* ECSlidingViewController.m in Sources */,
 				6E5A1B07187AB88700FAECA6 /* RNCryptorEngine.m in Sources */,
 				6E63B65818AA425E00B438A0 /* SecurityDecisionViaUntrustedInputDetailsVC.m in Sources */,
 				6EFED8CF1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m in Sources */,
 				6E172A101873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */,
 				6E1729D118709F3700C162DB /* LearnViewController.m in Sources */,
 				6E172A031873343800C162DB /* JailbreakDetectionVC.m in Sources */,
+				F64B87AF19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */,
 				6E63B64F18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */,
 				6E5A1B0D187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */,
 				6E4933C518CF274C0099CD74 /* SFAntiPiracy.m in Sources */,
 				6E5A1B05187AB88700FAECA6 /* RNCryptor.m in Sources */,
 				6E37427618749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
+				F64B87B119E02CB2005AB265 /* ECSlidingAnimationController.m in Sources */,
 				6E172A081873532800C162DB /* RuntimeManipulationVC.m in Sources */,
 				6E1729E818716BE700C162DB /* PDKeychainBindingsController.m in Sources */,
 				6E63B66118AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m in Sources */,
 				6E5A1B11187AB88700FAECA6 /* RNOpenSSLEncryptor.m in Sources */,
 				6E1729CA1870968F00C162DB /* MenuViewController.m in Sources */,
+				F64B87B319E02CB2005AB265 /* ECSlidingInteractiveTransition.m in Sources */,
 				6E1729D71870A6A800C162DB /* HomeViewController.m in Sources */,
 				6E623A0C187815610060AADA /* ClientSideInjectionVC.m in Sources */,
 				6E1729FB1871848A00C162DB /* User.m in Sources */,
@@ -942,6 +960,7 @@
 				6E37426D1874129D00843DD1 /* ApplicationPatchingVC.m in Sources */,
 				6E1729F71871844200C162DB /* Model.xcdatamodeld in Sources */,
 				6E1729DF187167A400C162DB /* InsecureDataStorageVulnVC.m in Sources */,
+				F64B87B519E02CB2005AB265 /* ECSlidingSegue.m in Sources */,
 				6E37427118742CFC00843DD1 /* ApplicationPatchingDetailsVC.m in Sources */,
 				6E4933CA18CF34320099CD74 /* PiracyDetectionVC.m in Sources */,
 				6E5A1B0F187AB88700FAECA6 /* RNOpenSSLDecryptor.m in Sources */,
@@ -1065,7 +1084,6 @@
 		};
 		6EFED8D31870848E00FEFCB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A69DA2CF1374EFAA03FE629 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1095,7 +1113,6 @@
 		};
 		6EFED8D41870848E00FEFCB1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A69DA2CF1374EFAA03FE629 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1132,7 +1149,9 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Users/Prateek/Documents/IOS\\ Projects/DVIA/DVIA/DamnVulnerableIOSApp",
+					/Users/Prateek/Documents/IOS,
+					Projects/DVIA/DVIA/DamnVulnerableIOSApp,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
@@ -1156,7 +1175,9 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"/Users/Prateek/Documents/IOS\\ Projects/DVIA/DVIA/DamnVulnerableIOSApp",
+					/Users/Prateek/Documents/IOS,
+					Projects/DVIA/DVIA/DamnVulnerableIOSApp,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
