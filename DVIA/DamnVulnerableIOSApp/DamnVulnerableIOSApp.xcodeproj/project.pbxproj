@@ -146,6 +146,8 @@
 		6EFED8C51870848E00FEFCB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFED8A71870848E00FEFCB1 /* UIKit.framework */; };
 		6EFED8CD1870848E00FEFCB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EFED8CB1870848E00FEFCB1 /* InfoPlist.strings */; };
 		6EFED8CF1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */; };
+		F60C536F19E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
+		F60C537019E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F64B879819E02AB8005AB265 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B879719E02AB8005AB265 /* Parse.framework */; };
 		F64B879919E02AB8005AB265 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B879719E02AB8005AB265 /* Parse.framework */; };
 		F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */; };
@@ -302,6 +304,8 @@
 		6EFED8CC1870848E00FEFCB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DamnVulnerableIOSAppTests.m; sourceTree = "<group>"; };
 		C91BA9DC1955B84A00B75BAC /* Parse */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Parse; path = Parse.framework/Versions/1.2.18/Parse; sourceTree = "<group>"; };
+		F60C536D19E4703600C63A0D /* SSLPinningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSLPinningVC.h; path = "View Controllers/SSLPinningVC.h"; sourceTree = "<group>"; };
+		F60C536E19E4703600C63A0D /* SSLPinningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSLPinningVC.m; path = "View Controllers/SSLPinningVC.m"; sourceTree = "<group>"; };
 		F64B879719E02AB8005AB265 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F64B87A119E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECPercentDrivenInteractiveTransition.h; path = "Third Party Classes/ECSlidingViewController/ECPercentDrivenInteractiveTransition.h"; sourceTree = "<group>"; };
 		F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECPercentDrivenInteractiveTransition.m; path = "Third Party Classes/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m"; sourceTree = "<group>"; };
@@ -511,6 +515,8 @@
 			children = (
 				6E37427318749FEA00843DD1 /* TransportLayerProtectionVC.h */,
 				6E37427418749FEA00843DD1 /* TransportLayerProtectionVC.m */,
+				F60C536D19E4703600C63A0D /* SSLPinningVC.h */,
+				F60C536E19E4703600C63A0D /* SSLPinningVC.m */,
 			);
 			name = "Transport Layer Protection";
 			sourceTree = "<group>";
@@ -895,6 +901,7 @@
 				6E172A0F1873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */,
 				6E37427518749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
 				6E5A1B0C187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */,
+				F60C536F19E4703600C63A0D /* SSLPinningVC.m in Sources */,
 				6E5A1B10187AB88700FAECA6 /* RNOpenSSLEncryptor.m in Sources */,
 				6E4933C918CF34320099CD74 /* PiracyDetectionVC.m in Sources */,
 				6E1729FA1871848A00C162DB /* User.m in Sources */,
@@ -962,6 +969,7 @@
 				6E172A101873597500C162DB /* RuntimeManipulationDetailsVC.m in Sources */,
 				6E1729D118709F3700C162DB /* LearnViewController.m in Sources */,
 				6E172A031873343800C162DB /* JailbreakDetectionVC.m in Sources */,
+				F60C537019E4703600C63A0D /* SSLPinningVC.m in Sources */,
 				F64B87AF19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */,
 				6E63B64F18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */,
 				F6E9BF5B19E41417003C36FB /* SensitiveInformationVC.m in Sources */,
