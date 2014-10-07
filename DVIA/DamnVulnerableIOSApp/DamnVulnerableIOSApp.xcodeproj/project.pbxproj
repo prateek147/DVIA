@@ -160,6 +160,10 @@
 		F64B87B719E02CB2005AB265 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87AB19E02CB2005AB265 /* ECSlidingViewController.m */; };
 		F64B87B819E02CB2005AB265 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87AD19E02CB2005AB265 /* UIViewController+ECSlidingViewController.m */; };
 		F64B87B919E02CB2005AB265 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87AD19E02CB2005AB265 /* UIViewController+ECSlidingViewController.m */; };
+		F6E9BF5619E41334003C36FB /* SensitiveInformationDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E9BF5519E41334003C36FB /* SensitiveInformationDetailsVC.m */; };
+		F6E9BF5719E41334003C36FB /* SensitiveInformationDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E9BF5519E41334003C36FB /* SensitiveInformationDetailsVC.m */; };
+		F6E9BF5A19E41417003C36FB /* SensitiveInformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E9BF5919E41417003C36FB /* SensitiveInformationVC.m */; };
+		F6E9BF5B19E41417003C36FB /* SensitiveInformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E9BF5919E41417003C36FB /* SensitiveInformationVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -312,6 +316,10 @@
 		F64B87AB19E02CB2005AB265 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSlidingViewController.m; path = "Third Party Classes/ECSlidingViewController/ECSlidingViewController.m"; sourceTree = "<group>"; };
 		F64B87AC19E02CB2005AB265 /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ECSlidingViewController.h"; path = "Third Party Classes/ECSlidingViewController/UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
 		F64B87AD19E02CB2005AB265 /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ECSlidingViewController.m"; path = "Third Party Classes/ECSlidingViewController/UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
+		F6E9BF5419E41334003C36FB /* SensitiveInformationDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensitiveInformationDetailsVC.h; path = "View Controllers/SensitiveInformationDetailsVC.h"; sourceTree = "<group>"; };
+		F6E9BF5519E41334003C36FB /* SensitiveInformationDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensitiveInformationDetailsVC.m; path = "View Controllers/SensitiveInformationDetailsVC.m"; sourceTree = "<group>"; };
+		F6E9BF5819E41417003C36FB /* SensitiveInformationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensitiveInformationVC.h; path = "View Controllers/SensitiveInformationVC.h"; sourceTree = "<group>"; };
+		F6E9BF5919E41417003C36FB /* SensitiveInformationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensitiveInformationVC.m; path = "View Controllers/SensitiveInformationVC.m"; sourceTree = "<group>"; };
 		FE13008725BD49A0AC0ED80A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -361,6 +369,7 @@
 				6E623A08187815410060AADA /* Client Side Injection */,
 				6E37427218749FC500843DD1 /* Transport Layer Protection */,
 				6E3742691874128200843DD1 /* Application Patching */,
+				F6E9BF4F19E4104E003C36FB /* Sensitive Information in memory */,
 				6E172A041873530A00C162DB /* Runtime Manipulation */,
 				6E1729FF1873341300C162DB /* Jailbreak Detection */,
 				6E1729FE187333E200C162DB /* Insecure Data Storage */,
@@ -729,6 +738,17 @@
 			name = ECSlidingVC;
 			sourceTree = "<group>";
 		};
+		F6E9BF4F19E4104E003C36FB /* Sensitive Information in memory */ = {
+			isa = PBXGroup;
+			children = (
+				F6E9BF5419E41334003C36FB /* SensitiveInformationDetailsVC.h */,
+				F6E9BF5519E41334003C36FB /* SensitiveInformationDetailsVC.m */,
+				F6E9BF5819E41417003C36FB /* SensitiveInformationVC.h */,
+				F6E9BF5919E41417003C36FB /* SensitiveInformationVC.m */,
+			);
+			name = "Sensitive Information in memory";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -885,9 +905,11 @@
 				6E37426C1874129D00843DD1 /* ApplicationPatchingVC.m in Sources */,
 				6E63B65318AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m in Sources */,
 				F64B87B419E02CB2005AB265 /* ECSlidingSegue.m in Sources */,
+				F6E9BF5619E41334003C36FB /* SensitiveInformationDetailsVC.m in Sources */,
 				6E5A1B0A187AB88700FAECA6 /* RNEncryptor.m in Sources */,
 				6E5A1B04187AB88700FAECA6 /* RNCryptor.m in Sources */,
 				6E1729DA1870A8C200C162DB /* InsecureDataStorageVC.m in Sources */,
+				F6E9BF5A19E41417003C36FB /* SensitiveInformationVC.m in Sources */,
 				6E1729F11871749200C162DB /* GenericWebViewVC.m in Sources */,
 				6E5A1B14187ABA9A00FAECA6 /* BrokenCryptographyDetailsVC.m in Sources */,
 				6E5A1B08187AB88700FAECA6 /* RNDecryptor.m in Sources */,
@@ -924,6 +946,7 @@
 				6E1729ED1871743700C162DB /* DamnVulnerableAppUtilities.m in Sources */,
 				6E5A1B0B187AB88700FAECA6 /* RNEncryptor.m in Sources */,
 				6E4933C018CF09C90099CD74 /* Model.m in Sources */,
+				F6E9BF5719E41334003C36FB /* SensitiveInformationDetailsVC.m in Sources */,
 				6E63B65418AA344500B438A0 /* SecurityDecisionViaUntrustedInputVC.m in Sources */,
 				6EB7B3C018899DCD00A4F353 /* SolutionsViewController.m in Sources */,
 				6E1729E618716BE700C162DB /* PDKeychainBindings.m in Sources */,
@@ -941,6 +964,7 @@
 				6E172A031873343800C162DB /* JailbreakDetectionVC.m in Sources */,
 				F64B87AF19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */,
 				6E63B64F18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */,
+				F6E9BF5B19E41417003C36FB /* SensitiveInformationVC.m in Sources */,
 				6E5A1B0D187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */,
 				6E4933C518CF274C0099CD74 /* SFAntiPiracy.m in Sources */,
 				6E5A1B05187AB88700FAECA6 /* RNCryptor.m in Sources */,

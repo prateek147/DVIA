@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="lzA-Dt-4Ld">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="lzA-Dt-4Ld">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--Sliding View Controller-->
@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-3189" y="597"/>
         </scene>
-        <!--Home View Controller - Damn Vulnerable iOS App-->
+        <!--Damn Vulnerable iOS App-->
         <scene sceneID="nuF-a7-Av2">
             <objects>
                 <viewController id="b1c-3n-h6B" customClass="HomeViewController" sceneMemberID="viewController">
@@ -128,9 +128,6 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="RxQ-nn-BiB" kind="custom" customClass="ECSlidingSegue" id="SFK-DZ-TW6"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="beY-51-3rD" style="IBUITableViewCellStyleDefault" id="Gc4-jh-q6V">
                                         <rect key="frame" x="0.0" y="99" width="320" height="44"/>
@@ -214,6 +211,27 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="UbX-O6-c3r" kind="custom" customClass="ECSlidingSegue" id="QkP-uo-bfy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="azZ-hs-dXN" style="IBUITableViewCellStyleDefault" id="0uH-Jm-fzj">
+                                        <rect key="frame" x="0.0" y="231" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0uH-Jm-fzj" id="Dyv-VH-4Mb">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Sensitive Information in memory" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="azZ-hs-dXN">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="6xf-Dd-6wO" kind="custom" customClass="ECSlidingSegue" id="Uec-2Q-vEL"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="2mo-KA-YiK" style="IBUITableViewCellStyleDefault" id="UmA-mV-0ti">
@@ -419,9 +437,102 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rY-v0-J5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7176" y="-2864"/>
+            <point key="canvasLocation" x="-9343" y="-2949"/>
         </scene>
-        <!--Side Channel Data LeakageVC - Side Channel Data Leakage-->
+        <!--Sensitive information in memory-->
+        <scene sceneID="npL-0e-KfM">
+            <objects>
+                <viewController id="cLD-LZ-seZ" customClass="SensitiveInformationDetailsVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4QP-f7-Xbj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1) A property named &quot;Password&quot; &amp; &quot;Username&quot;" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SQv-Qp-vRx">
+                                <rect key="frame" x="6" y="239" width="307" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2) An instance variable named &quot;passwd&quot;" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EzF-0c-oWj">
+                                <rect key="frame" x="7" y="269" width="307" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="g0c-tS-MFW">
+                                <rect key="frame" x="0.0" y="78" width="320" height="303"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Let's assume this is some application that a user has logged into already and is happily navigating. It is possible that the user's credentials are still stored in the memory of the application and hence accessible to an attaker. Your task is to find out the following things.</string>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sensitive information in memory" id="FGN-4C-C1W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NlX-UL-keN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8494" y="-3771"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="39h-mu-FoC">
+            <objects>
+                <navigationController id="6xf-Dd-6wO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YTO-qN-7Bu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k1b-xJ-GVl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Dxz-g1-02p" kind="relationship" relationship="rootViewController" id="Bdt-Wh-uPZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Kh-Rz-UdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8773" y="-3105"/>
+        </scene>
+        <!--Sensitive information in memory-->
+        <scene sceneID="I3f-H3-4Zg">
+            <objects>
+                <viewController id="Dxz-g1-02p" customClass="SensitiveInformationVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hSY-7t-5nr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ADo-5y-xaF">
+                                <rect key="frame" x="88" y="253" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start Challenge">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cLD-LZ-seZ" kind="push" id="lXQ-Gl-CcN"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="AlX-KY-cwt">
+                                <rect key="frame" x="0.0" y="74" width="320" height="237"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Some applications stored sensitive information in the memory of the application even when it's not required. This could happen when the developer creates properties or instance variables that might contain confidential information but forgets to remove them after they have been used.</string>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sensitive information in memory" id="Hd3-LU-PHt">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" style="done" id="zgh-e1-Y9Y"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLQ-0h-lAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8983" y="-3771"/>
+        </scene>
+        <!--Side Channel Data Leakage-->
         <scene sceneID="OS3-SQ-PvC">
             <objects>
                 <viewController id="hQK-DD-b5f" customClass="SideChannelDataLeakageVC" sceneMemberID="viewController">
@@ -429,13 +540,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="This kind of vulnerability occurs when sensitive data is leaked accidentally by the application." id="hdJ-Qb-lCe">
-                                <rect key="frame" x="0.0" y="68" width="320" height="289"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lyl-OO-S3t">
                                 <rect key="frame" x="0.0" y="161" width="320" height="196"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -446,6 +550,13 @@
                                     <outlet property="delegate" destination="hQK-DD-b5f" id="Tds-Wy-Juf"/>
                                 </connections>
                             </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="This kind of vulnerability occurs when sensitive data is leaked accidentally by the application." id="hdJ-Qb-lCe">
+                                <rect key="frame" x="0.0" y="68" width="320" height="289"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -471,7 +582,7 @@
             </objects>
             <point key="canvasLocation" x="-5923" y="-3421"/>
         </scene>
-        <!--Side Channel Data Leakage DetailsVC - Side Channel Data Leakage-->
+        <!--Side Channel Data Leakage-->
         <scene sceneID="8yf-CE-DMF">
             <objects>
                 <viewController id="Wck-vk-5qk" customClass="SideChannelDataLeakageDetailsVC" sceneMemberID="viewController">
@@ -630,19 +741,19 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="1WP-Cj-ajS">
-                                        <rect key="frame" x="13" y="7" width="297" height="290"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">One of the features of iOS is that it takes a screenshot of the application when it enters into background. This screenshot is then shown for some time when user taps on the app again to bring it to foreground while the app content is loaded in the background. This is done in order to provide a seamless experience. However, sometimes the screenshot may contain important information and since the screenshot is stored in the applicaton sandbox without proper protection, it can be obtained quite easily. Your task is to fill some data in the text field below, then take the app into the background and find the application screenshot showing the data entered in this text field.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Please answer this security question." id="jSX-rX-ces">
                                         <rect key="frame" x="14" y="293" width="297" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="1WP-Cj-ajS">
+                                        <rect key="frame" x="13" y="8" width="297" height="290"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">One of the features of iOS is that it takes a screenshot of the application when it enters into background. This screenshot is then shown for some time when user taps on the app again to bring it to foreground while the app content is loaded in the background. This is done in order to provide a seamless experience. However, sometimes the screenshot may contain important information and since the screenshot is stored in the applicaton sandbox without proper protection, it can be obtained quite easily. Your task is to fill some data in the text field below, then take the app into the background and find the application screenshot showing the data entered in this text field.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -672,7 +783,7 @@
             </objects>
             <point key="canvasLocation" x="-5452" y="-3659"/>
         </scene>
-        <!--Table View Controller - Settings-->
+        <!--Settings-->
         <scene sceneID="lHf-CR-AlI">
             <objects>
                 <tableViewController storyboardIdentifier="SettingsViewController" id="o1Q-7N-iz3" sceneMemberID="viewController">
@@ -719,7 +830,7 @@
             </objects>
             <point key="canvasLocation" x="-4576" y="-1594"/>
         </scene>
-        <!--Learn View Controller - Learn iOS Application Security-->
+        <!--Learn iOS Application Security-->
         <scene sceneID="ewU-ds-QhC">
             <objects>
                 <viewController id="Bok-o5-Bvx" customClass="LearnViewController" sceneMemberID="viewController">
@@ -774,7 +885,7 @@
             </objects>
             <point key="canvasLocation" x="-705" y="-1370"/>
         </scene>
-        <!--Insecure Data StorageVC - Insecure Data Storage-->
+        <!--Insecure Data Storage-->
         <scene sceneID="s4V-JV-JfF">
             <objects>
                 <viewController id="hdK-Th-JDv" customClass="InsecureDataStorageVC" sceneMemberID="viewController">
@@ -829,7 +940,7 @@
             </objects>
             <point key="canvasLocation" x="-2009" y="-1478"/>
         </scene>
-        <!--Insecure Data Storage VulnVC - Insecure Data Storage-->
+        <!--Insecure Data Storage-->
         <scene sceneID="fX0-2Z-F4K">
             <objects>
                 <viewController id="i23-yJ-Lii" customClass="InsecureDataStorageVulnVC" sceneMemberID="viewController">
@@ -1133,7 +1244,7 @@
             </objects>
             <point key="canvasLocation" x="-1385" y="-2198"/>
         </scene>
-        <!--Jailbreak DetectionVC - Jailbreak Detection-->
+        <!--Jailbreak Detection-->
         <scene sceneID="FYj-I5-lDP">
             <objects>
                 <viewController id="38B-u5-VEf" customClass="JailbreakDetectionVC" sceneMemberID="viewController">
@@ -1268,7 +1379,7 @@
             </objects>
             <point key="canvasLocation" x="-338" y="-660"/>
         </scene>
-        <!--Runtime ManipulationVC - Runtime Manipulation-->
+        <!--Runtime Manipulation-->
         <scene sceneID="jZs-Oj-tkn">
             <objects>
                 <viewController id="mwg-RL-cKq" customClass="RuntimeManipulationVC" sceneMemberID="viewController">
@@ -1338,7 +1449,7 @@
                                     <color key="titleColor" red="0.87450980389999999" green="0.72941176470000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8XW-Hq-qOZ" kind="push" customClass="ECSlidingSegue" id="N5G-O4-iS7"/>
+                                    <segue destination="8XW-Hq-qOZ" kind="push" id="N5G-O4-iS7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q7R-td-8Fd">
@@ -1395,7 +1506,7 @@
             </objects>
             <point key="canvasLocation" x="-1269" y="2264"/>
         </scene>
-        <!--Runtime Manipulation DetailsVC - Runtime Manipulation-->
+        <!--Runtime Manipulation-->
         <scene sceneID="226-A1-huk">
             <objects>
                 <viewController id="8XW-Hq-qOZ" customClass="RuntimeManipulationDetailsVC" sceneMemberID="viewController">
@@ -1468,7 +1579,7 @@
             </objects>
             <point key="canvasLocation" x="-936" y="1327"/>
         </scene>
-        <!--Runtime Manipulation SuccessVC - Runtime Manipulation-->
+        <!--Runtime Manipulation-->
         <scene sceneID="s5z-1q-PqW">
             <objects>
                 <viewController id="5xJ-MS-CJp" customClass="RuntimeManipulationSuccessVC" sceneMemberID="viewController">
@@ -1565,7 +1676,7 @@
             </objects>
             <point key="canvasLocation" x="-1679" y="2264"/>
         </scene>
-        <!--Application PatchingVC - Binary Patching-->
+        <!--Binary Patching-->
         <scene sceneID="jtk-hp-dx9">
             <objects>
                 <viewController id="g9c-Ju-vFC" customClass="ApplicationPatchingVC" sceneMemberID="viewController">
@@ -1628,7 +1739,7 @@
             </objects>
             <point key="canvasLocation" x="-913" y="91"/>
         </scene>
-        <!--Application Patching DetailsVC - Application Patching-->
+        <!--Application Patching-->
         <scene sceneID="gTM-U1-lEN">
             <objects>
                 <viewController id="LcH-cs-8Cs" customClass="ApplicationPatchingDetailsVC" sceneMemberID="viewController">
@@ -1810,7 +1921,7 @@
             </objects>
             <point key="canvasLocation" x="-1312" y="91"/>
         </scene>
-        <!--Runtime Manipulation SuccessVC - Application Patching-->
+        <!--Application Patching-->
         <scene sceneID="Nk6-ki-2Rl">
             <objects>
                 <viewController id="8OJ-Y1-Yvl" customClass="RuntimeManipulationSuccessVC" sceneMemberID="viewController">
@@ -1835,7 +1946,7 @@
             </objects>
             <point key="canvasLocation" x="-109" y="91"/>
         </scene>
-        <!--Transport Layer ProtectionVC - Transport Layer Protection-->
+        <!--Transport Layer Protection-->
         <scene sceneID="KCF-hM-eis">
             <objects>
                 <viewController id="cvs-xS-bXH" customClass="TransportLayerProtectionVC" sceneMemberID="viewController">
@@ -2092,7 +2203,7 @@
             </objects>
             <point key="canvasLocation" x="-2540" y="527"/>
         </scene>
-        <!--Jailbreak DetectionVC - About-->
+        <!--About-->
         <scene sceneID="bvn-fF-Ed0">
             <objects>
                 <viewController id="eNU-b7-cLC" customClass="JailbreakDetectionVC" sceneMemberID="viewController">
@@ -2146,7 +2257,7 @@
             </objects>
             <point key="canvasLocation" x="-2081" y="534"/>
         </scene>
-        <!--Client Side InjectionVC - Client Side Injection-->
+        <!--Client Side Injection-->
         <scene sceneID="fyg-rH-Bcy">
             <objects>
                 <viewController id="oQ8-T6-Zmx" customClass="ClientSideInjectionVC" sceneMemberID="viewController">
@@ -2189,7 +2300,7 @@
             </objects>
             <point key="canvasLocation" x="-5785" y="-182"/>
         </scene>
-        <!--Client Side Injection DetailsVC - Client Side Injection-->
+        <!--Client Side Injection-->
         <scene sceneID="6xv-7o-N8s">
             <objects>
                 <viewController id="6wT-54-kzu" customClass="ClientSideInjectionDetailsVC" sceneMemberID="viewController">
@@ -2335,7 +2446,7 @@
             </objects>
             <point key="canvasLocation" x="-4616" y="-10"/>
         </scene>
-        <!--Broken CryptographyVC - Broken Cryptography-->
+        <!--Broken Cryptography-->
         <scene sceneID="Ysc-gm-a4n">
             <objects>
                 <viewController id="vMb-g6-RuC" customClass="BrokenCryptographyVC" sceneMemberID="viewController">
@@ -2396,7 +2507,7 @@
             </objects>
             <point key="canvasLocation" x="-5573" y="-1136"/>
         </scene>
-        <!--Broken Cryptography DetailsVC - Broken Cryptography-->
+        <!--Broken Cryptography-->
         <scene sceneID="xPq-3l-rAi">
             <objects>
                 <viewController id="n3R-8V-gzK" customClass="BrokenCryptographyDetailsVC" sceneMemberID="viewController">
@@ -2546,7 +2657,7 @@
             </objects>
             <point key="canvasLocation" x="-4650" y="-912"/>
         </scene>
-        <!--Solutions View Controller - Solutions-->
+        <!--Solutions-->
         <scene sceneID="vlQ-Pq-HPg">
             <objects>
                 <viewController id="APd-u4-s6y" customClass="SolutionsViewController" sceneMemberID="viewController">
@@ -2651,7 +2762,7 @@
             </objects>
             <point key="canvasLocation" x="-3404" y="-2146"/>
         </scene>
-        <!--Security Decision Via Untrusted InputVC - Security Decisions via Untrusted Input-->
+        <!--Security Decisions via Untrusted Input-->
         <scene sceneID="IGl-zc-3r6">
             <objects>
                 <viewController id="BpK-Iw-f4O" customClass="SecurityDecisionViaUntrustedInputVC" sceneMemberID="viewController">
@@ -2682,19 +2793,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Security Decisions via Untrusted Input" id="CEf-gX-rhe">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="TdJ-Is-vB3">
-                            <connections>
-                                <segue destination="M33-in-7Tj" kind="unwind" unwindAction="unwindToMenuViewController:" id="fsR-mH-LS4"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="JWR-YI-N6E"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HWY-5Y-F4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="M33-in-7Tj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-2907" y="-3238"/>
         </scene>
-        <!--Security Decisions Via Untrusted Input DetailsVC - Security Decisions Via Untrusted Input-->
+        <!--Security Decisions Via Untrusted Input-->
         <scene sceneID="AZs-8j-Rpr">
             <objects>
                 <viewController id="hUT-z6-4mp" customClass="SecurityDecisionsViaUntrustedInputDetailsVC" sceneMemberID="viewController">
@@ -2907,9 +3013,9 @@
                     </cells>
                 </tableViewSection>
             </objects>
-            <point key="canvasLocation" x="-6604" y="-3608"/>
+            <point key="canvasLocation" x="-7167" y="-3406"/>
         </scene>
-        <!--Piracy DetectionVC - Piracy Detection-->
+        <!--Piracy Detection-->
         <scene sceneID="KmX-DP-orB">
             <objects>
                 <viewController id="Vdr-3H-iJX" customClass="PiracyDetectionVC" sceneMemberID="viewController">
@@ -2972,7 +3078,7 @@
                     <barButtonItem key="leftBarButtonItem" title="Menu" id="3g6-GA-GKl"/>
                 </navigationItem>
             </objects>
-            <point key="canvasLocation" x="-6975" y="-3737"/>
+            <point key="canvasLocation" x="-6655" y="-3763"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mJQ-js-Ytf">
