@@ -78,7 +78,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Id-he-uM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="WnP-X0-88p" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-2669" y="2332"/>
+            <point key="canvasLocation" x="-9821" y="-2616"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QF9-AV-FBa">
@@ -96,7 +96,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vii-W6-ROi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3090" y="2366"/>
+            <point key="canvasLocation" x="-10184" y="-2538"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="2Z5-HA-fFn">
@@ -128,6 +128,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="RxQ-nn-BiB" kind="custom" customClass="ECSlidingSegue" id="2Eh-bq-txr"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="beY-51-3rD" style="IBUITableViewCellStyleDefault" id="Gc4-jh-q6V">
                                         <rect key="frame" x="0.0" y="99" width="320" height="44"/>
@@ -438,7 +441,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rY-v0-J5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9343" y="-2949"/>
+            <point key="canvasLocation" x="-10571" y="-2605"/>
         </scene>
         <!--Sensitive information in memory-->
         <scene sceneID="npL-0e-KfM">
@@ -448,7 +451,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1) A property named &quot;Password&quot; &amp; &quot;Username&quot;" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SQv-Qp-vRx">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1) A couple of properties with the name &quot;Password&quot; &amp; &quot;Username&quot;" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SQv-Qp-vRx">
                                 <rect key="frame" x="6" y="239" width="307" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -463,10 +466,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="g0c-tS-MFW">
-                                <rect key="frame" x="0.0" y="78" width="320" height="303"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="303"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Let's assume this is some application that a user has logged into already and is happily navigating. It is possible that the user's credentials are still stored in the memory of the application and hence accessible to an attaker. Your task is to find out the following things.</string>
+                                <string key="text">Let's assume this is some application that a user has logged in to already and is happily navigating. It is possible that the user's credentials are still stored in the memory of the application and hence accessible to an attaker. Your task is to find out the following things.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -494,7 +497,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Kh-Rz-UdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8773" y="-3105"/>
+            <point key="canvasLocation" x="-10571" y="-3793"/>
         </scene>
         <!--Sensitive information in memory-->
         <scene sceneID="I3f-H3-4Zg">
@@ -504,8 +507,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="AlX-KY-cwt">
+                                <rect key="frame" x="0.0" y="58" width="320" height="163"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Some applications store sensitive information in the memory of the application even when it's not required. This could happen when the developer creates properties or instance variables that might contain confidential information but forgets to remove them after they have been used.</string>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ADo-5y-xaF">
-                                <rect key="frame" x="47" y="253" width="226" height="30"/>
+                                <rect key="frame" x="47" y="229" width="226" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Challenge">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -514,14 +525,6 @@
                                     <segue destination="cLD-LZ-seZ" kind="push" id="lXQ-Gl-CcN"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="AlX-KY-cwt">
-                                <rect key="frame" x="0.0" y="74" width="320" height="163"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Some applications stored sensitive information in the memory of the application even when it's not required. This could happen when the developer creates properties or instance variables that might contain confidential information but forgets to remove them after they have been used.</string>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2399,7 +2402,7 @@
                     <barButtonItem key="leftBarButtonItem" title="Menu" id="wvI-bR-DxR"/>
                 </navigationItem>
             </objects>
-            <point key="canvasLocation" x="-5713" y="499"/>
+            <point key="canvasLocation" x="-7529" y="283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4MG-Nc-DHt">
@@ -3041,7 +3044,7 @@
                     </cells>
                 </tableViewSection>
             </objects>
-            <point key="canvasLocation" x="-7167" y="-3406"/>
+            <point key="canvasLocation" x="-9943" y="234"/>
         </scene>
         <!--Piracy Detection-->
         <scene sceneID="KmX-DP-orB">
@@ -3179,7 +3182,7 @@
                     </cells>
                 </tableViewSection>
             </objects>
-            <point key="canvasLocation" x="-7548" y="-2949"/>
+            <point key="canvasLocation" x="-10540" y="-525"/>
         </scene>
     </scenes>
     <resources>
