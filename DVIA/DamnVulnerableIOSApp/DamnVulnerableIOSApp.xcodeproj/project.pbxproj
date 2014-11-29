@@ -162,6 +162,8 @@
 		F64B87B719E02CB2005AB265 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87AB19E02CB2005AB265 /* ECSlidingViewController.m */; };
 		F64B87B819E02CB2005AB265 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87AD19E02CB2005AB265 /* UIViewController+ECSlidingViewController.m */; };
 		F64B87B919E02CB2005AB265 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87AD19E02CB2005AB265 /* UIViewController+ECSlidingViewController.m */; };
+		F66C9CC21A29E42C00DDA15B /* DVIA-cert.cer in Resources */ = {isa = PBXBuildFile; fileRef = F66C9CC11A29E42C00DDA15B /* DVIA-cert.cer */; };
+		F66C9CCC1A2A137C00DDA15B /* google.co.uk.cer in Resources */ = {isa = PBXBuildFile; fileRef = F66C9CCB1A2A137C00DDA15B /* google.co.uk.cer */; };
 		F6E9BF5619E41334003C36FB /* SensitiveInformationDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E9BF5519E41334003C36FB /* SensitiveInformationDetailsVC.m */; };
 		F6E9BF5719E41334003C36FB /* SensitiveInformationDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E9BF5519E41334003C36FB /* SensitiveInformationDetailsVC.m */; };
 		F6E9BF5A19E41417003C36FB /* SensitiveInformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E9BF5919E41417003C36FB /* SensitiveInformationVC.m */; };
@@ -320,6 +322,8 @@
 		F64B87AB19E02CB2005AB265 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECSlidingViewController.m; path = "Third Party Classes/ECSlidingViewController/ECSlidingViewController.m"; sourceTree = "<group>"; };
 		F64B87AC19E02CB2005AB265 /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ECSlidingViewController.h"; path = "Third Party Classes/ECSlidingViewController/UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
 		F64B87AD19E02CB2005AB265 /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ECSlidingViewController.m"; path = "Third Party Classes/ECSlidingViewController/UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
+		F66C9CC11A29E42C00DDA15B /* DVIA-cert.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DVIA-cert.cer"; sourceTree = SOURCE_ROOT; };
+		F66C9CCB1A2A137C00DDA15B /* google.co.uk.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = google.co.uk.cer; path = Resources/google.co.uk.cer; sourceTree = "<group>"; };
 		F6E9BF5419E41334003C36FB /* SensitiveInformationDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensitiveInformationDetailsVC.h; path = "View Controllers/SensitiveInformationDetailsVC.h"; sourceTree = "<group>"; };
 		F6E9BF5519E41334003C36FB /* SensitiveInformationDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensitiveInformationDetailsVC.m; path = "View Controllers/SensitiveInformationDetailsVC.m"; sourceTree = "<group>"; };
 		F6E9BF5819E41417003C36FB /* SensitiveInformationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensitiveInformationVC.h; path = "View Controllers/SensitiveInformationVC.h"; sourceTree = "<group>"; };
@@ -474,6 +478,7 @@
 		6E3742621873FB8900843DD1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F66C9CCB1A2A137C00DDA15B /* google.co.uk.cer */,
 				6E033F4C18B1D5E7006F8DAB /* menuIcon.png */,
 				6E033F4D18B1D5E7006F8DAB /* menuIcon@2x.png */,
 				6E033F4E18B1D5E7006F8DAB /* 120x120.png */,
@@ -696,6 +701,7 @@
 		6EFED8AA1870848E00FEFCB1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F66C9CC11A29E42C00DDA15B /* DVIA-cert.cer */,
 				6E3742621873FB8900843DD1 /* Resources */,
 				6EFED8AB1870848E00FEFCB1 /* DamnVulnerableIOSApp-Info.plist */,
 				6EFED8AC1870848E00FEFCB1 /* InfoPlist.strings */,
@@ -840,6 +846,7 @@
 				6E9BA764188018B30016714B /* menu-icon@2x.png in Resources */,
 				6E5A1AE9187AAF6400FAECA6 /* slider-active.png in Resources */,
 				6E5A1AE3187AADA800FAECA6 /* slider-bg.png in Resources */,
+				F66C9CC21A29E42C00DDA15B /* DVIA-cert.cer in Resources */,
 				6E033F6518B1D5E7006F8DAB /* 640_960_SplashScn.png in Resources */,
 				6E9BA75C188015CC0016714B /* header-bg.png in Resources */,
 				6E3742651873FBB000843DD1 /* main-bg.png in Resources */,
@@ -856,6 +863,7 @@
 				6E033F5518B1D5E7006F8DAB /* menuIcon.png in Resources */,
 				6E37427B1874A18300843DD1 /* card-bg@2x.png in Resources */,
 				6E3742671873FBB000843DD1 /* main-bg@2x.png in Resources */,
+				F66C9CCC1A2A137C00DDA15B /* google.co.uk.cer in Resources */,
 				6E033F6318B1D5E7006F8DAB /* 640x1136_SplashScn.png in Resources */,
 				6E033F5F18B1D5E7006F8DAB /* 72x72.png in Resources */,
 			);

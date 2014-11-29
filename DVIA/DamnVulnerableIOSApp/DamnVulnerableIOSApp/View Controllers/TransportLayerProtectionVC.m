@@ -9,12 +9,13 @@
 #import "TransportLayerProtectionVC.h"
 #import "UIViewController+ECSlidingViewController.h"
 
-@interface TransportLayerProtectionVC () <UITextFieldDelegate>
+@interface TransportLayerProtectionVC () <UITextFieldDelegate, NSURLConnectionDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *cardNoField;
 @property (strong, nonatomic) IBOutlet UITextField *cardOwnerNameField;
 @property (strong, nonatomic) IBOutlet UITextField *cardCVVfield;
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
+@property (nonatomic,assign) BOOL isSSLPinning;
 
 @end
 
@@ -50,13 +51,11 @@
 
 - (IBAction)sendOverHTTPTapped:(id)sender {
     NSURL *url = [NSURL URLWithString:@"http://google.com/"];
-    
     [self sendRequestOverUrl:url];
 }
 
 - (IBAction)sendOverHTTPSTapped:(id)sender {
     NSURL *url = [NSURL URLWithString:@"https://google.com/"];
-    
     [self sendRequestOverUrl:url];
 }
 
@@ -87,4 +86,62 @@
     return YES;
 }
 
+- (IBAction)sendUsingSSLPinning:(id)sender {
+    self.isSSLPinning = YES;
+    NSURL *httpsURL = [NSURL URLWithString:@"https://www.google.co.uk"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:httpsURL cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:10.0f];
+    NSURLConnection *connection = [NSURLConnection connectionWithRequest:request delegate:self];
+    [connection start];
+}
+
+#pragma mark NSURLConnection Delegate Methods
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+   //Ignore
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    //Ignore
+}
+
+- (NSCachedURLResponse *)connection:(NSURLConnection *)connection
+                  willCacheResponse:(NSCachedURLResponse*)cachedResponse {
+    // Return nil to indicate not necessary to store a cached response for this connection
+    return nil;
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    // The request is complete and data has been received
+    // You can parse the stuff in your instance variable now
+    self.isSSLPinning = NO;
+    
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    // The request has failed for some reason!
+    // Check the error var
+}
+
+- (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
+{
+    //Don't check for valid certificate when the user taps on "Send over HTTPs"
+    if(self.isSSLPinning){
+    self.isSSLPinning = NO;
+    SecTrustRef serverTrust = challenge.protectionSpace.serverTrust;
+    SecCertificateRef certificate = SecTrustGetCertificateAtIndex(serverTrust, 0);
+    NSData *remoteCertificateData = CFBridgingRelease(SecCertificateCopyData(certificate));
+    NSData *skabberCertData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"google.co.uk" ofType:@"cer"]];
+    
+    if ([remoteCertificateData isEqualToData:skabberCertData]) {
+        [DamnVulnerableAppUtilities showAlertWithMessage:@"Request Sent using SSL pinning, lookout !"];
+
+        NSURLCredential *credential = [NSURLCredential credentialForTrust:serverTrust];
+        [[challenge sender] useCredential:credential forAuthenticationChallenge:challenge];
+    }
+    else {
+        [DamnVulnerableAppUtilities showAlertWithMessage:@"Certificate validation failed"];
+        [[challenge sender] cancelAuthenticationChallenge:challenge];
+    }
+    }
+}
 @end
