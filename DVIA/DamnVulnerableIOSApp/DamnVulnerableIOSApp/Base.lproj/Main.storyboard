@@ -109,7 +109,7 @@
                         <color key="separatorColor" red="0.99900205289999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="DamnVulnerableIOSApp.com" footerTitle="Version 1.3" id="I6U-Jm-85w">
+                            <tableViewSection headerTitle="DamnVulnerableiOSApp.com" footerTitle="Version 1.4" id="I6U-Jm-85w">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pZG-f5-3Vp" style="IBUITableViewCellStyleDefault" id="Dvv-bd-LHt">
                                         <rect key="frame" x="0.0" y="55" width="320" height="44"/>
@@ -146,6 +146,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="8al-wk-2gn" kind="custom" customClass="ECSlidingSegue" id="2bf-Ay-3Yu"/>
                                         </connections>
@@ -1119,6 +1120,21 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="Bq2-LX-2hY">
+                                <rect key="frame" x="-3" y="56" width="325" height="369"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="g9Y-0d-wsq">
+                                        <rect key="frame" x="20" y="23" width="297" height="231"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Applications using UIWebView to load web pages often use caching to speed up the response time. In some cases, they could cache a response that will contain confidential information. Your task is to find the place where the requests and responses are stored in the application sandbox. Hint: The table names in the database that cache the data start with cf_url.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1136,6 +1152,7 @@
                         <outlet property="userDefaultsView" destination="Yot-0T-GCY" id="2t1-ea-tvo"/>
                         <outlet property="userPasswordTextField" destination="daz-Yi-mLj" id="xD0-P6-6gl"/>
                         <outlet property="usernameTextField" destination="17W-Vi-gCU" id="IPx-15-KRr"/>
+                        <outlet property="webkitView" destination="Bq2-LX-2hY" id="Ybn-qN-Zah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GcJ-gq-LHi" userLabel="First Responder" sceneMemberID="firstResponder"/>

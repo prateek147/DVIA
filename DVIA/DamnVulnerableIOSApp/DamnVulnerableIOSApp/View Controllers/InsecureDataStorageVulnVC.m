@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIView *keychainView;
 @property (weak, nonatomic) IBOutlet UIView *plistView;
 @property (weak, nonatomic) IBOutlet UIView *coreDataView;
+@property (weak, nonatomic) IBOutlet UIView *webkitView;
+
 
 @property (strong, nonatomic) IBOutlet UITextField *userDefaultsTextField;
 @property (strong, nonatomic) IBOutlet UITextField *usernameTextField;
@@ -70,6 +72,8 @@
         case InsecureDataStorageCoreData:
             [self.coreDataView setHidden:NO];
             break;
+        case InsecureDataStorageWebKit:
+            [self.webkitView setHidden:NO];
         default:
             break;
     }

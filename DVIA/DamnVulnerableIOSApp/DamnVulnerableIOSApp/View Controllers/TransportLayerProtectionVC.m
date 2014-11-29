@@ -134,14 +134,13 @@
     
     if ([remoteCertificateData isEqualToData:skabberCertData]) {
         [DamnVulnerableAppUtilities showAlertWithMessage:@"Request Sent using SSL pinning, lookout !"];
-
-        NSURLCredential *credential = [NSURLCredential credentialForTrust:serverTrust];
+         NSURLCredential *credential = [NSURLCredential credentialForTrust:serverTrust];
         [[challenge sender] useCredential:credential forAuthenticationChallenge:challenge];
     }
     else {
-        [DamnVulnerableAppUtilities showAlertWithMessage:@"Certificate validation failed"];
+        [DamnVulnerableAppUtilities showAlertWithMessage:@"Certificate validation failed. You will have to do better than this, my boy!!"];
         [[challenge sender] cancelAuthenticationChallenge:challenge];
-    }
+        }
     }
 }
 @end
