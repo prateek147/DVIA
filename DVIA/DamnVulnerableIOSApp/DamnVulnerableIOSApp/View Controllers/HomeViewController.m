@@ -43,4 +43,16 @@
     [DamnVulnerableAppUtilities pushWebVCWithURL:kHomePage viewController:self];
 }
 
+- (IBAction)twitterHandleTapped:(id)sender {
+    NSString *twitterHandleURL = @"twitter://prateekg147";
+    if([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:twitterHandleURL]]){
+        NSURL *url = [NSURL URLWithString:twitterHandleURL];
+        [[UIApplication sharedApplication] openURL:url];
+    }
+    else{
+        [DamnVulnerableAppUtilities pushWebVCWithURL:twitterHandleURL viewController:self];
+    }
+}
+
+
 @end

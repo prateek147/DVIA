@@ -133,7 +133,7 @@
     NSData *skabberCertData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"google.co.uk" ofType:@"cer"]];
     
     if ([remoteCertificateData isEqualToData:skabberCertData]) {
-        [DamnVulnerableAppUtilities showAlertWithMessage:@"Request Sent using SSL pinning, lookout !"];
+        [DamnVulnerableAppUtilities showAlertWithMessage:@"Request Sent using pinning, lookout !"];
          NSURLCredential *credential = [NSURLCredential credentialForTrust:serverTrust];
         [[challenge sender] useCredential:credential forAuthenticationChallenge:challenge];
     }
