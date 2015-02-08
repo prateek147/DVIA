@@ -147,6 +147,8 @@
 		6EFED8CF1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */; };
 		9F00E2941A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F00E2931A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m */; };
 		9F00E2981A87DFEC00373A35 /* AttackingParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F00E2971A87DFEC00373A35 /* AttackingParseViewController.m */; };
+		9F00E29C1A87E43700373A35 /* ParseFirstChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F00E29B1A87E43700373A35 /* ParseFirstChallengeViewController.m */; };
+		9F45E6BC1A87E5000049AF03 /* FirstParseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6BB1A87E5000049AF03 /* FirstParseClass.m */; };
 		F60C536F19E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F60C537019E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F64B879819E02AB8005AB265 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B879719E02AB8005AB265 /* Parse.framework */; };
@@ -308,6 +310,10 @@
 		9F00E2931A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttackingThirdPartyLibrariesTableViewController.m; path = "View Controllers/AttackingThirdPartyLibrariesTableViewController.m"; sourceTree = "<group>"; };
 		9F00E2961A87DFEC00373A35 /* AttackingParseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttackingParseViewController.h; path = "View Controllers/AttackingParseViewController.h"; sourceTree = "<group>"; };
 		9F00E2971A87DFEC00373A35 /* AttackingParseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttackingParseViewController.m; path = "View Controllers/AttackingParseViewController.m"; sourceTree = "<group>"; };
+		9F00E29A1A87E43700373A35 /* ParseFirstChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseFirstChallengeViewController.h; path = "View Controllers/ParseFirstChallengeViewController.h"; sourceTree = "<group>"; };
+		9F00E29B1A87E43700373A35 /* ParseFirstChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseFirstChallengeViewController.m; path = "View Controllers/ParseFirstChallengeViewController.m"; sourceTree = "<group>"; };
+		9F45E6BA1A87E5000049AF03 /* FirstParseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstParseClass.h; path = Model/FirstParseClass.h; sourceTree = "<group>"; };
+		9F45E6BB1A87E5000049AF03 /* FirstParseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstParseClass.m; path = Model/FirstParseClass.m; sourceTree = "<group>"; };
 		C91BA9DC1955B84A00B75BAC /* Parse */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Parse; path = Parse.framework/Versions/1.2.18/Parse; sourceTree = "<group>"; };
 		F60C536D19E4703600C63A0D /* SSLPinningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSLPinningVC.h; path = "View Controllers/SSLPinningVC.h"; sourceTree = "<group>"; };
 		F60C536E19E4703600C63A0D /* SSLPinningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSLPinningVC.m; path = "View Controllers/SSLPinningVC.m"; sourceTree = "<group>"; };
@@ -441,6 +447,7 @@
 				6E1729F91871848A00C162DB /* User.m */,
 				6E4933BD18CF09C90099CD74 /* Model.h */,
 				6E4933BE18CF09C90099CD74 /* Model.m */,
+				9F45E6BD1A87E5040049AF03 /* Parse Models */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -743,8 +750,19 @@
 			children = (
 				9F00E2961A87DFEC00373A35 /* AttackingParseViewController.h */,
 				9F00E2971A87DFEC00373A35 /* AttackingParseViewController.m */,
+				9F00E29A1A87E43700373A35 /* ParseFirstChallengeViewController.h */,
+				9F00E29B1A87E43700373A35 /* ParseFirstChallengeViewController.m */,
 			);
 			name = "Attacking Parse";
+			sourceTree = "<group>";
+		};
+		9F45E6BD1A87E5040049AF03 /* Parse Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F45E6BA1A87E5000049AF03 /* FirstParseClass.h */,
+				9F45E6BB1A87E5000049AF03 /* FirstParseClass.m */,
+			);
+			name = "Parse Models";
 			sourceTree = "<group>";
 		};
 		F64B879A19E02C7E005AB265 /* ECSlidingVC */ = {
@@ -930,6 +948,7 @@
 				6E37427518749FEA00843DD1 /* TransportLayerProtectionVC.m in Sources */,
 				6E5A1B0C187AB88700FAECA6 /* RNOpenSSLCryptor.m in Sources */,
 				F60C536F19E4703600C63A0D /* SSLPinningVC.m in Sources */,
+				9F45E6BC1A87E5000049AF03 /* FirstParseClass.m in Sources */,
 				6E5A1B10187AB88700FAECA6 /* RNOpenSSLEncryptor.m in Sources */,
 				6E4933C918CF34320099CD74 /* PiracyDetectionVC.m in Sources */,
 				6E1729FA1871848A00C162DB /* User.m in Sources */,
@@ -957,6 +976,7 @@
 				6E5A1AF0187AB41100FAECA6 /* BrokenCryptographyVC.m in Sources */,
 				6E63B66018AAAA0600B438A0 /* SideChannelDataLeakageDetailsVC.m in Sources */,
 				6E172A021873343800C162DB /* JailbreakDetectionVC.m in Sources */,
+				9F00E29C1A87E43700373A35 /* ParseFirstChallengeViewController.m in Sources */,
 				6E5A1B0E187AB88700FAECA6 /* RNOpenSSLDecryptor.m in Sources */,
 				6E1729E518716BE700C162DB /* PDKeychainBindings.m in Sources */,
 				F64B87B019E02CB2005AB265 /* ECSlidingAnimationController.m in Sources */,

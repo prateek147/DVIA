@@ -2383,7 +2383,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DxS-AH-cKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8904" y="21"/>
+            <point key="canvasLocation" x="-9655" y="-435"/>
         </scene>
         <!--Client Side Injection-->
         <scene sceneID="6xv-7o-N8s">
@@ -3304,7 +3304,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTb-Gb-8VF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="jCl-AE-D5q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-8444" y="21"/>
+            <point key="canvasLocation" x="-9195" y="-435"/>
         </scene>
         <!--Attacking third party libraries-->
         <scene sceneID="Mqk-6q-KIm">
@@ -3321,6 +3321,9 @@
                                 <state key="normal" title="START CHALLENGE">
                                     <color key="titleColor" red="0.87450980389999999" green="0.72941176470000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="AGJ-87-Tz1" kind="push" id="irT-Oi-gQn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qnd-i1-CB7">
                                 <rect key="frame" x="13" y="250" width="291" height="44"/>
@@ -3348,7 +3351,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yif-xZ-TtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8032" y="21"/>
+            <point key="canvasLocation" x="-8783" y="-435"/>
+        </scene>
+        <!--Attacking third party libraries-->
+        <scene sceneID="ez6-G8-54V">
+            <objects>
+                <viewController id="AGJ-87-Tz1" userLabel="Attacking third party libraries" customClass="ParseFirstChallengeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="po0-5F-GT1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Secret keyword" minimumFontSize="17" id="hqg-Ny-Yed">
+                                <rect key="frame" x="16" y="84" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SMA-ku-bFQ">
+                                <rect key="frame" x="96" y="131" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test the input">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testButtonTapped:" destination="AGJ-87-Tz1" eventType="touchUpInside" id="OqG-cU-7jl"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" id="Zzd-qF-7bR">
+                                <rect key="frame" x="5" y="185" width="315" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You should do a couple of things: 1. Locate the Parse applicationId and clientKey. 2. Find the name of Parse class corresponding to this challenge somewhere in the application code. 3. Inspect this class, find the keyword and print it in the above textfield.</string>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Attacking Parse.com" id="SBF-rM-Fj1"/>
+                    <connections>
+                        <outlet property="inputTextField" destination="hqg-Ny-Yed" id="FNe-WL-Nhr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07H-sA-iKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8330" y="-648"/>
         </scene>
     </scenes>
     <resources>
