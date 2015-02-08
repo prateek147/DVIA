@@ -3268,7 +3268,7 @@
                         <sections>
                             <tableViewSection id="pzE-zG-hlE">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="TIO-32-YdS" style="IBUITableViewCellStyleDefault" id="dYR-74-1fN">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="TIO-32-YdS" style="IBUITableViewCellStyleDefault" id="dYR-74-1fN">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dYR-74-1fN" id="Ym5-xn-wgN">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -3281,6 +3281,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="toZ-bD-KOu" kind="push" id="9Nj-Rl-xRJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -3306,40 +3309,44 @@
         <!--Attacking third party libraries-->
         <scene sceneID="Mqk-6q-KIm">
             <objects>
-                <viewController id="toZ-bD-KOu" userLabel="Attacking third party libraries" customClass="SensitiveInformationVC" sceneMemberID="viewController">
+                <viewController id="toZ-bD-KOu" userLabel="Attacking third party libraries" customClass="AttackingParseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zmM-IF-CqW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vtl-xF-5Rx">
-                                <rect key="frame" x="67" y="242" width="150" height="22"/>
+                                <rect key="frame" x="76" y="308" width="150" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="START CHALLENGE">
                                     <color key="titleColor" red="0.87450980389999999" green="0.72941176470000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="OkU-Fu-e54">
-                                <rect key="frame" x="0.0" y="58" width="320" height="163"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Some applications store sensitive information in the memory of the application even when it's not required. This could happen when the developer creates properties or instance variables that might contain confidential information but forgets to remove them after they have been used.</string>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qnd-i1-CB7">
+                                <rect key="frame" x="13" y="250" width="291" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Read an article on Attacking Parse">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readArticleButtonTapped:" destination="toZ-bD-KOu" eventType="touchUpInside" id="msx-9K-Qh0"/>
+                                    <action selector="readArticleTapped:" destination="hdK-Th-JDv" eventType="touchUpInside" id="E2y-Uh-uge"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" id="f5Q-VQ-AhD">
+                                <rect key="frame" x="0.0" y="67" width="320" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Parse is a wonderful BaaS which helps with setting up backend infrastructure for your mobile application as fast as possible. Maybe just because of this simplicity many developers forget about a number of new security issues and vulnerabilities.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sensitive information in memory" id="7Rl-cL-nL6">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" style="done" id="K3H-7a-XKk">
-                            <connections>
-                                <segue destination="mTJ-as-aM2" kind="unwind" unwindAction="unwindToMenuViewController:" id="1cD-L7-JFb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Attacking Parse.com" id="7Rl-cL-nL6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yif-xZ-TtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="mTJ-as-aM2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-8032" y="21"/>
         </scene>

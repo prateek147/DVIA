@@ -35,6 +35,7 @@
 #define kArticleURLTransportLayer @"http://highaltitudehacks.com/2013/08/20/ios-application-security-part-11-analyzing-network-traffic-over-http-slash-https"
 #define kArticleURLBrokenCryptography @"http://highaltitudehacks.com/2014/01/17/ios-application-security-part-29-insecure-or-broken-cryptography"
 #define kArticleURLSchemes @"http://highaltitudehacks.com/2014/03/07/ios-application-security-part-30-attacking-url-schemes"
+#define kArticleParse @"http://highaltitudehacks.com/2015/01/24/ios-application-security-part-38-attacking-apps-using-parse"
 
 //Colours
 #define kNavigationTintColor [UIColor colorWithRed:223.0/255 green:186.0/255 blue:105.0/255 alpha:1.0]

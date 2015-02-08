@@ -146,6 +146,7 @@
 		6EFED8CD1870848E00FEFCB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EFED8CB1870848E00FEFCB1 /* InfoPlist.strings */; };
 		6EFED8CF1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */; };
 		9F00E2941A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F00E2931A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m */; };
+		9F00E2981A87DFEC00373A35 /* AttackingParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F00E2971A87DFEC00373A35 /* AttackingParseViewController.m */; };
 		F60C536F19E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F60C537019E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F64B879819E02AB8005AB265 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B879719E02AB8005AB265 /* Parse.framework */; };
@@ -305,6 +306,8 @@
 		6EFED8CE1870848E00FEFCB1 /* DamnVulnerableIOSAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DamnVulnerableIOSAppTests.m; sourceTree = "<group>"; };
 		9F00E2921A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttackingThirdPartyLibrariesTableViewController.h; path = "View Controllers/AttackingThirdPartyLibrariesTableViewController.h"; sourceTree = "<group>"; };
 		9F00E2931A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttackingThirdPartyLibrariesTableViewController.m; path = "View Controllers/AttackingThirdPartyLibrariesTableViewController.m"; sourceTree = "<group>"; };
+		9F00E2961A87DFEC00373A35 /* AttackingParseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttackingParseViewController.h; path = "View Controllers/AttackingParseViewController.h"; sourceTree = "<group>"; };
+		9F00E2971A87DFEC00373A35 /* AttackingParseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttackingParseViewController.m; path = "View Controllers/AttackingParseViewController.m"; sourceTree = "<group>"; };
 		C91BA9DC1955B84A00B75BAC /* Parse */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Parse; path = Parse.framework/Versions/1.2.18/Parse; sourceTree = "<group>"; };
 		F60C536D19E4703600C63A0D /* SSLPinningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSLPinningVC.h; path = "View Controllers/SSLPinningVC.h"; sourceTree = "<group>"; };
 		F60C536E19E4703600C63A0D /* SSLPinningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSLPinningVC.m; path = "View Controllers/SSLPinningVC.m"; sourceTree = "<group>"; };
@@ -730,8 +733,18 @@
 			children = (
 				9F00E2921A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.h */,
 				9F00E2931A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m */,
+				9F00E2991A87E08E00373A35 /* Attacking Parse */,
 			);
 			name = "Attacking third party libraries";
+			sourceTree = "<group>";
+		};
+		9F00E2991A87E08E00373A35 /* Attacking Parse */ = {
+			isa = PBXGroup;
+			children = (
+				9F00E2961A87DFEC00373A35 /* AttackingParseViewController.h */,
+				9F00E2971A87DFEC00373A35 /* AttackingParseViewController.m */,
+			);
+			name = "Attacking Parse";
 			sourceTree = "<group>";
 		};
 		F64B879A19E02C7E005AB265 /* ECSlidingVC */ = {
@@ -909,6 +922,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E63B65C18AAA8B800B438A0 /* SideChannelDataLeakageVC.m in Sources */,
+				9F00E2981A87DFEC00373A35 /* AttackingParseViewController.m in Sources */,
 				6EB7B3BF18899DCD00A4F353 /* SolutionsViewController.m in Sources */,
 				6E4933C418CF274C0099CD74 /* SFAntiPiracy.m in Sources */,
 				F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */,
