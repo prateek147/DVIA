@@ -148,13 +148,16 @@
 		9F00E2941A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F00E2931A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m */; };
 		9F00E2981A87DFEC00373A35 /* AttackingParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F00E2971A87DFEC00373A35 /* AttackingParseViewController.m */; };
 		9F00E29C1A87E43700373A35 /* ParseFirstChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F00E29B1A87E43700373A35 /* ParseFirstChallengeViewController.m */; };
+		9F0DEE861A87F67E00507260 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0DEE851A87F67E00507260 /* libsqlite3.dylib */; };
+		9F0DEE881A87F6A500507260 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0DEE871A87F6A500507260 /* Social.framework */; };
+		9F0DEE891A87F6C900507260 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B64A18A8FD9500B438A0 /* Accounts.framework */; };
 		9F45E6BC1A87E5000049AF03 /* FirstParseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6BB1A87E5000049AF03 /* FirstParseClass.m */; };
 		9F45E6C01A87EAD10049AF03 /* ParseSecondChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6BF1A87EAD10049AF03 /* ParseSecondChallengeViewController.m */; };
 		9F45E6C31A87ED510049AF03 /* SecondParseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6C21A87ED510049AF03 /* SecondParseClass.m */; };
+		9F45E6C71A87F5D80049AF03 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F45E6C51A87F5D80049AF03 /* Bolts.framework */; };
+		9F45E6C81A87F5D80049AF03 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F45E6C61A87F5D80049AF03 /* Parse.framework */; };
 		F60C536F19E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F60C537019E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
-		F64B879819E02AB8005AB265 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B879719E02AB8005AB265 /* Parse.framework */; };
-		F64B879919E02AB8005AB265 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64B879719E02AB8005AB265 /* Parse.framework */; };
 		F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */; };
 		F64B87AF19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */; };
 		F64B87B019E02CB2005AB265 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A419E02CB2005AB265 /* ECSlidingAnimationController.m */; };
@@ -314,16 +317,19 @@
 		9F00E2971A87DFEC00373A35 /* AttackingParseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttackingParseViewController.m; path = "View Controllers/AttackingParseViewController.m"; sourceTree = "<group>"; };
 		9F00E29A1A87E43700373A35 /* ParseFirstChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseFirstChallengeViewController.h; path = "View Controllers/ParseFirstChallengeViewController.h"; sourceTree = "<group>"; };
 		9F00E29B1A87E43700373A35 /* ParseFirstChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseFirstChallengeViewController.m; path = "View Controllers/ParseFirstChallengeViewController.m"; sourceTree = "<group>"; };
+		9F0DEE851A87F67E00507260 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9F0DEE871A87F6A500507260 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		9F45E6BA1A87E5000049AF03 /* FirstParseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstParseClass.h; path = Model/FirstParseClass.h; sourceTree = "<group>"; };
 		9F45E6BB1A87E5000049AF03 /* FirstParseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstParseClass.m; path = Model/FirstParseClass.m; sourceTree = "<group>"; };
 		9F45E6BE1A87EAD10049AF03 /* ParseSecondChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseSecondChallengeViewController.h; path = "View Controllers/ParseSecondChallengeViewController.h"; sourceTree = "<group>"; };
 		9F45E6BF1A87EAD10049AF03 /* ParseSecondChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseSecondChallengeViewController.m; path = "View Controllers/ParseSecondChallengeViewController.m"; sourceTree = "<group>"; };
 		9F45E6C11A87ED510049AF03 /* SecondParseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondParseClass.h; path = Model/SecondParseClass.h; sourceTree = "<group>"; };
 		9F45E6C21A87ED510049AF03 /* SecondParseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondParseClass.m; path = Model/SecondParseClass.m; sourceTree = "<group>"; };
+		9F45E6C51A87F5D80049AF03 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		9F45E6C61A87F5D80049AF03 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C91BA9DC1955B84A00B75BAC /* Parse */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Parse; path = Parse.framework/Versions/1.2.18/Parse; sourceTree = "<group>"; };
 		F60C536D19E4703600C63A0D /* SSLPinningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSLPinningVC.h; path = "View Controllers/SSLPinningVC.h"; sourceTree = "<group>"; };
 		F60C536E19E4703600C63A0D /* SSLPinningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSLPinningVC.m; path = "View Controllers/SSLPinningVC.m"; sourceTree = "<group>"; };
-		F64B879719E02AB8005AB265 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F64B87A119E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECPercentDrivenInteractiveTransition.h; path = "Third Party Classes/ECSlidingViewController/ECPercentDrivenInteractiveTransition.h"; sourceTree = "<group>"; };
 		F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECPercentDrivenInteractiveTransition.m; path = "Third Party Classes/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m"; sourceTree = "<group>"; };
 		F64B87A319E02CB2005AB265 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSlidingAnimationController.h; path = "Third Party Classes/ECSlidingViewController/ECSlidingAnimationController.h"; sourceTree = "<group>"; };
@@ -349,20 +355,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E63B64918A8F8BA00B438A0 /* SystemConfiguration.framework in Frameworks */,
-				6E63B64718A8F8A200B438A0 /* StoreKit.framework in Frameworks */,
-				6E63B64518A8F89C00B438A0 /* Security.framework in Frameworks */,
-				6E63B64318A8F89700B438A0 /* QuartzCore.framework in Frameworks */,
-				F64B879819E02AB8005AB265 /* Parse.framework in Frameworks */,
-				6E63B64118A8F89300B438A0 /* MobileCoreServices.framework in Frameworks */,
-				6E63B63F18A8F88E00B438A0 /* libz.dylib in Frameworks */,
-				6E63B63D18A8F88600B438A0 /* CoreLocation.framework in Frameworks */,
-				6EFED8A61870848E00FEFCB1 /* CoreGraphics.framework in Frameworks */,
-				6E63B63B18A8F87A00B438A0 /* CFNetwork.framework in Frameworks */,
+				9F0DEE891A87F6C900507260 /* Accounts.framework in Frameworks */,
+				9F0DEE881A87F6A500507260 /* Social.framework in Frameworks */,
+				9F0DEE861A87F67E00507260 /* libsqlite3.dylib in Frameworks */,
 				6E63B63918A8F87600B438A0 /* AudioToolbox.framework in Frameworks */,
+				6E63B63B18A8F87A00B438A0 /* CFNetwork.framework in Frameworks */,
+				6EFED8A61870848E00FEFCB1 /* CoreGraphics.framework in Frameworks */,
+				6E63B63D18A8F88600B438A0 /* CoreLocation.framework in Frameworks */,
+				6E63B63F18A8F88E00B438A0 /* libz.dylib in Frameworks */,
+				6E63B64118A8F89300B438A0 /* MobileCoreServices.framework in Frameworks */,
+				6E63B64318A8F89700B438A0 /* QuartzCore.framework in Frameworks */,
+				6E63B64518A8F89C00B438A0 /* Security.framework in Frameworks */,
+				6E63B64718A8F8A200B438A0 /* StoreKit.framework in Frameworks */,
+				6E63B64918A8F8BA00B438A0 /* SystemConfiguration.framework in Frameworks */,
+				9F45E6C81A87F5D80049AF03 /* Parse.framework in Frameworks */,
 				6E1729FD1871914100C162DB /* CoreData.framework in Frameworks */,
 				6EFED8A81870848E00FEFCB1 /* UIKit.framework in Frameworks */,
 				6EFED8A41870848E00FEFCB1 /* Foundation.framework in Frameworks */,
+				9F45E6C71A87F5D80049AF03 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EFED8C51870848E00FEFCB1 /* UIKit.framework in Frameworks */,
-				F64B879919E02AB8005AB265 /* Parse.framework in Frameworks */,
 				6EFED8C41870848E00FEFCB1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,7 +657,8 @@
 		6EFED8971870848E00FEFCB1 = {
 			isa = PBXGroup;
 			children = (
-				F64B879719E02AB8005AB265 /* Parse.framework */,
+				9F45E6C51A87F5D80049AF03 /* Bolts.framework */,
+				9F45E6C61A87F5D80049AF03 /* Parse.framework */,
 				6EFED8A91870848E00FEFCB1 /* DamnVulnerableIOSApp */,
 				6EFED8C81870848E00FEFCB1 /* DamnVulnerableIOSAppTests */,
 				6EFED8A21870848E00FEFCB1 /* Frameworks */,
@@ -668,6 +678,8 @@
 		6EFED8A21870848E00FEFCB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F0DEE871A87F6A500507260 /* Social.framework */,
+				9F0DEE851A87F67E00507260 /* libsqlite3.dylib */,
 				C91BA9DC1955B84A00B75BAC /* Parse */,
 				6E63B64A18A8FD9500B438A0 /* Accounts.framework */,
 				6E63B64818A8F8BA00B438A0 /* SystemConfiguration.framework */,
