@@ -12,7 +12,7 @@
 
 #import <Parse/Parse.h>
 
-@interface ParseFirstChallengeViewController ()
+@interface ParseFirstChallengeViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *inputTextField;
 
@@ -39,6 +39,11 @@
 - (void)showFailureAlert {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Failure" message:@"Well, your answer is not right." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alertView show];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (IBAction)testButtonTapped:(id)sender {
