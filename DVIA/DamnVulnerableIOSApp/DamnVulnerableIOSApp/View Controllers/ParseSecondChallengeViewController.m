@@ -12,7 +12,7 @@
 
 #import <Parse/Parse.h>
 
-@interface ParseSecondChallengeViewController ()
+@interface ParseSecondChallengeViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UILabel *codeLabel;
 
@@ -53,6 +53,11 @@
 - (void)showFailureAlert {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Failure" message:@"Something got wrong, we haven't found a corresponding record." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alertView show];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (IBAction)testButtonTapped:(id)sender {
