@@ -151,6 +151,7 @@
 		9F0DEE861A87F67E00507260 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0DEE851A87F67E00507260 /* libsqlite3.dylib */; };
 		9F0DEE881A87F6A500507260 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0DEE871A87F6A500507260 /* Social.framework */; };
 		9F0DEE891A87F6C900507260 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B64A18A8FD9500B438A0 /* Accounts.framework */; };
+		9F3817D81A9F89FF00D9D087 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3817D71A9F89FF00D9D087 /* Realm.framework */; };
 		9F45E6BC1A87E5000049AF03 /* FirstParseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6BB1A87E5000049AF03 /* FirstParseClass.m */; };
 		9F45E6C01A87EAD10049AF03 /* ParseSecondChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6BF1A87EAD10049AF03 /* ParseSecondChallengeViewController.m */; };
 		9F45E6C31A87ED510049AF03 /* SecondParseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6C21A87ED510049AF03 /* SecondParseClass.m */; };
@@ -319,6 +320,7 @@
 		9F00E29B1A87E43700373A35 /* ParseFirstChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseFirstChallengeViewController.m; path = "View Controllers/ParseFirstChallengeViewController.m"; sourceTree = "<group>"; };
 		9F0DEE851A87F67E00507260 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9F0DEE871A87F6A500507260 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9F3817D71A9F89FF00D9D087 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		9F45E6BA1A87E5000049AF03 /* FirstParseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstParseClass.h; path = Model/FirstParseClass.h; sourceTree = "<group>"; };
 		9F45E6BB1A87E5000049AF03 /* FirstParseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstParseClass.m; path = Model/FirstParseClass.m; sourceTree = "<group>"; };
 		9F45E6BE1A87EAD10049AF03 /* ParseSecondChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseSecondChallengeViewController.h; path = "View Controllers/ParseSecondChallengeViewController.h"; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 				6EFED8A81870848E00FEFCB1 /* UIKit.framework in Frameworks */,
 				6EFED8A41870848E00FEFCB1 /* Foundation.framework in Frameworks */,
 				9F45E6C71A87F5D80049AF03 /* Bolts.framework in Frameworks */,
+				9F3817D81A9F89FF00D9D087 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +431,7 @@
 		6E1729E018716BBD00C162DB /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				9F3817D61A9F89F500D9D087 /* Realm */,
 				F64B879A19E02C7E005AB265 /* ECSlidingVC */,
 				6E4933C118CF27370099CD74 /* SFAntiPiracy */,
 				6E5A1AF2187AB56400FAECA6 /* RNCryptor */,
@@ -774,6 +778,14 @@
 				9F45E6BF1A87EAD10049AF03 /* ParseSecondChallengeViewController.m */,
 			);
 			name = "Attacking Parse";
+			sourceTree = "<group>";
+		};
+		9F3817D61A9F89F500D9D087 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				9F3817D71A9F89FF00D9D087 /* Realm.framework */,
+			);
+			name = Realm;
 			sourceTree = "<group>";
 		};
 		9F45E6BD1A87E5040049AF03 /* Parse Models */ = {
@@ -1200,6 +1212,7 @@
 					/Users/Prateek/Documents/IOS,
 					Projects/DVIA/DVIA/DamnVulnerableIOSApp,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DamnVulnerableIOSApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
@@ -1229,6 +1242,7 @@
 					/Users/Prateek/Documents/IOS,
 					Projects/DVIA/DVIA/DamnVulnerableIOSApp,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DamnVulnerableIOSApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
