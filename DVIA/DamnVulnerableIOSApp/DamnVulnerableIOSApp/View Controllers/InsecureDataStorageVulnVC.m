@@ -11,6 +11,8 @@
 #import <CoreData/CoreData.h>
 #import "AppDelegate.h"
 #import "User.h"
+#import <Realm/Realm.h>
+#import "RealmUser.h"
 
 @interface InsecureDataStorageVulnVC () <UITextFieldDelegate>
 
@@ -19,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIView *plistView;
 @property (weak, nonatomic) IBOutlet UIView *coreDataView;
 @property (weak, nonatomic) IBOutlet UIView *webkitView;
+@property (weak, nonatomic) IBOutlet UIView *realmView;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *userDefaultsTextField;
@@ -29,6 +32,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
 @property (weak, nonatomic) IBOutlet UITextField *userPasswordTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *realmUserName;
+@property (weak, nonatomic) IBOutlet UITextField *realmPassword;
 
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
@@ -74,6 +80,8 @@
             break;
         case InsecureDataStorageWebKit:
             [self.webkitView setHidden:NO];
+        case InsecureDataStorageRealm:
+            [self.realmView setHidden:NO];
         default:
             break;
     }
@@ -125,6 +133,18 @@
     }else{
         [DamnVulnerableAppUtilities showAlertWithMessage:@"Data saved in Core Data"];
     }
+}
+
+- (IBAction)saveInRealmTapped:(id)sender {
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    RealmUser *user = [[RealmUser alloc] init];
+    
+    user.name = self.realmUserName.text;
+    user.password = self.realmPassword.text;
+    
+    [realm beginWriteTransaction];
+    [realm addObject:user];
+    [realm commitWriteTransaction];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

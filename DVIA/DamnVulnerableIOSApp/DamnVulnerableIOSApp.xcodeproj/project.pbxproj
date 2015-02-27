@@ -151,6 +151,9 @@
 		9F0DEE861A87F67E00507260 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0DEE851A87F67E00507260 /* libsqlite3.dylib */; };
 		9F0DEE881A87F6A500507260 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0DEE871A87F6A500507260 /* Social.framework */; };
 		9F0DEE891A87F6C900507260 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E63B64A18A8FD9500B438A0 /* Accounts.framework */; };
+		9F0F76DF1AA0796F00FB300E /* RealmUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0F76DE1AA0796F00FB300E /* RealmUser.m */; };
+		9F0F76E21AA07D2500FB300E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0F76E11AA07D2500FB300E /* libc++.dylib */; };
+		9F0F76E31AA07D8D00FB300E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3817D71A9F89FF00D9D087 /* Realm.framework */; };
 		9F3817D81A9F89FF00D9D087 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3817D71A9F89FF00D9D087 /* Realm.framework */; };
 		9F45E6BC1A87E5000049AF03 /* FirstParseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6BB1A87E5000049AF03 /* FirstParseClass.m */; };
 		9F45E6C01A87EAD10049AF03 /* ParseSecondChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6BF1A87EAD10049AF03 /* ParseSecondChallengeViewController.m */; };
@@ -320,6 +323,9 @@
 		9F00E29B1A87E43700373A35 /* ParseFirstChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseFirstChallengeViewController.m; path = "View Controllers/ParseFirstChallengeViewController.m"; sourceTree = "<group>"; };
 		9F0DEE851A87F67E00507260 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9F0DEE871A87F6A500507260 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9F0F76DD1AA0796F00FB300E /* RealmUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmUser.h; sourceTree = "<group>"; };
+		9F0F76DE1AA0796F00FB300E /* RealmUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmUser.m; sourceTree = "<group>"; };
+		9F0F76E11AA07D2500FB300E /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		9F3817D71A9F89FF00D9D087 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		9F45E6BA1A87E5000049AF03 /* FirstParseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstParseClass.h; path = Model/FirstParseClass.h; sourceTree = "<group>"; };
 		9F45E6BB1A87E5000049AF03 /* FirstParseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstParseClass.m; path = Model/FirstParseClass.m; sourceTree = "<group>"; };
@@ -357,6 +363,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0F76E21AA07D2500FB300E /* libc++.dylib in Frameworks */,
 				9F0DEE891A87F6C900507260 /* Accounts.framework in Frameworks */,
 				9F0DEE881A87F6A500507260 /* Social.framework in Frameworks */,
 				9F0DEE861A87F67E00507260 /* libsqlite3.dylib in Frameworks */,
@@ -383,6 +390,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0F76E31AA07D8D00FB300E /* Realm.framework in Frameworks */,
 				6EFED8C51870848E00FEFCB1 /* UIKit.framework in Frameworks */,
 				6EFED8C41870848E00FEFCB1 /* Foundation.framework in Frameworks */,
 			);
@@ -467,6 +475,7 @@
 				6E4933BD18CF09C90099CD74 /* Model.h */,
 				6E4933BE18CF09C90099CD74 /* Model.m */,
 				9F45E6BD1A87E5040049AF03 /* Parse Models */,
+				9F0F76E01AA0797200FB300E /* Realm Models */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -682,6 +691,7 @@
 		6EFED8A21870848E00FEFCB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F0F76E11AA07D2500FB300E /* libc++.dylib */,
 				9F0DEE871A87F6A500507260 /* Social.framework */,
 				9F0DEE851A87F67E00507260 /* libsqlite3.dylib */,
 				C91BA9DC1955B84A00B75BAC /* Parse */,
@@ -778,6 +788,15 @@
 				9F45E6BF1A87EAD10049AF03 /* ParseSecondChallengeViewController.m */,
 			);
 			name = "Attacking Parse";
+			sourceTree = "<group>";
+		};
+		9F0F76E01AA0797200FB300E /* Realm Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F0F76DD1AA0796F00FB300E /* RealmUser.h */,
+				9F0F76DE1AA0796F00FB300E /* RealmUser.m */,
+			);
+			name = "Realm Models";
 			sourceTree = "<group>";
 		};
 		9F3817D61A9F89F500D9D087 /* Realm */ = {
@@ -878,7 +897,7 @@
 				ORGANIZATIONNAME = HighAltitudeHacks.com;
 				TargetAttributes = {
 					6EFED89F1870848E00FEFCB1 = {
-						DevelopmentTeam = 5SN4U5A564;
+						DevelopmentTeam = 4X3E7G4N3S;
 					};
 					6EFED8C01870848E00FEFCB1 = {
 						TestTargetID = 6EFED89F1870848E00FEFCB1;
@@ -1017,6 +1036,7 @@
 				9F45E6C01A87EAD10049AF03 /* ParseSecondChallengeViewController.m in Sources */,
 				F64B87B019E02CB2005AB265 /* ECSlidingAnimationController.m in Sources */,
 				6E63B64E18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */,
+				9F0F76DF1AA0796F00FB300E /* RealmUser.m in Sources */,
 				6E1729D61870A6A800C162DB /* HomeViewController.m in Sources */,
 				6E1729EC1871743700C162DB /* DamnVulnerableAppUtilities.m in Sources */,
 				F64B87B819E02CB2005AB265 /* UIViewController+ECSlidingViewController.m in Sources */,
@@ -1205,7 +1225,7 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iOS Development: Prateek Gianchandani (9WJU7EAEE3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1224,7 +1244,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2378583e-55d4-4d13-b0dd-8cf63ea4cd92";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1235,8 +1255,8 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iOS Development: Prateek Gianchandani (9WJU7EAEE3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Prateek/Documents/IOS,
@@ -1254,7 +1274,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2378583e-55d4-4d13-b0dd-8cf63ea4cd92";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1271,6 +1291,7 @@
 					/Users/Prateek/Documents/IOS,
 					Projects/DVIA/DVIA/DamnVulnerableIOSApp,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DamnVulnerableIOSApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";
@@ -1297,6 +1318,7 @@
 					/Users/Prateek/Documents/IOS,
 					Projects/DVIA/DVIA/DamnVulnerableIOSApp,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DamnVulnerableIOSApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DamnVulnerableIOSApp/DamnVulnerableIOSApp-Prefix.pch";

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="lzA-Dt-4Ld">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="lzA-Dt-4Ld">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -992,6 +992,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" id="HxW-hH-GML">
+                                <rect key="frame" x="-3" y="71" width="325" height="404"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" id="1Tk-kd-15P">
+                                        <rect key="frame" x="10" y="91" width="304" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i23-yJ-Lii" id="xVi-rT-deV"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" id="k5q-9n-ugG">
+                                        <rect key="frame" x="10" y="139" width="304" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="i23-yJ-Lii" id="S1l-Lk-1XK"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8LP-eb-2CN">
+                                        <rect key="frame" x="75" y="177" width="174" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Save in Realm database">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveInRealmTapped:" destination="i23-yJ-Lii" eventType="touchUpInside" id="GHq-9N-dfE"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The input entered here is saved in a Realm database. Your task is to find where this value is stored in the App sandbox." id="VsI-9o-AVz">
+                                        <rect key="frame" x="11" y="5" width="297" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <view hidden="YES" contentMode="scaleToFill" id="IGj-sI-pMt">
                                 <rect key="frame" x="-3" y="62" width="325" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1191,6 +1233,9 @@
                         <outlet property="passwordTextField" destination="93h-ff-fBO" id="bBU-K6-hZv"/>
                         <outlet property="phoneTextField" destination="AFB-2V-GKB" id="Mnd-FM-k3c"/>
                         <outlet property="plistView" destination="2Wn-zH-Ng0" id="fZn-fS-uMS"/>
+                        <outlet property="realmPassword" destination="k5q-9n-ugG" id="gJ3-oj-iq7"/>
+                        <outlet property="realmUserName" destination="1Tk-kd-15P" id="W25-SU-Frb"/>
+                        <outlet property="realmView" destination="HxW-hH-GML" id="AYZ-rT-cry"/>
                         <outlet property="userDefaultsTextField" destination="uUJ-rK-mB4" id="TsS-E4-Koh"/>
                         <outlet property="userDefaultsView" destination="Yot-0T-GCY" id="2t1-ea-tvo"/>
                         <outlet property="userPasswordTextField" destination="daz-Yi-mLj" id="xD0-P6-6gl"/>
@@ -1203,7 +1248,7 @@
                     <barButtonItem key="leftBarButtonItem" title="Menu" id="kZW-RP-auY"/>
                 </navigationItem>
             </objects>
-            <point key="canvasLocation" x="-1569" y="-1434"/>
+            <point key="canvasLocation" x="-1541" y="-1478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nTZ-D0-bky">
