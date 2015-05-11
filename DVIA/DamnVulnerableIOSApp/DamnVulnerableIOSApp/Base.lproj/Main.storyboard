@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="lzA-Dt-4Ld">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="lzA-Dt-4Ld">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Sliding View Controller-->
@@ -125,7 +125,7 @@
                             <tableViewSection headerTitle="DamnVulnerableiOSApp.com" footerTitle="Version 1.4" id="I6U-Jm-85w">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pZG-f5-3Vp" style="IBUITableViewCellStyleDefault" id="Dvv-bd-LHt">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dvv-bd-LHt" id="h9z-NQ-qXC">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -146,7 +146,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="beY-51-3rD" style="IBUITableViewCellStyleDefault" id="Gc4-jh-q6V">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="94" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gc4-jh-q6V" id="mwE-LA-s73">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -168,7 +168,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="jft-ip-4WQ" style="IBUITableViewCellStyleDefault" id="TOh-L2-8mX">
-                                        <rect key="frame" x="0.0" y="143" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="138" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TOh-L2-8mX" id="i1B-3h-xxL">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -189,7 +189,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="cjz-B5-cA9" style="IBUITableViewCellStyleDefault" id="Lso-ec-ce2">
-                                        <rect key="frame" x="0.0" y="187" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="182" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lso-ec-ce2" id="MiX-A3-TCw">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -210,7 +210,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pAc-eQ-MZF" style="IBUITableViewCellStyleDefault" id="Gpc-yv-Mvi">
-                                        <rect key="frame" x="0.0" y="231" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="226" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gpc-yv-Mvi" id="WaS-tN-UCs">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -231,7 +231,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="azZ-hs-dXN" style="IBUITableViewCellStyleDefault" id="0uH-Jm-fzj">
-                                        <rect key="frame" x="0.0" y="231" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="270" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0uH-Jm-fzj" id="Dyv-VH-4Mb">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -252,7 +252,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Khy-5Q-Xsv" style="IBUITableViewCellStyleDefault" id="PM0-F2-hqC">
-                                        <rect key="frame" x="0.0" y="553" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="314" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PM0-F2-hqC" id="SsM-hx-H2D">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -273,7 +273,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="2mo-KA-YiK" style="IBUITableViewCellStyleDefault" id="UmA-mV-0ti">
-                                        <rect key="frame" x="0.0" y="275" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="358" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UmA-mV-0ti" id="aOh-l3-G0M">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -294,7 +294,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pnG-HD-Dfa" rowHeight="58" style="IBUITableViewCellStyleDefault" id="Ve0-iy-T6G">
-                                        <rect key="frame" x="0.0" y="319" width="320" height="58"/>
+                                        <rect key="frame" x="0.0" y="402" width="320" height="58"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ve0-iy-T6G" id="2aV-Dj-Uet">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="58"/>
@@ -315,7 +315,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Bf2-lu-Mm1" rowHeight="44" style="IBUITableViewCellStyleDefault" id="CZg-S7-0t4">
-                                        <rect key="frame" x="0.0" y="377" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="460" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CZg-S7-0t4" id="FSd-qF-SIW">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -336,7 +336,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="X3Y-5h-hTA" style="IBUITableViewCellStyleDefault" id="FLD-74-1XI">
-                                        <rect key="frame" x="0.0" y="421" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="504" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FLD-74-1XI" id="hBw-lb-unz">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -357,7 +357,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="RNx-Du-rjR" style="IBUITableViewCellStyleDefault" id="IhX-9i-Um9">
-                                        <rect key="frame" x="0.0" y="465" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="548" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IhX-9i-Um9" id="xYL-5Z-kgN">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -378,7 +378,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="hmL-qA-NuZ" style="IBUITableViewCellStyleDefault" id="2JJ-4b-3ag">
-                                        <rect key="frame" x="0.0" y="509" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="592" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2JJ-4b-3ag" id="vqs-Id-Fx7">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -399,7 +399,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="gfY-ay-QQi" style="IBUITableViewCellStyleDefault" id="BuV-bu-jzn">
-                                        <rect key="frame" x="0.0" y="553" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="636" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BuV-bu-jzn" id="Ozm-y0-6lC">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -420,7 +420,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="EXB-C6-g7L" style="IBUITableViewCellStyleDefault" id="qU7-1c-9iQ">
-                                        <rect key="frame" x="0.0" y="597" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="680" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qU7-1c-9iQ" id="xKs-B5-VSv">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -441,7 +441,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="UPn-Li-bSO" style="IBUITableViewCellStyleDefault" id="csF-PL-KmO">
-                                        <rect key="frame" x="0.0" y="641" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="724" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="csF-PL-KmO" id="ggi-X0-Fcg">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -837,7 +837,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ee7-lN-Agc">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ee7-lN-Agc" id="atg-gQ-Noy">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -3310,8 +3310,10 @@
                             <tableViewSection id="pzE-zG-hlE">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="TIO-32-YdS" style="IBUITableViewCellStyleDefault" id="dYR-74-1fN">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dYR-74-1fN" id="Ym5-xn-wgN">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Attacking Parse.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TIO-32-YdS">
@@ -3324,6 +3326,25 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="toZ-bD-KOu" kind="push" id="9Nj-Rl-xRJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="nnn-kr-w2r" style="IBUITableViewCellStyleDefault" id="hYf-jM-cxn">
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hYf-jM-cxn" id="9jo-JQ-Kx6">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Attacking Flurry.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nnn-kr-w2r">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="R3o-Q3-AKm" kind="push" id="Xvr-fS-f82"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -3403,7 +3424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yif-xZ-TtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8783" y="-435"/>
+            <point key="canvasLocation" x="-8679" y="-1090"/>
         </scene>
         <!--Attacking third party libraries-->
         <scene sceneID="ez6-G8-54V">
@@ -3450,7 +3471,96 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07H-sA-iKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8330" y="-648"/>
+            <point key="canvasLocation" x="-8226" y="-1303"/>
+        </scene>
+        <!--Attacking Flurry.com-->
+        <scene sceneID="pd8-Ht-n3s">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="R3o-Q3-AKm" customClass="AttackingFlurryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yQc-Pp-jg5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Flurry is the most popular mobile analytics service. The authorization is done by using single API key." selectable="NO" id="pSC-gU-gHc">
+                                <rect key="frame" x="0.0" y="66" width="320" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2yq-Gq-nvf">
+                                <rect key="frame" x="71" y="184" width="178" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="START CHALLENGE">
+                                    <color key="titleColor" red="0.87450980389999999" green="0.72941176470000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bh4-Yr-0dp" kind="push" id="swk-b6-xj5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Attacking Flurry.com" id="LXq-Ev-axe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BcM-Ca-RXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8679" y="-182"/>
+        </scene>
+        <!--Attacking Flurry.com-->
+        <scene sceneID="MTh-bK-Gd6">
+            <objects>
+                <viewController id="bh4-Yr-0dp" customClass="FlurryChallengeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ymr-Rp-jnk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Flurry API key:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pqy-tM-zQF">
+                                <rect key="frame" x="16" y="69" width="281" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="API Key" minimumFontSize="17" id="jaw-Bd-Oi9">
+                                <rect key="frame" x="16" y="101" width="281" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bh4-Yr-0dp" id="9NT-iE-Utc"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="All you need to do is locate Flurry API key somewhere in the application code and print it in the textfield above." selectable="NO" id="dQw-6I-Mue">
+                                <rect key="frame" x="5" y="179" width="315" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o3x-DG-aLn">
+                                <rect key="frame" x="100" y="141" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test the result">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testButtonTapped:" destination="fyh-ga-hHh" eventType="touchUpInside" id="TbS-HJ-kDB"/>
+                                    <action selector="testResultButton:" destination="bh4-Yr-0dp" eventType="touchUpInside" id="MVu-wl-XRl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Attacking Flurry.com" id="0L0-Zt-9FP"/>
+                    <connections>
+                        <outlet property="apiKeyTextField" destination="jaw-Bd-Oi9" id="g53-8M-Ymn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2nu-18-xzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8225" y="-188"/>
         </scene>
         <!--Attacking Parse.com-->
         <scene sceneID="Tx3-OS-azS">
@@ -3519,7 +3629,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QxF-g6-hcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8329" y="-93"/>
+            <point key="canvasLocation" x="-8225" y="-748"/>
         </scene>
     </scenes>
     <resources>

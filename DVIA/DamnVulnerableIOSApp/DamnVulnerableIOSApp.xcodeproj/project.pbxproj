@@ -160,6 +160,8 @@
 		9F45E6C31A87ED510049AF03 /* SecondParseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6C21A87ED510049AF03 /* SecondParseClass.m */; };
 		9F45E6C71A87F5D80049AF03 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F45E6C51A87F5D80049AF03 /* Bolts.framework */; };
 		9F45E6C81A87F5D80049AF03 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F45E6C61A87F5D80049AF03 /* Parse.framework */; };
+		9FBF18611B013B40009E1D7A /* AttackingFlurryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */; };
+		9FBF18641B013C52009E1D7A /* FlurryChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18631B013C52009E1D7A /* FlurryChallengeViewController.m */; };
 		F60C536F19E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F60C537019E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */; };
@@ -335,6 +337,10 @@
 		9F45E6C21A87ED510049AF03 /* SecondParseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondParseClass.m; path = Model/SecondParseClass.m; sourceTree = "<group>"; };
 		9F45E6C51A87F5D80049AF03 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		9F45E6C61A87F5D80049AF03 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9FBF185F1B013B40009E1D7A /* AttackingFlurryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttackingFlurryViewController.h; path = "View Controllers/AttackingFlurryViewController.h"; sourceTree = "<group>"; };
+		9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttackingFlurryViewController.m; path = "View Controllers/AttackingFlurryViewController.m"; sourceTree = "<group>"; };
+		9FBF18621B013C52009E1D7A /* FlurryChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlurryChallengeViewController.h; path = "View Controllers/FlurryChallengeViewController.h"; sourceTree = "<group>"; };
+		9FBF18631B013C52009E1D7A /* FlurryChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlurryChallengeViewController.m; path = "View Controllers/FlurryChallengeViewController.m"; sourceTree = "<group>"; };
 		C91BA9DC1955B84A00B75BAC /* Parse */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Parse; path = Parse.framework/Versions/1.2.18/Parse; sourceTree = "<group>"; };
 		F60C536D19E4703600C63A0D /* SSLPinningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSLPinningVC.h; path = "View Controllers/SSLPinningVC.h"; sourceTree = "<group>"; };
 		F60C536E19E4703600C63A0D /* SSLPinningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSLPinningVC.m; path = "View Controllers/SSLPinningVC.m"; sourceTree = "<group>"; };
@@ -773,6 +779,7 @@
 				9F00E2921A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.h */,
 				9F00E2931A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m */,
 				9F00E2991A87E08E00373A35 /* Attacking Parse */,
+				9FBF185E1B013B0E009E1D7A /* Attacking Flurry */,
 			);
 			name = "Attacking third party libraries";
 			sourceTree = "<group>";
@@ -816,6 +823,17 @@
 				9F45E6C21A87ED510049AF03 /* SecondParseClass.m */,
 			);
 			name = "Parse Models";
+			sourceTree = "<group>";
+		};
+		9FBF185E1B013B0E009E1D7A /* Attacking Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				9FBF185F1B013B40009E1D7A /* AttackingFlurryViewController.h */,
+				9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */,
+				9FBF18621B013C52009E1D7A /* FlurryChallengeViewController.h */,
+				9FBF18631B013C52009E1D7A /* FlurryChallengeViewController.m */,
+			);
+			name = "Attacking Flurry";
 			sourceTree = "<group>";
 		};
 		F64B879A19E02C7E005AB265 /* ECSlidingVC */ = {
@@ -995,6 +1013,7 @@
 				6E63B65C18AAA8B800B438A0 /* SideChannelDataLeakageVC.m in Sources */,
 				9F00E2981A87DFEC00373A35 /* AttackingParseViewController.m in Sources */,
 				6EB7B3BF18899DCD00A4F353 /* SolutionsViewController.m in Sources */,
+				9FBF18611B013B40009E1D7A /* AttackingFlurryViewController.m in Sources */,
 				6E4933C418CF274C0099CD74 /* SFAntiPiracy.m in Sources */,
 				9F45E6C31A87ED510049AF03 /* SecondParseClass.m in Sources */,
 				F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */,
@@ -1035,6 +1054,7 @@
 				6E1729E518716BE700C162DB /* PDKeychainBindings.m in Sources */,
 				9F45E6C01A87EAD10049AF03 /* ParseSecondChallengeViewController.m in Sources */,
 				F64B87B019E02CB2005AB265 /* ECSlidingAnimationController.m in Sources */,
+				9FBF18641B013C52009E1D7A /* FlurryChallengeViewController.m in Sources */,
 				6E63B64E18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */,
 				9F0F76DF1AA0796F00FB300E /* RealmUser.m in Sources */,
 				6E1729D61870A6A800C162DB /* HomeViewController.m in Sources */,
