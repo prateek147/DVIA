@@ -1626,29 +1626,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" id="kx8-8y-GaO">
-                                <rect key="frame" x="8" y="126" width="304" height="30"/>
+                                <rect key="frame" x="8" y="116" width="304" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter correct 3 digit code" minimumFontSize="17" id="3tj-MJ-J0N">
-                                <rect key="frame" x="8" y="386" width="304" height="30"/>
+                                <rect key="frame" x="8" y="365" width="304" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pJU-oM-vtr">
-                                <rect key="frame" x="79" y="150" width="139" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login Method 1">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginMethod1Tapped:" destination="8XW-Hq-qOZ" eventType="touchUpInside" id="4af-oz-ng7"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zDS-B6-SXM">
-                                <rect key="frame" x="80" y="176" width="139" height="44"/>
+                                <rect key="frame" x="78" y="162" width="139" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login Method 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1658,7 +1648,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="Csi-Ba-jeo">
-                                <rect key="frame" x="0.0" y="204" width="320" height="108"/>
+                                <rect key="frame" x="0.0" y="191" width="320" height="108"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Tapping the button below will load a tutorial on runtime manipulation from a particular url. Use runtime manipulation techniques to load content from a different url instead, for e.g http://google.com.</string>
@@ -1666,14 +1656,24 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Brute Force this 3 digit code using Cycript" id="RRx-TQ-aEa">
-                                <rect key="frame" x="0.0" y="346" width="320" height="35"/>
+                                <rect key="frame" x="0.0" y="330" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1qf-02-biN">
+                                <rect key="frame" x="79" y="294" width="139" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Read tutorial">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readTutorialTapped:" destination="8XW-Hq-qOZ" eventType="touchUpInside" id="fPp-yv-E73"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mhn-T7-Pat">
-                                <rect key="frame" x="79" y="416" width="139" height="44"/>
+                                <rect key="frame" x="79" y="390" width="139" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Validate code">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1682,14 +1682,14 @@
                                     <action selector="validateCodeTapped:" destination="8XW-Hq-qOZ" eventType="touchUpInside" id="1vw-J0-yYw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1qf-02-biN">
-                                <rect key="frame" x="79" y="307" width="139" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pJU-oM-vtr">
+                                <rect key="frame" x="79" y="141" width="139" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Read tutorial">
+                                <state key="normal" title="Login Method 1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="readTutorialTapped:" destination="8XW-Hq-qOZ" eventType="touchUpInside" id="fPp-yv-E73"/>
+                                    <action selector="loginMethod1Tapped:" destination="8XW-Hq-qOZ" eventType="touchUpInside" id="4af-oz-ng7"/>
                                 </connections>
                             </button>
                         </subviews>
