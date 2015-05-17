@@ -6,18 +6,20 @@
 //  Copyright (c) 2015 HighAltitudeHacks.com. All rights reserved.
 //
 
-#import "FlurryChallengeViewController.h"
+#import "FlurryFirstChallengeViewController.h"
 #import "UIViewController+ECSlidingViewController.h"
+
+#import "Flurry.h"
 
 static NSString *FlurryApiKey = @"ZMSFBDBYFQ8XHQBRP2VY";
 
-@interface FlurryChallengeViewController ()
+@interface FlurryFirstChallengeViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *apiKeyTextField;
 
 @end
 
-@implementation FlurryChallengeViewController
+@implementation FlurryFirstChallengeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,7 +28,7 @@ static NSString *FlurryApiKey = @"ZMSFBDBYFQ8XHQBRP2VY";
 }
 
 - (void)showSuccessAlert {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"Congrats! You've found the Flurry API Key!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"Congrats! You've found the Flurry API Key! Now you can proceed to the following challenge." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alertView show];
 }
 

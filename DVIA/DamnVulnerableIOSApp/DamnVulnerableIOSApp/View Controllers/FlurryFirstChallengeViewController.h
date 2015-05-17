@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FlurryChallengeViewController : UIViewController
+@interface FlurryFirstChallengeViewController : UIViewController
 
 @end
