@@ -15,8 +15,7 @@ typedef enum {
     InsecureDataStorageKeychain,
     InsecureDataStorageCoreData,
     InsecureDataStorageWebKit,
-    InsecureDataStorageRealm,
-    InsecureDataStorageCouchbase
+    InsecureDataStorageRealm
 } InsecureVulnType;
 
 @interface InsecureDataStorageVulnVC : UIViewController

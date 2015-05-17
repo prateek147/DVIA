@@ -160,7 +160,6 @@
 		9F45E6C31A87ED510049AF03 /* SecondParseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6C21A87ED510049AF03 /* SecondParseClass.m */; };
 		9F45E6C71A87F5D80049AF03 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F45E6C51A87F5D80049AF03 /* Bolts.framework */; };
 		9F45E6C81A87F5D80049AF03 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F45E6C61A87F5D80049AF03 /* Parse.framework */; };
-		9FED94C81B08CB680069D9FF /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FED94C61B08CB680069D9FF /* CouchbaseLite.framework */; };
 		F60C536F19E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F60C537019E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */; };
@@ -336,7 +335,6 @@
 		9F45E6C21A87ED510049AF03 /* SecondParseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondParseClass.m; path = Model/SecondParseClass.m; sourceTree = "<group>"; };
 		9F45E6C51A87F5D80049AF03 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		9F45E6C61A87F5D80049AF03 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		9FED94C61B08CB680069D9FF /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
 		C91BA9DC1955B84A00B75BAC /* Parse */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Parse; path = Parse.framework/Versions/1.2.18/Parse; sourceTree = "<group>"; };
 		F60C536D19E4703600C63A0D /* SSLPinningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSLPinningVC.h; path = "View Controllers/SSLPinningVC.h"; sourceTree = "<group>"; };
 		F60C536E19E4703600C63A0D /* SSLPinningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSLPinningVC.m; path = "View Controllers/SSLPinningVC.m"; sourceTree = "<group>"; };
@@ -378,7 +376,6 @@
 				6E63B64318A8F89700B438A0 /* QuartzCore.framework in Frameworks */,
 				6E63B64518A8F89C00B438A0 /* Security.framework in Frameworks */,
 				6E63B64718A8F8A200B438A0 /* StoreKit.framework in Frameworks */,
-				9FED94C81B08CB680069D9FF /* CouchbaseLite.framework in Frameworks */,
 				6E63B64918A8F8BA00B438A0 /* SystemConfiguration.framework in Frameworks */,
 				9F45E6C81A87F5D80049AF03 /* Parse.framework in Frameworks */,
 				6E1729FD1871914100C162DB /* CoreData.framework in Frameworks */,
@@ -673,7 +670,6 @@
 		6EFED8971870848E00FEFCB1 = {
 			isa = PBXGroup;
 			children = (
-				9FED94C61B08CB680069D9FF /* CouchbaseLite.framework */,
 				9F45E6C51A87F5D80049AF03 /* Bolts.framework */,
 				9F45E6C61A87F5D80049AF03 /* Parse.framework */,
 				6EFED8A91870848E00FEFCB1 /* DamnVulnerableIOSApp */,
@@ -901,7 +897,7 @@
 				ORGANIZATIONNAME = HighAltitudeHacks.com;
 				TargetAttributes = {
 					6EFED89F1870848E00FEFCB1 = {
-						DevelopmentTeam = UM246WFXVS;
+						DevelopmentTeam = 4X3E7G4N3S;
 					};
 					6EFED8C01870848E00FEFCB1 = {
 						TestTargetID = 6EFED89F1870848E00FEFCB1;
