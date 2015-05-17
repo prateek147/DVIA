@@ -164,6 +164,7 @@
 		9FBF18641B013C52009E1D7A /* FlurryFirstChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18631B013C52009E1D7A /* FlurryFirstChallengeViewController.m */; };
 		9FED94C21B08AA790069D9FF /* libFlurry_6.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FED94C11B08AA790069D9FF /* libFlurry_6.4.0.a */; };
 		9FED94C51B08BABC0069D9FF /* FlurrySecondChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED94C41B08BABC0069D9FF /* FlurrySecondChallengeViewController.m */; };
+		9FED94C81B08CB680069D9FF /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FED94C61B08CB680069D9FF /* CouchbaseLite.framework */; };
 		F60C536F19E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F60C537019E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */; };
@@ -348,6 +349,7 @@
 		9FED94C11B08AA790069D9FF /* libFlurry_6.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.4.0.a; sourceTree = "<group>"; };
 		9FED94C31B08BABC0069D9FF /* FlurrySecondChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurrySecondChallengeViewController.h; sourceTree = "<group>"; };
 		9FED94C41B08BABC0069D9FF /* FlurrySecondChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlurrySecondChallengeViewController.m; sourceTree = "<group>"; };
+		9FED94C61B08CB680069D9FF /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
 		C91BA9DC1955B84A00B75BAC /* Parse */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Parse; path = Parse.framework/Versions/1.2.18/Parse; sourceTree = "<group>"; };
 		F60C536D19E4703600C63A0D /* SSLPinningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSLPinningVC.h; path = "View Controllers/SSLPinningVC.h"; sourceTree = "<group>"; };
 		F60C536E19E4703600C63A0D /* SSLPinningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSLPinningVC.m; path = "View Controllers/SSLPinningVC.m"; sourceTree = "<group>"; };
@@ -390,6 +392,7 @@
 				6E63B64518A8F89C00B438A0 /* Security.framework in Frameworks */,
 				6E63B64718A8F8A200B438A0 /* StoreKit.framework in Frameworks */,
 				9FED94C21B08AA790069D9FF /* libFlurry_6.4.0.a in Frameworks */,
+				9FED94C81B08CB680069D9FF /* CouchbaseLite.framework in Frameworks */,
 				6E63B64918A8F8BA00B438A0 /* SystemConfiguration.framework in Frameworks */,
 				9F45E6C81A87F5D80049AF03 /* Parse.framework in Frameworks */,
 				6E1729FD1871914100C162DB /* CoreData.framework in Frameworks */,
@@ -685,6 +688,7 @@
 		6EFED8971870848E00FEFCB1 = {
 			isa = PBXGroup;
 			children = (
+				9FED94C61B08CB680069D9FF /* CouchbaseLite.framework */,
 				9F45E6C51A87F5D80049AF03 /* Bolts.framework */,
 				9F45E6C61A87F5D80049AF03 /* Parse.framework */,
 				6EFED8A91870848E00FEFCB1 /* DamnVulnerableIOSApp */,
