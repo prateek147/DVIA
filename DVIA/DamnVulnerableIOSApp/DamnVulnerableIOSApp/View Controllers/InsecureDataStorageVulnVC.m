@@ -13,7 +13,6 @@
 #import "User.h"
 #import <Realm/Realm.h>
 #import "RealmUser.h"
-#import <CouchbaseLite/CouchbaseLite.h>
 
 @interface InsecureDataStorageVulnVC () <UITextFieldDelegate>
 
@@ -23,7 +22,6 @@
 @property (weak, nonatomic) IBOutlet UIView *coreDataView;
 @property (weak, nonatomic) IBOutlet UIView *webkitView;
 @property (weak, nonatomic) IBOutlet UIView *realmView;
-@property (weak, nonatomic) IBOutlet UIView *couchbaseView;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *userDefaultsTextField;
@@ -38,8 +36,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *realmUserName;
 @property (weak, nonatomic) IBOutlet UITextField *realmPassword;
 
-@property (weak, nonatomic) IBOutlet UITextField *couchbaseUserName;
-@property (weak, nonatomic) IBOutlet UITextField *couchbasePassword;
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
@@ -84,13 +80,8 @@
             break;
         case InsecureDataStorageWebKit:
             [self.webkitView setHidden:NO];
-            break;
         case InsecureDataStorageRealm:
             [self.realmView setHidden:NO];
-            break;
-        case InsecureDataStorageCouchbase:
-            [self.couchbaseView setHidden:NO];
-            break;
         default:
             break;
     }
@@ -154,21 +145,6 @@
     [realm beginWriteTransaction];
     [realm addObject:user];
     [realm commitWriteTransaction];
-}
-
-- (IBAction)saveInCouchbaseTapped:(id)sender {
-    NSError *error = nil;
-    CBLDatabase *database = [[CBLManager sharedInstance] databaseNamed:@"dvcouchbasedb"
-                                                                 error:&error];
-    
-    NSString *username = self.couchbaseUserName.text;
-    NSString *password = self.couchbasePassword.text;
-    NSDictionary *properties = @{
-                                 @"username" : username,
-                                 @"password" : password
-                                 };
-    CBLDocument *newDocument = [database createDocument];
-    [newDocument putProperties:properties error:&error];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
