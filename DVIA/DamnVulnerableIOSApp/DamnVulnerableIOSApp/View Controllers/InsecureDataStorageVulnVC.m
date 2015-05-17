@@ -13,6 +13,7 @@
 #import "User.h"
 #import <Realm/Realm.h>
 #import "RealmUser.h"
+#import <CouchbaseLite/CouchbaseLite.h>
 
 @interface InsecureDataStorageVulnVC () <UITextFieldDelegate>
 
@@ -156,7 +157,18 @@
 }
 
 - (IBAction)saveInCouchbaseTapped:(id)sender {
+    NSError *error = nil;
+    CBLDatabase *database = [[CBLManager sharedInstance] databaseNamed:@"dvcouchbasedb"
+                                                                 error:&error];
     
+    NSString *username = self.couchbaseUserName.text;
+    NSString *password = self.couchbasePassword.text;
+    NSDictionary *properties = @{
+                                 @"username" : username,
+                                 @"password" : password
+                                 };
+    CBLDocument *newDocument = [database createDocument];
+    [newDocument putProperties:properties error:&error];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
