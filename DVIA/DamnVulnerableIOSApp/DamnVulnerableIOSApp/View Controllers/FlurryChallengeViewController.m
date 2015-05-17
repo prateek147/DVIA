@@ -9,7 +9,7 @@
 #import "FlurryChallengeViewController.h"
 #import "UIViewController+ECSlidingViewController.h"
 
-static NSString *FlurryApiKey = @"123";
+static NSString *FlurryApiKey = @"ZMSFBDBYFQ8XHQBRP2VY";
 
 @interface FlurryChallengeViewController ()
 

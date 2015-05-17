@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "Flurry/Flurry.h"
 #import "Model.h"
 
 @implementation AppDelegate
@@ -26,6 +27,10 @@
     //Initialize parse
     [Parse setApplicationId:kParseAppId
                   clientKey:kParseClientKey];
+    
+    //Initialize Flurry
+    [Flurry startSession:@"ZMSFBDBYFQ8XHQBRP2VY"];
+    
     [self fetchTutorials];
     return YES;
 }
