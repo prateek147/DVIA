@@ -12,6 +12,7 @@ typedef enum {
     SensInfoScreenshot,
     SensInfoPasteboard,
     SensInfoKeystrokeLogging,
+    SensInfoCookies
 } SensInfoVulnType;
 
 @interface SideChannelDataLeakageDetailsVC : UIViewController
