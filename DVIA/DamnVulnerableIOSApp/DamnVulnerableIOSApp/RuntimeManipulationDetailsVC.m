@@ -13,9 +13,11 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *codeTextField;
 @property (nonatomic,strong) NSString *urlToLoad;
 
 - (IBAction)readTutorialTapped:(id)sender;
+- (IBAction)validateCodeTapped:(id)sender;
 
 @end
 
@@ -83,6 +85,19 @@
 
 - (IBAction)readTutorialTapped:(id)sender {
 [DamnVulnerableAppUtilities pushWebVCWithURL:self.urlToLoad viewController:self];
+}
+
+
++(BOOL)validateCode:(NSInteger)code {
+    if (code==181 ){
+        [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Congratulations. You have cracked the code" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        return YES;
+    }
+    [[[UIAlertView alloc] initWithTitle:@"Failure" message:@"Incorrect code" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+    return NO;
+   }
+- (IBAction)validateCodeTapped:(id)sender {
+    [RuntimeManipulationDetailsVC validateCode:self.codeTextField.text.integerValue];
 }
 
 
