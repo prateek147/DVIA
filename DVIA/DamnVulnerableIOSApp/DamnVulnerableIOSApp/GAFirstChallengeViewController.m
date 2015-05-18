@@ -8,6 +8,7 @@
 
 #import "GAFirstChallengeViewController.h"
 #import "GoogleAnalytics/GAI.h"
+#import "UIViewController+ECSlidingViewController.h"
 
 static NSString *const GoogleAnalyticsApiKey = @"UA-63106875-1";
 
@@ -20,6 +21,8 @@ static NSString *const GoogleAnalyticsApiKey = @"UA-63106875-1";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.tintColor = kNavigationTintColor;
+    [self.slidingViewController.topViewController.view addGestureRecognizer:self.slidingViewController.panGesture];
 }
 
 - (void)showSuccessAlert {

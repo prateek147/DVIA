@@ -3760,13 +3760,52 @@ If you have any questions, comments, suggestions or if you want to contribute to
         <!--Attacking Google Analytics-->
         <scene sceneID="5tn-H9-1dU">
             <objects>
-                <viewController id="4kg-er-2hy" sceneMemberID="viewController">
+                <viewController id="4kg-er-2hy" customClass="GASecondChallengeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pOe-H7-tjp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Secret Event Value:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kWp-Gm-nx2">
+                                <rect key="frame" x="16" y="64" width="281" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Secret Event Value" minimumFontSize="17" id="X7r-ua-FKC">
+                                <rect key="frame" x="16" y="95" width="281" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4kg-er-2hy" id="CC7-rm-nLY"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D08-3b-WGG">
+                                <rect key="frame" x="96" y="133" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test the result">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testButtonTapped:" destination="4kg-er-2hy" eventType="touchUpInside" id="b0Y-Ya-Ri9"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" id="QMZ-D3-szZ">
+                                <rect key="frame" x="3" y="171" width="315" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This ViewController is tied to a specific Google Analytics event. You have to disassemble it, find the event payload and input in the textfield the string, corresponding to the key "eventSecretName".</string>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Attacking Google Analytics" id="fOB-ln-iFY"/>
+                    <connections>
+                        <outlet property="secretEventValueTextField" destination="X7r-ua-FKC" id="Kc1-Vy-yn3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXy-8w-dFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
