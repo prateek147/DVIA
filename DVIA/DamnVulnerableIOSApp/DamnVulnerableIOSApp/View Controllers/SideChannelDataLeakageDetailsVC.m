@@ -8,7 +8,14 @@
 
 #import "SideChannelDataLeakageDetailsVC.h"
 
+static NSString *const SiteURLString = @"http://highaltitudehacks.com";
+static NSString *const CookieUsername = @"admin123";
+static NSString *const CookiePassword = @"dvpassword";
+
 @interface SideChannelDataLeakageDetailsVC () <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *cookiesView;
+@property (weak, nonatomic) IBOutlet UITextField *cookiesUsernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *cookiesPasswordTextField;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *logsView;
 @property (weak, nonatomic) IBOutlet UIScrollView *screenshotView;
@@ -43,6 +50,7 @@
     [self.screenshotView setContentSize:CGSizeMake(320.0, 700.0)];
     [self.pasteboardView setContentSize:CGSizeMake(320.0, 700.0)];
     [self.keystrokeView setContentSize:CGSizeMake(320.0, 700.0)];
+    [self.cookiesView setContentSize:CGSizeMake(320.0, 700.0)];
 
     [DamnVulnerableAppUtilities addCommonBackgroundImageToViewController:self];
     switch (self.vulnCode) {
@@ -57,10 +65,47 @@
             break;
         case SensInfoKeystrokeLogging:
             [self.keystrokeView setHidden:NO];
+            break;
+        case SensInfoCookies:
+            [self.cookiesView setHidden:NO];
+            [self setSharedCookies];
+            break;
         default:
             break;
     }
 	// Do any additional setup after loading the view.
+}
+
+- (void)setSharedCookies {
+    NSDate *currentDate = [NSDate date];
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    
+    NSDateComponents *components = [calendar components:NSCalendarUnitMonth fromDate:currentDate];
+    [components setMonth:components.month + 5];
+    NSDate *expireDate = [calendar dateByAddingComponents:components toDate:currentDate options:0];
+    NSTimeInterval expireInterval = [expireDate timeIntervalSince1970];
+    
+    NSURL *siteURL = [NSURL URLWithString:SiteURLString];
+    NSDictionary *usernameProperties = @{
+                                 NSHTTPCookieDomain : siteURL.host,
+                                 NSHTTPCookiePath : siteURL.path,
+                                 NSHTTPCookieName : @"username",
+                                 NSHTTPCookieValue : CookieUsername,
+                                 NSHTTPCookieExpires : @(expireInterval)
+                                 };
+    NSHTTPCookie *usernameCookie = [[NSHTTPCookie alloc] initWithProperties:usernameProperties];
+    
+    NSDictionary *passwordProperties = @{
+                                         NSHTTPCookieDomain : siteURL.host,
+                                         NSHTTPCookiePath : siteURL.path,
+                                         NSHTTPCookieName : @"password",
+                                         NSHTTPCookieValue : CookiePassword,
+                                         NSHTTPCookieExpires : @(expireInterval)
+                                         };
+    NSHTTPCookie *passwordCookie = [[NSHTTPCookie alloc] initWithProperties:passwordProperties];
+    
+    [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookies:@[usernameCookie, passwordCookie] forURL:siteURL mainDocumentURL:nil];
 }
 
 -(void)makeSignUpCall {
@@ -87,6 +132,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)cookiesTestResultsButtonTapped:(id)sender {
+    NSString *inputtedUsername = self.cookiesUsernameTextField.text;
+    NSString *inputtedPassword = self.cookiesPasswordTextField.text;
+    
+    BOOL isRightUsername = [inputtedUsername isEqualToString:CookieUsername];
+    BOOL isRightPassword = [inputtedPassword isEqualToString:CookiePassword];
+    
+    if (isRightUsername && isRightPassword) {
+        [self showSuccessAlert];
+    } else {
+        [self showFailureAlert];
+    }
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     return YES;
@@ -95,4 +154,15 @@
 - (IBAction)signUpTapped:(id)sender {
     [self makeSignUpCall];
 }
+
+- (void)showSuccessAlert {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Success!" message:@"Congrats! You've found the right username and password!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
+- (void)showFailureAlert {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Failure" message:@"Well, your answer is not right." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alertView show];
+}
+
 @end

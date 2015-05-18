@@ -160,6 +160,11 @@
 		9F45E6C31A87ED510049AF03 /* SecondParseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F45E6C21A87ED510049AF03 /* SecondParseClass.m */; };
 		9F45E6C71A87F5D80049AF03 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F45E6C51A87F5D80049AF03 /* Bolts.framework */; };
 		9F45E6C81A87F5D80049AF03 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F45E6C61A87F5D80049AF03 /* Parse.framework */; };
+		9FBF18611B013B40009E1D7A /* AttackingFlurryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */; };
+		9FBF18641B013C52009E1D7A /* FlurryFirstChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18631B013C52009E1D7A /* FlurryFirstChallengeViewController.m */; };
+		9FED94C21B08AA790069D9FF /* libFlurry_6.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FED94C11B08AA790069D9FF /* libFlurry_6.4.0.a */; };
+		9FED94C51B08BABC0069D9FF /* FlurrySecondChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FED94C41B08BABC0069D9FF /* FlurrySecondChallengeViewController.m */; };
+		9FED94C81B08CB680069D9FF /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FED94C61B08CB680069D9FF /* CouchbaseLite.framework */; };
 		F60C536F19E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F60C537019E4703600C63A0D /* SSLPinningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F60C536E19E4703600C63A0D /* SSLPinningVC.m */; };
 		F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F64B87A219E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m */; };
@@ -335,6 +340,16 @@
 		9F45E6C21A87ED510049AF03 /* SecondParseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondParseClass.m; path = Model/SecondParseClass.m; sourceTree = "<group>"; };
 		9F45E6C51A87F5D80049AF03 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		9F45E6C61A87F5D80049AF03 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9FBF185F1B013B40009E1D7A /* AttackingFlurryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttackingFlurryViewController.h; path = "View Controllers/AttackingFlurryViewController.h"; sourceTree = "<group>"; };
+		9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttackingFlurryViewController.m; path = "View Controllers/AttackingFlurryViewController.m"; sourceTree = "<group>"; };
+		9FBF18621B013C52009E1D7A /* FlurryFirstChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlurryFirstChallengeViewController.h; path = "View Controllers/FlurryFirstChallengeViewController.h"; sourceTree = "<group>"; };
+		9FBF18631B013C52009E1D7A /* FlurryFirstChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlurryFirstChallengeViewController.m; path = "View Controllers/FlurryFirstChallengeViewController.m"; sourceTree = "<group>"; };
+		9FED94BF1B08AA790069D9FF /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		9FED94C01B08AA790069D9FF /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
+		9FED94C11B08AA790069D9FF /* libFlurry_6.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.4.0.a; sourceTree = "<group>"; };
+		9FED94C31B08BABC0069D9FF /* FlurrySecondChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurrySecondChallengeViewController.h; sourceTree = "<group>"; };
+		9FED94C41B08BABC0069D9FF /* FlurrySecondChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlurrySecondChallengeViewController.m; sourceTree = "<group>"; };
+		9FED94C61B08CB680069D9FF /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
 		C91BA9DC1955B84A00B75BAC /* Parse */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Parse; path = Parse.framework/Versions/1.2.18/Parse; sourceTree = "<group>"; };
 		F60C536D19E4703600C63A0D /* SSLPinningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSLPinningVC.h; path = "View Controllers/SSLPinningVC.h"; sourceTree = "<group>"; };
 		F60C536E19E4703600C63A0D /* SSLPinningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSLPinningVC.m; path = "View Controllers/SSLPinningVC.m"; sourceTree = "<group>"; };
@@ -376,6 +391,8 @@
 				6E63B64318A8F89700B438A0 /* QuartzCore.framework in Frameworks */,
 				6E63B64518A8F89C00B438A0 /* Security.framework in Frameworks */,
 				6E63B64718A8F8A200B438A0 /* StoreKit.framework in Frameworks */,
+				9FED94C21B08AA790069D9FF /* libFlurry_6.4.0.a in Frameworks */,
+				9FED94C81B08CB680069D9FF /* CouchbaseLite.framework in Frameworks */,
 				6E63B64918A8F8BA00B438A0 /* SystemConfiguration.framework in Frameworks */,
 				9F45E6C81A87F5D80049AF03 /* Parse.framework in Frameworks */,
 				6E1729FD1871914100C162DB /* CoreData.framework in Frameworks */,
@@ -439,6 +456,7 @@
 		6E1729E018716BBD00C162DB /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				9FED94BE1B08AA790069D9FF /* Flurry */,
 				9F3817D61A9F89F500D9D087 /* Realm */,
 				F64B879A19E02C7E005AB265 /* ECSlidingVC */,
 				6E4933C118CF27370099CD74 /* SFAntiPiracy */,
@@ -670,6 +688,7 @@
 		6EFED8971870848E00FEFCB1 = {
 			isa = PBXGroup;
 			children = (
+				9FED94C61B08CB680069D9FF /* CouchbaseLite.framework */,
 				9F45E6C51A87F5D80049AF03 /* Bolts.framework */,
 				9F45E6C61A87F5D80049AF03 /* Parse.framework */,
 				6EFED8A91870848E00FEFCB1 /* DamnVulnerableIOSApp */,
@@ -773,6 +792,7 @@
 				9F00E2921A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.h */,
 				9F00E2931A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m */,
 				9F00E2991A87E08E00373A35 /* Attacking Parse */,
+				9FBF185E1B013B0E009E1D7A /* Attacking Flurry */,
 			);
 			name = "Attacking third party libraries";
 			sourceTree = "<group>";
@@ -816,6 +836,29 @@
 				9F45E6C21A87ED510049AF03 /* SecondParseClass.m */,
 			);
 			name = "Parse Models";
+			sourceTree = "<group>";
+		};
+		9FBF185E1B013B0E009E1D7A /* Attacking Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				9FBF185F1B013B40009E1D7A /* AttackingFlurryViewController.h */,
+				9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */,
+				9FBF18621B013C52009E1D7A /* FlurryFirstChallengeViewController.h */,
+				9FBF18631B013C52009E1D7A /* FlurryFirstChallengeViewController.m */,
+				9FED94C31B08BABC0069D9FF /* FlurrySecondChallengeViewController.h */,
+				9FED94C41B08BABC0069D9FF /* FlurrySecondChallengeViewController.m */,
+			);
+			name = "Attacking Flurry";
+			sourceTree = "<group>";
+		};
+		9FED94BE1B08AA790069D9FF /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				9FED94BF1B08AA790069D9FF /* Flurry.h */,
+				9FED94C01B08AA790069D9FF /* FlurryWatch.h */,
+				9FED94C11B08AA790069D9FF /* libFlurry_6.4.0.a */,
+			);
+			path = Flurry;
 			sourceTree = "<group>";
 		};
 		F64B879A19E02C7E005AB265 /* ECSlidingVC */ = {
@@ -897,7 +940,7 @@
 				ORGANIZATIONNAME = HighAltitudeHacks.com;
 				TargetAttributes = {
 					6EFED89F1870848E00FEFCB1 = {
-						DevelopmentTeam = 4X3E7G4N3S;
+						DevelopmentTeam = UM246WFXVS;
 					};
 					6EFED8C01870848E00FEFCB1 = {
 						TestTargetID = 6EFED89F1870848E00FEFCB1;
@@ -994,7 +1037,9 @@
 			files = (
 				6E63B65C18AAA8B800B438A0 /* SideChannelDataLeakageVC.m in Sources */,
 				9F00E2981A87DFEC00373A35 /* AttackingParseViewController.m in Sources */,
+				9FED94C51B08BABC0069D9FF /* FlurrySecondChallengeViewController.m in Sources */,
 				6EB7B3BF18899DCD00A4F353 /* SolutionsViewController.m in Sources */,
+				9FBF18611B013B40009E1D7A /* AttackingFlurryViewController.m in Sources */,
 				6E4933C418CF274C0099CD74 /* SFAntiPiracy.m in Sources */,
 				9F45E6C31A87ED510049AF03 /* SecondParseClass.m in Sources */,
 				F64B87AE19E02CB2005AB265 /* ECPercentDrivenInteractiveTransition.m in Sources */,
@@ -1035,6 +1080,7 @@
 				6E1729E518716BE700C162DB /* PDKeychainBindings.m in Sources */,
 				9F45E6C01A87EAD10049AF03 /* ParseSecondChallengeViewController.m in Sources */,
 				F64B87B019E02CB2005AB265 /* ECSlidingAnimationController.m in Sources */,
+				9FBF18641B013C52009E1D7A /* FlurryFirstChallengeViewController.m in Sources */,
 				6E63B64E18A8FE0800B438A0 /* FBMissingSymbols.m in Sources */,
 				9F0F76DF1AA0796F00FB300E /* RealmUser.m in Sources */,
 				6E1729D61870A6A800C162DB /* HomeViewController.m in Sources */,
@@ -1241,6 +1287,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Parse.framework/Versions/1.2.18",
+					"$(PROJECT_DIR)/DamnVulnerableIOSApp/Flurry",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1271,6 +1318,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Parse.framework/Versions/1.2.18",
+					"$(PROJECT_DIR)/DamnVulnerableIOSApp/Flurry",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1284,6 +1332,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DamnVulnerableIOSApp.app/DamnVulnerableIOSApp";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1311,6 +1360,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DamnVulnerableIOSApp.app/DamnVulnerableIOSApp";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
