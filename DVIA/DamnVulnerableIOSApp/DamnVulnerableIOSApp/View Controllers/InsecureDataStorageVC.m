@@ -70,7 +70,7 @@
      self.navigationController.navigationBar.tintColor = kNavigationTintColor;
     [self.slidingViewController.topViewController.view addGestureRecognizer:self.slidingViewController.panGesture];
     [DamnVulnerableAppUtilities addCommonBackgroundImageToViewController:self];
-    self.vulnerabilities = [NSArray arrayWithObjects:@"Plist",@"NSUserDefaults",@"Keychain",@"Core Data",@"Webkit Caching",@"Realm",@"Couchbase Lite",nil];
+    self.vulnerabilities = [NSArray arrayWithObjects:@"Plist",@"NSUserDefaults",@"Keychain",@"Core Data",@"Webkit Caching",@"Realm",@"Couchbase Lite",@"YapDatabase",nil];
 	// Do any additional setup after loading the view.
 }
 

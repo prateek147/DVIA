@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UIView *webkitView;
 @property (weak, nonatomic) IBOutlet UIView *realmView;
 @property (weak, nonatomic) IBOutlet UIView *couchbaseView;
+@property (weak, nonatomic) IBOutlet UIView *yapdatabaseView;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *userDefaultsTextField;
@@ -40,6 +41,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *couchbaseUserName;
 @property (weak, nonatomic) IBOutlet UITextField *couchbasePassword;
+
+@property (weak, nonatomic) IBOutlet UITextField *yapDatabaseUsername;
+@property (weak, nonatomic) IBOutlet UITextField *yapDatabasePassword;
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
@@ -90,6 +94,9 @@
             break;
         case InsecureDataStorageCouchbase:
             [self.couchbaseView setHidden:NO];
+            break;
+        case InsecureDataStorageYapDatabase:
+            [self.yapdatabaseView setHidden:NO];
             break;
         default:
             break;
@@ -169,6 +176,10 @@
                                  };
     CBLDocument *newDocument = [database createDocument];
     [newDocument putProperties:properties error:&error];
+}
+
+- (IBAction)saveInYapDatabaseTapped:(id)sender {
+    
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
