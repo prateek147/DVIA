@@ -14,6 +14,7 @@
 #import <Realm/Realm.h>
 #import "RealmUser.h"
 #import <CouchbaseLite/CouchbaseLite.h>
+#import "YapDatabase.h"
 
 @interface InsecureDataStorageVulnVC () <UITextFieldDelegate>
 
@@ -179,7 +180,23 @@
 }
 
 - (IBAction)saveInYapDatabaseTapped:(id)sender {
-    
+    NSString *databaseName = @"YapDatabase.sqlite";
+    NSURL *baseURL = [[NSFileManager defaultManager] URLForDirectory:NSApplicationSupportDirectory
+                                                            inDomain:NSUserDomainMask
+                                                   appropriateForURL:nil
+                                                              create:YES
+                                                               error:NULL];
+    NSURL *databaseURL = [baseURL URLByAppendingPathComponent:databaseName isDirectory:NO];
+    NSString *databasePath = databaseURL.filePathURL.path;
+
+    YapDatabase *database = [[YapDatabase alloc] initWithPath:databasePath];
+    YapDatabaseConnection *connection = [database newConnection];
+    [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
+        NSString *username = self.yapDatabaseUsername.text;
+        NSString *password = self.yapDatabasePassword.text;
+        [transaction setObject:username forKey:@"Username" inCollection:@"DVIA"];
+        [transaction setObject:password forKey:@"Password" inCollection:@"DVIA"];
+    }];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
