@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import "Flurry/Flurry.h"
+#import "GoogleAnalytics/GAI.h"
 #import "Model.h"
 
 @implementation AppDelegate
@@ -30,6 +31,9 @@
     
     //Initialize Flurry
     [Flurry startSession:@"ZMSFBDBYFQ8XHQBRP2VY"];
+    
+    //Initialize Google Analytics
+    [[GAI sharedInstance] trackerWithTrackingId:@"UA-63106875-1"];
     
     [self fetchTutorials];
     return YES;

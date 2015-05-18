@@ -3719,7 +3719,7 @@ If you have any questions, comments, suggestions or if you want to contribute to
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Google Analytics is another one mobile analytics service. The authorization is also done by using single API key." selectable="NO" id="wSn-Cq-u6d">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Google Analytics is the another one mobile analytics service. The authorization is also done by using single API key." selectable="NO" id="wSn-Cq-u6d">
                                 <rect key="frame" x="0.0" y="66" width="320" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
