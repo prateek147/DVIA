@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     self.vulnerabilities = [NSArray arrayWithObjects:@"Device Logs",@"App Screenshot",@"Pasteboard",@"Keystroke logging",nil];
+     self.vulnerabilities = [NSArray arrayWithObjects:@"Device Logs",@"App Screenshot",@"Pasteboard",@"Keystroke logging",@"Cookies",nil];
     [self.slidingViewController.topViewController.view addGestureRecognizer:self.slidingViewController.panGesture];
     [DamnVulnerableAppUtilities addCommonBackgroundImageToViewController:self];
      self.navigationController.navigationBar.tintColor = kNavigationTintColor;
@@ -61,6 +61,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     self.vulnCode = indexPath.row;
     [self performSegueWithIdentifier:@"pushSensInfoDetailsVC" sender:self];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
