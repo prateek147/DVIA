@@ -254,6 +254,12 @@
 		9FACC7F11B0A700300C54F02 /* GAFirstChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACC7F01B0A700300C54F02 /* GAFirstChallengeViewController.m */; };
 		9FACC7FE1B0A757A00C54F02 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FACC7FD1B0A757A00C54F02 /* libGoogleAnalyticsServices.a */; };
 		9FACC8011B0A763700C54F02 /* GASecondChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACC8001B0A763700C54F02 /* GASecondChallengeViewController.m */; };
+		9FACC80C1B0A7BFA00C54F02 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACC80B1B0A7BFA00C54F02 /* InterfaceController.m */; };
+		9FACC80E1B0A7BFA00C54F02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FACC80D1B0A7BFA00C54F02 /* Images.xcassets */; };
+		9FACC8121B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 9FACC8111B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App.app */; };
+		9FACC81A1B0A7BFA00C54F02 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FACC8181B0A7BFA00C54F02 /* Interface.storyboard */; };
+		9FACC81C1B0A7BFA00C54F02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FACC81B1B0A7BFA00C54F02 /* Images.xcassets */; };
+		9FACC81F1B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FACC8061B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9FBF18611B013B40009E1D7A /* AttackingFlurryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */; };
 		9FBF18641B013C52009E1D7A /* FlurryFirstChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18631B013C52009E1D7A /* FlurryFirstChallengeViewController.m */; };
 		9FED94C21B08AA790069D9FF /* libFlurry_6.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FED94C11B08AA790069D9FF /* libFlurry_6.4.0.a */; };
@@ -288,7 +294,35 @@
 			remoteGlobalIDString = 6EFED89F1870848E00FEFCB1;
 			remoteInfo = DamnVulnerableIOSApp;
 		};
+		9FACC8131B0A7BFA00C54F02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EFED8981870848E00FEFCB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FACC8101B0A7BFA00C54F02;
+			remoteInfo = "DamnVulnerableIOSApp WatchKit App";
+		};
+		9FACC81D1B0A7BFA00C54F02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EFED8981870848E00FEFCB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FACC8051B0A7BFA00C54F02;
+			remoteInfo = "DamnVulnerableIOSApp WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9FACC8261B0A7BFA00C54F02 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9FACC81F1B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6E033F4C18B1D5E7006F8DAB /* menuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuIcon.png; path = Resources/menuIcon.png; sourceTree = "<group>"; };
@@ -646,6 +680,15 @@
 		9FACC7FD1B0A757A00C54F02 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		9FACC7FF1B0A763700C54F02 /* GASecondChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GASecondChallengeViewController.h; sourceTree = "<group>"; };
 		9FACC8001B0A763700C54F02 /* GASecondChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GASecondChallengeViewController.m; sourceTree = "<group>"; };
+		9FACC8061B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DamnVulnerableIOSApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FACC8091B0A7BFA00C54F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FACC80A1B0A7BFA00C54F02 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		9FACC80B1B0A7BFA00C54F02 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		9FACC80D1B0A7BFA00C54F02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9FACC8111B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DamnVulnerableIOSApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FACC8171B0A7BFA00C54F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FACC8191B0A7BFA00C54F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9FACC81B1B0A7BFA00C54F02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9FBF185F1B013B40009E1D7A /* AttackingFlurryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttackingFlurryViewController.h; path = "View Controllers/AttackingFlurryViewController.h"; sourceTree = "<group>"; };
 		9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttackingFlurryViewController.m; path = "View Controllers/AttackingFlurryViewController.m"; sourceTree = "<group>"; };
 		9FBF18621B013C52009E1D7A /* FlurryFirstChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlurryFirstChallengeViewController.h; path = "View Controllers/FlurryFirstChallengeViewController.h"; sourceTree = "<group>"; };
@@ -717,6 +760,13 @@
 				9F0F76E31AA07D8D00FB300E /* Realm.framework in Frameworks */,
 				6EFED8C51870848E00FEFCB1 /* UIKit.framework in Frameworks */,
 				6EFED8C41870848E00FEFCB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FACC8031B0A7BFA00C54F02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1003,6 +1053,8 @@
 				9F45E6C61A87F5D80049AF03 /* Parse.framework */,
 				6EFED8A91870848E00FEFCB1 /* DamnVulnerableIOSApp */,
 				6EFED8C81870848E00FEFCB1 /* DamnVulnerableIOSAppTests */,
+				9FACC8071B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension */,
+				9FACC8151B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App */,
 				6EFED8A21870848E00FEFCB1 /* Frameworks */,
 				6EFED8A11870848E00FEFCB1 /* Products */,
 			);
@@ -1013,6 +1065,8 @@
 			children = (
 				6EFED8A01870848E00FEFCB1 /* DamnVulnerableIOSApp.app */,
 				6EFED8C11870848E00FEFCB1 /* DamnVulnerableIOSAppTests.xctest */,
+				9FACC8061B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension.appex */,
+				9FACC8111B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1589,6 +1643,43 @@
 			path = GoogleAnalytics;
 			sourceTree = "<group>";
 		};
+		9FACC8071B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9FACC80A1B0A7BFA00C54F02 /* InterfaceController.h */,
+				9FACC80B1B0A7BFA00C54F02 /* InterfaceController.m */,
+				9FACC80D1B0A7BFA00C54F02 /* Images.xcassets */,
+				9FACC8081B0A7BFA00C54F02 /* Supporting Files */,
+			);
+			path = "DamnVulnerableIOSApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9FACC8081B0A7BFA00C54F02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FACC8091B0A7BFA00C54F02 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FACC8151B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9FACC8181B0A7BFA00C54F02 /* Interface.storyboard */,
+				9FACC81B1B0A7BFA00C54F02 /* Images.xcassets */,
+				9FACC8161B0A7BFA00C54F02 /* Supporting Files */,
+			);
+			path = "DamnVulnerableIOSApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		9FACC8161B0A7BFA00C54F02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FACC8171B0A7BFA00C54F02 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9FBF185E1B013B0E009E1D7A /* Attacking Flurry */ = {
 			isa = PBXGroup;
 			children = (
@@ -1653,10 +1744,12 @@
 				6EFED89C1870848E00FEFCB1 /* Sources */,
 				6EFED89D1870848E00FEFCB1 /* Frameworks */,
 				6EFED89E1870848E00FEFCB1 /* Resources */,
+				9FACC8261B0A7BFA00C54F02 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9FACC81E1B0A7BFA00C54F02 /* PBXTargetDependency */,
 			);
 			name = DamnVulnerableIOSApp;
 			productName = DamnVulnerableIOSApp;
@@ -1681,6 +1774,39 @@
 			productReference = 6EFED8C11870848E00FEFCB1 /* DamnVulnerableIOSAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9FACC8051B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FACC8251B0A7BFA00C54F02 /* Build configuration list for PBXNativeTarget "DamnVulnerableIOSApp WatchKit Extension" */;
+			buildPhases = (
+				9FACC8021B0A7BFA00C54F02 /* Sources */,
+				9FACC8031B0A7BFA00C54F02 /* Frameworks */,
+				9FACC8041B0A7BFA00C54F02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FACC8141B0A7BFA00C54F02 /* PBXTargetDependency */,
+			);
+			name = "DamnVulnerableIOSApp WatchKit Extension";
+			productName = "DamnVulnerableIOSApp WatchKit Extension";
+			productReference = 9FACC8061B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		9FACC8101B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FACC8241B0A7BFA00C54F02 /* Build configuration list for PBXNativeTarget "DamnVulnerableIOSApp WatchKit App" */;
+			buildPhases = (
+				9FACC80F1B0A7BFA00C54F02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DamnVulnerableIOSApp WatchKit App";
+			productName = "DamnVulnerableIOSApp WatchKit App";
+			productReference = 9FACC8111B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1695,6 +1821,13 @@
 					};
 					6EFED8C01870848E00FEFCB1 = {
 						TestTargetID = 6EFED89F1870848E00FEFCB1;
+					};
+					9FACC8051B0A7BFA00C54F02 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = UM246WFXVS;
+					};
+					9FACC8101B0A7BFA00C54F02 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -1713,6 +1846,8 @@
 			targets = (
 				6EFED89F1870848E00FEFCB1 /* DamnVulnerableIOSApp */,
 				6EFED8C01870848E00FEFCB1 /* DamnVulnerableIOSAppTests */,
+				9FACC8051B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension */,
+				9FACC8101B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -1779,6 +1914,24 @@
 				6E033F5618B1D5E7006F8DAB /* menuIcon.png in Resources */,
 				6E5A1AE6187AADA800FAECA6 /* slider-bg@2x.png in Resources */,
 				6E37427C1874A18300843DD1 /* card-bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FACC8041B0A7BFA00C54F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FACC8121B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App.app in Resources */,
+				9FACC80E1B0A7BFA00C54F02 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FACC80F1B0A7BFA00C54F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FACC81A1B0A7BFA00C54F02 /* Interface.storyboard in Resources */,
+				9FACC81C1B0A7BFA00C54F02 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1994,6 +2147,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FACC8021B0A7BFA00C54F02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FACC80C1B0A7BFA00C54F02 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2001,6 +2162,16 @@
 			isa = PBXTargetDependency;
 			target = 6EFED89F1870848E00FEFCB1 /* DamnVulnerableIOSApp */;
 			targetProxy = 6EFED8C61870848E00FEFCB1 /* PBXContainerItemProxy */;
+		};
+		9FACC8141B0A7BFA00C54F02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FACC8101B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit App */;
+			targetProxy = 9FACC8131B0A7BFA00C54F02 /* PBXContainerItemProxy */;
+		};
+		9FACC81E1B0A7BFA00C54F02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FACC8051B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension */;
+			targetProxy = 9FACC81D1B0A7BFA00C54F02 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2027,6 +2198,14 @@
 				6EFED8CC1870848E00FEFCB1 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9FACC8181B0A7BFA00C54F02 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FACC8191B0A7BFA00C54F02 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2225,6 +2404,92 @@
 			};
 			name = Release;
 		};
+		9FACC8201B0A7BFA00C54F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "DamnVulnerableIOSApp WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9FACC8211B0A7BFA00C54F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "DamnVulnerableIOSApp WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9FACC8221B0A7BFA00C54F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = DamnVulnerableIOSApp_WatchKit_Extension;
+				INFOPLIST_FILE = "DamnVulnerableIOSApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		9FACC8231B0A7BFA00C54F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = DamnVulnerableIOSApp_WatchKit_Extension;
+				INFOPLIST_FILE = "DamnVulnerableIOSApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2254,6 +2519,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9FACC8241B0A7BFA00C54F02 /* Build configuration list for PBXNativeTarget "DamnVulnerableIOSApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FACC8221B0A7BFA00C54F02 /* Debug */,
+				9FACC8231B0A7BFA00C54F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9FACC8251B0A7BFA00C54F02 /* Build configuration list for PBXNativeTarget "DamnVulnerableIOSApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FACC8201B0A7BFA00C54F02 /* Debug */,
+				9FACC8211B0A7BFA00C54F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
