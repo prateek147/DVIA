@@ -14,6 +14,7 @@
 #import <Realm/Realm.h>
 #import "RealmUser.h"
 #import <CouchbaseLite/CouchbaseLite.h>
+#import "YapDatabase.h"
 
 @interface InsecureDataStorageVulnVC () <UITextFieldDelegate>
 
@@ -24,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIView *webkitView;
 @property (weak, nonatomic) IBOutlet UIView *realmView;
 @property (weak, nonatomic) IBOutlet UIView *couchbaseView;
+@property (weak, nonatomic) IBOutlet UIView *yapdatabaseView;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *userDefaultsTextField;
@@ -40,6 +42,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *couchbaseUserName;
 @property (weak, nonatomic) IBOutlet UITextField *couchbasePassword;
+
+@property (weak, nonatomic) IBOutlet UITextField *yapDatabaseUsername;
+@property (weak, nonatomic) IBOutlet UITextField *yapDatabasePassword;
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
@@ -90,6 +95,9 @@
             break;
         case InsecureDataStorageCouchbase:
             [self.couchbaseView setHidden:NO];
+            break;
+        case InsecureDataStorageYapDatabase:
+            [self.yapdatabaseView setHidden:NO];
             break;
         default:
             break;
@@ -169,6 +177,26 @@
                                  };
     CBLDocument *newDocument = [database createDocument];
     [newDocument putProperties:properties error:&error];
+}
+
+- (IBAction)saveInYapDatabaseTapped:(id)sender {
+    NSString *databaseName = @"YapDatabase.sqlite";
+    NSURL *baseURL = [[NSFileManager defaultManager] URLForDirectory:NSApplicationSupportDirectory
+                                                            inDomain:NSUserDomainMask
+                                                   appropriateForURL:nil
+                                                              create:YES
+                                                               error:NULL];
+    NSURL *databaseURL = [baseURL URLByAppendingPathComponent:databaseName isDirectory:NO];
+    NSString *databasePath = databaseURL.filePathURL.path;
+
+    YapDatabase *database = [[YapDatabase alloc] initWithPath:databasePath];
+    YapDatabaseConnection *connection = [database newConnection];
+    [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
+        NSString *username = self.yapDatabaseUsername.text;
+        NSString *password = self.yapDatabasePassword.text;
+        [transaction setObject:username forKey:@"Username" inCollection:@"DVIA"];
+        [transaction setObject:password forKey:@"Password" inCollection:@"DVIA"];
+    }];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
