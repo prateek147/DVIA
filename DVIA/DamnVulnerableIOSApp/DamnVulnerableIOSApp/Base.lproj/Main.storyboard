@@ -888,7 +888,7 @@ NOTE: If you don't see the Cookies file in the Library folder, restart the app a
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ee7-lN-Agc">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ee7-lN-Agc" id="atg-gQ-Noy">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -3454,10 +3454,10 @@ If you have any questions, comments, suggestions or if you want to contribute to
         <scene sceneID="aod-qI-Jlp">
             <objects>
                 <tableViewController id="URD-J1-c1K" customClass="AttackingThirdPartyLibrariesTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Lxf-oz-O0H">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Lxf-oz-O0H">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="tC5-nx-22D">
                             <rect key="frame" x="0.0" y="108" width="320" height="100"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3473,10 +3473,10 @@ If you have any questions, comments, suggestions or if you want to contribute to
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <sections>
-                            <tableViewSection id="pzE-zG-hlE">
+                            <tableViewSection headerTitle="Data Storage" id="pzE-zG-hlE">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="TIO-32-YdS" style="IBUITableViewCellStyleDefault" id="dYR-74-1fN">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="114" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dYR-74-1fN" id="Ym5-xn-wgN">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -3494,14 +3494,18 @@ If you have any questions, comments, suggestions or if you want to contribute to
                                             <segue destination="toZ-bD-KOu" kind="push" id="9Nj-Rl-xRJ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="nnn-kr-w2r" style="IBUITableViewCellStyleDefault" id="hYf-jM-cxn">
-                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Analytics" id="w1q-zk-uqL">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="O0c-2n-xor" style="IBUITableViewCellStyleDefault" id="vgc-V9-Ir8">
+                                        <rect key="frame" x="0.0" y="201" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hYf-jM-cxn" id="9jo-JQ-Kx6">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vgc-V9-Ir8" id="BkP-91-aCu">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Attacking Flurry.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nnn-kr-w2r">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Attacking Flurry.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O0c-2n-xor">
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -3510,7 +3514,26 @@ If you have any questions, comments, suggestions or if you want to contribute to
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="R3o-Q3-AKm" kind="push" id="Xvr-fS-f82"/>
+                                            <segue destination="R3o-Q3-AKm" kind="push" id="koD-9h-gde"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="WYp-1S-t0o" style="IBUITableViewCellStyleDefault" id="FHv-BJ-eIJ">
+                                        <rect key="frame" x="0.0" y="245" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FHv-BJ-eIJ" id="1WQ-zl-tpm">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Attacking Google Analytics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WYp-1S-t0o">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="w72-Kn-AZg" kind="push" id="ujJ-cd-bsQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -3590,7 +3613,7 @@ If you have any questions, comments, suggestions or if you want to contribute to
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yif-xZ-TtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8679" y="-1090"/>
+            <point key="canvasLocation" x="-8655" y="-1738"/>
         </scene>
         <!--Attacking third party libraries-->
         <scene sceneID="ez6-G8-54V">
@@ -3640,7 +3663,7 @@ If you have any questions, comments, suggestions or if you want to contribute to
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07H-sA-iKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8226" y="-1303"/>
+            <point key="canvasLocation" x="-8202" y="-1951"/>
         </scene>
         <!--Attacking Flurry.com-->
         <scene sceneID="pd8-Ht-n3s">
@@ -3686,7 +3709,68 @@ If you have any questions, comments, suggestions or if you want to contribute to
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BcM-Ca-RXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8679" y="-182"/>
+            <point key="canvasLocation" x="-8655" y="-576"/>
+        </scene>
+        <!--Attacking Google Analytics-->
+        <scene sceneID="Ebe-bI-JPc">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="w72-Kn-AZg" customClass="AttackingGAViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rsp-yR-fRG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Google Analytics is another one mobile analytics service. The authorization is also done by using single API key." selectable="NO" id="wSn-Cq-u6d">
+                                <rect key="frame" x="0.0" y="66" width="320" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uKq-Fi-Sbg">
+                                <rect key="frame" x="71" y="184" width="178" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="START CHALLENGE 1">
+                                    <color key="titleColor" red="0.87450980389999999" green="0.72941176470000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aVr-v1-CJ5" kind="push" id="Ub1-ie-ifa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ocb-ER-Zh2">
+                                <rect key="frame" x="71" y="229" width="178" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="START CHALLENGE 2">
+                                    <color key="titleColor" red="0.87450980389999999" green="0.72941176470000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4kg-er-2hy" kind="push" id="Kd0-KZ-QWN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Attacking Google Analytics" id="BmH-7V-33z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VnJ-p5-fOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8680" y="579"/>
+        </scene>
+        <!--Attacking Google Analytics-->
+        <scene sceneID="5tn-H9-1dU">
+            <objects>
+                <viewController id="4kg-er-2hy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pOe-H7-tjp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Attacking Google Analytics" id="fOB-ln-iFY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXy-8w-dFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8215" y="933"/>
         </scene>
         <!--Attacking Flurry.com-->
         <scene sceneID="MTh-bK-Gd6">
@@ -3740,7 +3824,7 @@ If you have any questions, comments, suggestions or if you want to contribute to
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2nu-18-xzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8225" y="-188"/>
+            <point key="canvasLocation" x="-8201" y="-840"/>
         </scene>
         <!--Attacking Flurry.com-->
         <scene sceneID="gCV-3W-ImU">
@@ -3796,7 +3880,62 @@ If you have any questions, comments, suggestions or if you want to contribute to
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltd-dT-Uqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8224" y="356"/>
+            <point key="canvasLocation" x="-8208" y="-300"/>
+        </scene>
+        <!--Attacking Google Analytics-->
+        <scene sceneID="rXn-HD-FWs">
+            <objects>
+                <viewController id="aVr-v1-CJ5" customClass="GAFirstChallengeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VVB-Bm-qQv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Google Analytics API key:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gca-eI-Hhb">
+                                <rect key="frame" x="11" y="70" width="281" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="API Key" minimumFontSize="17" id="fwR-4c-iym">
+                                <rect key="frame" x="11" y="102" width="281" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="aVr-v1-CJ5" id="tkX-Oa-yMU"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="All you need to do is locate Google Analytics API key somewhere in the application code and print it in the textfield above." selectable="NO" id="Pd4-uq-5Xk">
+                                <rect key="frame" x="0.0" y="180" width="315" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pbB-Z0-wi2">
+                                <rect key="frame" x="95" y="142" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test the result">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="testButtonTapped:" destination="aVr-v1-CJ5" eventType="touchUpInside" id="CvP-tP-UYH"/>
+                                    <action selector="testButtonTapped:" destination="fyh-ga-hHh" eventType="touchUpInside" id="aKA-cZ-xc2"/>
+                                    <action selector="testResultButton:" destination="bh4-Yr-0dp" eventType="touchUpInside" id="jyT-lZ-nWU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Attacking Google Analytics" id="kt6-YE-scV"/>
+                    <connections>
+                        <outlet property="apiKeyTextField" destination="fwR-4c-iym" id="Y3n-AN-adK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEE-JC-7mi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8215" y="277"/>
         </scene>
         <!--Attacking Parse.com-->
         <scene sceneID="Tx3-OS-azS">
@@ -3869,7 +4008,7 @@ If you have any questions, comments, suggestions or if you want to contribute to
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QxF-g6-hcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8225" y="-748"/>
+            <point key="canvasLocation" x="-8201" y="-1396"/>
         </scene>
     </scenes>
     <resources>

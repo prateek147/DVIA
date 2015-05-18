@@ -250,6 +250,8 @@
 		9FACC7E81B0A51D100C54F02 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACC7DC1B0A51D100C54F02 /* DDMultiFormatter.m */; };
 		9FACC7E91B0A51D100C54F02 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9FACC7DD1B0A51D100C54F02 /* README.txt */; };
 		9FACC7EA1B0A51D100C54F02 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9FACC7DE1B0A51D100C54F02 /* LICENSE.txt */; };
+		9FACC7EE1B0A6F0200C54F02 /* AttackingGAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACC7ED1B0A6F0200C54F02 /* AttackingGAViewController.m */; };
+		9FACC7F11B0A700300C54F02 /* GAFirstChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACC7F01B0A700300C54F02 /* GAFirstChallengeViewController.m */; };
 		9FBF18611B013B40009E1D7A /* AttackingFlurryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */; };
 		9FBF18641B013C52009E1D7A /* FlurryFirstChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18631B013C52009E1D7A /* FlurryFirstChallengeViewController.m */; };
 		9FED94C21B08AA790069D9FF /* libFlurry_6.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FED94C11B08AA790069D9FF /* libFlurry_6.4.0.a */; };
@@ -625,6 +627,10 @@
 		9FACC7DC1B0A51D100C54F02 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
 		9FACC7DD1B0A51D100C54F02 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		9FACC7DE1B0A51D100C54F02 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		9FACC7EC1B0A6F0200C54F02 /* AttackingGAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackingGAViewController.h; sourceTree = "<group>"; };
+		9FACC7ED1B0A6F0200C54F02 /* AttackingGAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttackingGAViewController.m; sourceTree = "<group>"; };
+		9FACC7EF1B0A700300C54F02 /* GAFirstChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAFirstChallengeViewController.h; sourceTree = "<group>"; };
+		9FACC7F01B0A700300C54F02 /* GAFirstChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAFirstChallengeViewController.m; sourceTree = "<group>"; };
 		9FBF185F1B013B40009E1D7A /* AttackingFlurryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttackingFlurryViewController.h; path = "View Controllers/AttackingFlurryViewController.h"; sourceTree = "<group>"; };
 		9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttackingFlurryViewController.m; path = "View Controllers/AttackingFlurryViewController.m"; sourceTree = "<group>"; };
 		9FBF18621B013C52009E1D7A /* FlurryFirstChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlurryFirstChallengeViewController.h; path = "View Controllers/FlurryFirstChallengeViewController.h"; sourceTree = "<group>"; };
@@ -1078,6 +1084,7 @@
 			children = (
 				9F00E2921A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.h */,
 				9F00E2931A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m */,
+				9FACC7EB1B0A6EAB00C54F02 /* Attacking Google Analytics */,
 				9F00E2991A87E08E00373A35 /* Attacking Parse */,
 				9FBF185E1B013B0E009E1D7A /* Attacking Flurry */,
 			);
@@ -1534,6 +1541,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		9FACC7EB1B0A6EAB00C54F02 /* Attacking Google Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				9FACC7EC1B0A6F0200C54F02 /* AttackingGAViewController.h */,
+				9FACC7ED1B0A6F0200C54F02 /* AttackingGAViewController.m */,
+				9FACC7EF1B0A700300C54F02 /* GAFirstChallengeViewController.h */,
+				9FACC7F01B0A700300C54F02 /* GAFirstChallengeViewController.m */,
+			);
+			name = "Attacking Google Analytics";
+			sourceTree = "<group>";
+		};
 		9FBF185E1B013B0E009E1D7A /* Attacking Flurry */ = {
 			isa = PBXGroup;
 			children = (
@@ -1789,6 +1807,7 @@
 				6E37426C1874129D00843DD1 /* ApplicationPatchingVC.m in Sources */,
 				9F00E2941A87DD5100373A35 /* AttackingThirdPartyLibrariesTableViewController.m in Sources */,
 				9FACC7B91B0A518800C54F02 /* YapTouch.m in Sources */,
+				9FACC7EE1B0A6F0200C54F02 /* AttackingGAViewController.m in Sources */,
 				9FACC79F1B0A518800C54F02 /* YapDatabaseSecondaryIndexConnection.m in Sources */,
 				9FACC7A21B0A518800C54F02 /* YapDatabaseSecondaryIndexSetup.m in Sources */,
 				9FACC7941B0A518800C54F02 /* YapDatabaseRelationship.m in Sources */,
@@ -1824,6 +1843,7 @@
 				9FACC7B51B0A518800C54F02 /* YapDebugDictionary.m in Sources */,
 				6E172A071873532800C162DB /* RuntimeManipulationVC.m in Sources */,
 				9FACC7B01B0A518800C54F02 /* YapDatabaseConnectionDefaults.m in Sources */,
+				9FACC7F11B0A700300C54F02 /* GAFirstChallengeViewController.m in Sources */,
 				6E623A0F1878187F0060AADA /* ClientSideInjectionDetailsVC.m in Sources */,
 				9FACC7C41B0A518800C54F02 /* YapDatabaseTransaction.m in Sources */,
 				9FACC7AA1B0A518800C54F02 /* YapDatabaseView.m in Sources */,
