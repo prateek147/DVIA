@@ -11,6 +11,9 @@
 
 @interface InterfaceController()
 
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *cardNumberLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *cardBalanceLabel;
+
 @end
 
 
@@ -30,6 +33,10 @@
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
+}
+
+- (IBAction)refreshDataButtonTapped {
+    [self.cardBalanceLabel setText:@"1$"];
 }
 
 @end
