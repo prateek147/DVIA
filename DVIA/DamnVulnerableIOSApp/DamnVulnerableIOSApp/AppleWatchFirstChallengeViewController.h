@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppleWatchConfigurationViewController : UIViewController
+@interface AppleWatchFirstChallengeViewController : UIViewController
 
 @end
