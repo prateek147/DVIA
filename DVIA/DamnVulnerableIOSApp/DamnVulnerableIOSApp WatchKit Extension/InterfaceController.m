@@ -28,6 +28,7 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    [self updateData];
 }
 
 - (void)didDeactivate {
@@ -36,7 +37,15 @@
 }
 
 - (IBAction)refreshDataButtonTapped {
-    [self.cardBalanceLabel setText:@"1$"];
+    [self updateData];
+}
+
+- (void)updateData {
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.dvia.AppleWatch.shared"];
+    NSString *cardNumber = [defaults objectForKey:@"cardNumber"] ?: @"undefined";
+    NSNumber *balance = [defaults objectForKey:@"moneyBalance"] ?: @0;
+    [self.cardNumberLabel setText:cardNumber];
+    [self.cardBalanceLabel setText:[NSString stringWithFormat:@"%@$", balance]];
 }
 
 @end

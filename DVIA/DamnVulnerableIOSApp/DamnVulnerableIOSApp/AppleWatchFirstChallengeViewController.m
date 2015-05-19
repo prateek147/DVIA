@@ -18,6 +18,7 @@
 
 @property (strong, nonatomic) NSString *cardNumber;
 @property (strong, nonatomic) NSNumber *cvvCode;
+@property (strong, nonatomic) NSNumber *balance;
 
 @end
 
@@ -54,14 +55,19 @@
 - (void)createNewRandomBankUser {
     PFObject *bankUser = [PFObject objectWithClassName:@"AppleWatchBankUser"];
     self.cardNumber = [self randomCardNumber];
-    self.cvvCode = [self randomBalance];
-    
+    self.cvvCode = [self randomCvvCode];
+    self.balance = [self randomBalance];
     bankUser[@"cardNumber"] = self.cardNumber;
-    bankUser[@"moneyBalance"] = self.cvvCode;
-    bankUser[@"cvvCode"] = [self randomCvvCode];
+    bankUser[@"moneyBalance"] = self.balance;
+    bankUser[@"cvvCode"] = self.cvvCode;
     
     [bankUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.dvia.AppleWatch.shared"];
+        [defaults setObject:self.cardNumber forKey:@"cardNumber"];
+        [defaults setObject:self.cvvCode forKey:@"cvvCode"];
+        [defaults setObject:self.balance forKey:@"moneyBalance"];
         
+        [defaults synchronize];
     }];
 }
 
