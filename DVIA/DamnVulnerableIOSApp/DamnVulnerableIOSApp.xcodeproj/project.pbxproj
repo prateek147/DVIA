@@ -260,6 +260,7 @@
 		9FACC81A1B0A7BFA00C54F02 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FACC8181B0A7BFA00C54F02 /* Interface.storyboard */; };
 		9FACC81C1B0A7BFA00C54F02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FACC81B1B0A7BFA00C54F02 /* Images.xcassets */; };
 		9FACC81F1B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9FACC8061B0A7BFA00C54F02 /* DamnVulnerableIOSApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9FACC83A1B0B994700C54F02 /* AppleWatchConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FACC8391B0B994700C54F02 /* AppleWatchConfigurationViewController.m */; };
 		9FBF18611B013B40009E1D7A /* AttackingFlurryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */; };
 		9FBF18641B013C52009E1D7A /* FlurryFirstChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF18631B013C52009E1D7A /* FlurryFirstChallengeViewController.m */; };
 		9FED94C21B08AA790069D9FF /* libFlurry_6.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FED94C11B08AA790069D9FF /* libFlurry_6.4.0.a */; };
@@ -689,6 +690,8 @@
 		9FACC8171B0A7BFA00C54F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FACC8191B0A7BFA00C54F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		9FACC81B1B0A7BFA00C54F02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9FACC8381B0B994700C54F02 /* AppleWatchConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleWatchConfigurationViewController.h; sourceTree = "<group>"; };
+		9FACC8391B0B994700C54F02 /* AppleWatchConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleWatchConfigurationViewController.m; sourceTree = "<group>"; };
 		9FBF185F1B013B40009E1D7A /* AttackingFlurryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttackingFlurryViewController.h; path = "View Controllers/AttackingFlurryViewController.h"; sourceTree = "<group>"; };
 		9FBF18601B013B40009E1D7A /* AttackingFlurryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttackingFlurryViewController.m; path = "View Controllers/AttackingFlurryViewController.m"; sourceTree = "<group>"; };
 		9FBF18621B013C52009E1D7A /* FlurryFirstChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlurryFirstChallengeViewController.h; path = "View Controllers/FlurryFirstChallengeViewController.h"; sourceTree = "<group>"; };
@@ -776,6 +779,7 @@
 		6E1729CB18709F0300C162DB /* Vulnerabilities */ = {
 			isa = PBXGroup;
 			children = (
+				9FACC8361B0B992000C54F02 /* App Extensions */,
 				6E4933C618CF34110099CD74 /* Piracy Detection */,
 				6E63B65918AAA62600B438A0 /* SideChannelDataLeakage */,
 				6E63B65018AA319700B438A0 /* SecurityDecisionsViaUntrustedInput */,
@@ -1680,6 +1684,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9FACC8361B0B992000C54F02 /* App Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FACC8371B0B992900C54F02 /* Apple Watch Extension */,
+			);
+			name = "App Extensions";
+			sourceTree = "<group>";
+		};
+		9FACC8371B0B992900C54F02 /* Apple Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9FACC8381B0B994700C54F02 /* AppleWatchConfigurationViewController.h */,
+				9FACC8391B0B994700C54F02 /* AppleWatchConfigurationViewController.m */,
+			);
+			name = "Apple Watch Extension";
+			sourceTree = "<group>";
+		};
 		9FBF185E1B013B0E009E1D7A /* Attacking Flurry */ = {
 			isa = PBXGroup;
 			children = (
@@ -1983,6 +2004,7 @@
 				9FACC7B71B0A518800C54F02 /* YapNull.m in Sources */,
 				9FACC7901B0A518800C54F02 /* YapDatabaseHooksTransaction.m in Sources */,
 				9FACC77F1B0A518800C54F02 /* YDBCKRecordInfo.m in Sources */,
+				9FACC83A1B0B994700C54F02 /* AppleWatchConfigurationViewController.m in Sources */,
 				9FACC7BC1B0A518800C54F02 /* YapCollectionKey.m in Sources */,
 				9FACC7791B0A518800C54F02 /* YDBCKChangeRecord.m in Sources */,
 				9FACC77B1B0A518800C54F02 /* YDBCKRecordTableInfo.m in Sources */,
@@ -2527,6 +2549,7 @@
 				9FACC8231B0A7BFA00C54F02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FACC8251B0A7BFA00C54F02 /* Build configuration list for PBXNativeTarget "DamnVulnerableIOSApp WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -2535,6 +2558,7 @@
 				9FACC8211B0A7BFA00C54F02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
