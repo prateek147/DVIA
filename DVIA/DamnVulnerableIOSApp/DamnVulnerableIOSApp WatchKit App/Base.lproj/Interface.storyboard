@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="130" alignment="left" text="Card Number:" id="c9i-Oj-kqN"/>
+                        <label width="130" alignment="left" text="000" id="wLD-2k-aKX"/>
+                        <label width="130" alignment="left" text="Balance:" id="fwa-Sd-uBD"/>
+                        <label alignment="left" text="0$" id="k7P-li-Wmq"/>
+                        <button width="1" alignment="left" title="Refresh Data" id="1ih-UP-E9t">
+                            <connections>
+                                <action selector="refreshDataButtonTapped" destination="AgC-eL-Hgc" id="gpy-Bj-6VO"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="cardBalanceLabel" destination="k7P-li-Wmq" id="SNE-au-Ypi"/>
+                        <outlet property="cardNumberLabel" destination="wLD-2k-aKX" id="5xQ-8R-ywB"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
