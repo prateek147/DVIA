@@ -44,7 +44,8 @@
 }
 
 - (IBAction)twitterHandleTapped:(id)sender {
-    NSString *twitterHandleURL = @"twitter://prateekg147";
+    NSString *twitterHandle = [[((UIButton *)sender).titleLabel.text componentsSeparatedByString:@"@"] objectAtIndex:1];
+    NSString *twitterHandleURL = [NSString stringWithFormat:@"twitter://%@",twitterHandle];
     if([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:twitterHandleURL]]){
         NSURL *url = [NSURL URLWithString:twitterHandleURL];
         [[UIApplication sharedApplication] openURL:url];

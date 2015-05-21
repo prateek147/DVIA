@@ -20,10 +20,7 @@
 - (IBAction)unwindToMenuViewController:(UIStoryboardSegue *)segue { }
 
 -(void)viewDidLoad{
-    [self.menuTableView setBackgroundColor:
-     [UIColor colorWithPatternImage:
-      [UIImage imageNamed:
-    	@"slider-bg"]]];
+    [self.menuTableView setBackgroundColor:[UIColor blackColor]];
 }
 
 
