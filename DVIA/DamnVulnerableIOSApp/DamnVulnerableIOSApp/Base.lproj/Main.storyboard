@@ -49,7 +49,7 @@
                             <tableViewSection id="QeM-DN-AOD">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="dlk-2d-IV9">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dlk-2d-IV9" id="fwq-7X-2e2">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -76,11 +76,21 @@
                             <outlet property="delegate" destination="DUz-ur-4Hv" id="RuV-br-2ye"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Extensions Vulnerabilities" id="20o-ye-Moz"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Extensions Vulnerabilities" id="20o-ye-Moz">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Rwj-iV-p5h">
+                            <color key="tintColor" red="0.87450980389999999" green="0.72941176470000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="IXN-Zp-xfy" kind="unwind" unwindAction="unwindToMenuViewController:" id="w2y-pL-JPF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pno-Jb-mbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="IXN-Zp-xfy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-10132" y="-3541"/>
+            <point key="canvasLocation" x="-10158" y="-3553"/>
         </scene>
         <!--Apple Watch Extension-->
         <scene sceneID="WF5-r3-3Gc">
@@ -277,7 +287,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Id-he-uM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="WnP-X0-88p" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-9821" y="-2616"/>
+            <point key="canvasLocation" x="-9988" y="-2586"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QF9-AV-FBa">
@@ -295,7 +305,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vii-W6-ROi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10184" y="-2538"/>
+            <point key="canvasLocation" x="-10391" y="-2530"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="2Z5-HA-fFn">
@@ -308,7 +318,7 @@
                         <color key="separatorColor" red="0.99900205289999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="DamnVulnerableiOSApp.com" footerTitle="Version 1.4" id="I6U-Jm-85w">
+                            <tableViewSection headerTitle="DamnVulnerableiOSApp.com" footerTitle="Version 2.0" id="I6U-Jm-85w">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pZG-f5-3Vp" style="IBUITableViewCellStyleDefault" id="Dvv-bd-LHt">
                                         <rect key="frame" x="0.0" y="50" width="320" height="44"/>
@@ -353,29 +363,8 @@
                                             <segue destination="8al-wk-2gn" kind="custom" customClass="ECSlidingSegue" id="2bf-Ay-3Yu"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="NQM-QM-F2P" style="IBUITableViewCellStyleDefault" id="XIv-hh-p36">
-                                        <rect key="frame" x="0.0" y="138" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XIv-hh-p36" id="Mhl-KD-fIG">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Extensions Vulnerabilities" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NQM-QM-F2P">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="f8E-YG-65N" kind="custom" customClass="ECSlidingSegue" id="V8G-FH-1qT"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="jft-ip-4WQ" style="IBUITableViewCellStyleDefault" id="TOh-L2-8mX">
-                                        <rect key="frame" x="0.0" y="182" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="138" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TOh-L2-8mX" id="i1B-3h-xxL">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -396,7 +385,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="cjz-B5-cA9" style="IBUITableViewCellStyleDefault" id="Lso-ec-ce2">
-                                        <rect key="frame" x="0.0" y="226" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="182" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lso-ec-ce2" id="MiX-A3-TCw">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
@@ -414,6 +403,27 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="Uxh-yW-Saq" kind="custom" customClass="ECSlidingSegue" id="vvw-s2-9jN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="NQM-QM-F2P" style="IBUITableViewCellStyleDefault" id="XIv-hh-p36">
+                                        <rect key="frame" x="0.0" y="226" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XIv-hh-p36" id="Mhl-KD-fIG">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Extensions Vulnerabilities" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NQM-QM-F2P">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="f8E-YG-65N" kind="custom" customClass="ECSlidingSegue" id="V8G-FH-1qT"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pAc-eQ-MZF" style="IBUITableViewCellStyleDefault" id="Gpc-yv-Mvi">
@@ -682,7 +692,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rY-v0-J5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10571" y="-2605"/>
+            <point key="canvasLocation" x="-10576" y="-2630"/>
         </scene>
         <!--Sensitive information in memory-->
         <scene sceneID="npL-0e-KfM">
@@ -3683,7 +3693,7 @@ If you have any questions, comments, suggestions or if you want to contribute to
                             <tableViewSection headerTitle="Data Storage" id="pzE-zG-hlE">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="TIO-32-YdS" style="IBUITableViewCellStyleDefault" id="dYR-74-1fN">
-                                        <rect key="frame" x="0.0" y="50" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="114" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dYR-74-1fN" id="Ym5-xn-wgN">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -3706,7 +3716,7 @@ If you have any questions, comments, suggestions or if you want to contribute to
                             <tableViewSection headerTitle="Analytics" id="w1q-zk-uqL">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="O0c-2n-xor" style="IBUITableViewCellStyleDefault" id="vgc-V9-Ir8">
-                                        <rect key="frame" x="0.0" y="137" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="201" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vgc-V9-Ir8" id="BkP-91-aCu">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -3725,7 +3735,7 @@ If you have any questions, comments, suggestions or if you want to contribute to
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="WYp-1S-t0o" style="IBUITableViewCellStyleDefault" id="FHv-BJ-eIJ">
-                                        <rect key="frame" x="0.0" y="181" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="245" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FHv-BJ-eIJ" id="1WQ-zl-tpm">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>

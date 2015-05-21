@@ -17,8 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.tintColor = kNavigationTintColor;
     [self.slidingViewController.topViewController.view addGestureRecognizer:self.slidingViewController.panGesture];
+    [DamnVulnerableAppUtilities addCommonBackgroundImageToViewController:self];
+    self.navigationController.navigationBar.tintColor = kNavigationTintColor;
 }
 
 @end

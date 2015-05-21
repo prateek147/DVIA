@@ -7,6 +7,7 @@
 //
 
 #import "AppleWatchFirstChallengeViewController.h"
+#import "UIViewController+ECSlidingViewController.h"
 #import <Parse/Parse.h>
 #include <stdlib.h>
 
