@@ -28,7 +28,12 @@
 #import "RNCryptor+Private.h"
 #import <Security/SecRandom.h>
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 110000
+extern int SecRandomCopyBytes(SecRandomRef rnd, size_t count, void *bytes) __attribute__((weak_import));
+#else
 extern int SecRandomCopyBytes(SecRandomRef rnd, size_t count, uint8_t *bytes) __attribute__((weak_import));
+#endif
+
 extern int
 CCKeyDerivationPBKDF( CCPBKDFAlgorithm algorithm, const char *password, size_t passwordLen,
                      const uint8_t *salt, size_t saltLen,

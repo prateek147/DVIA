@@ -154,7 +154,7 @@
 // Kill the application
 + (void)killApplication {
     // Try to run a system call for kill
-    system(KILL);
+   // system(KILL);
     
     // SIGKILL
     [[UIApplication sharedApplication] sendAction:SIGKILL to:[UIApplication sharedApplication] from:self forEvent:nil];
@@ -454,19 +454,20 @@ static inline int fileManagerCheck() {
 
 // System() available
 + (int)systemCheck {
-    @try {
-        // See if the system call can be used
-        if (system(0)) {
-            // Jailbroken
-            return KFSystem;
-        } else
-            // Not Jailbroken
-            return NOTJAIL;
-    }
-    @catch (NSException *exception) {
-        // Not Jailbroken
-        return NOTJAIL;
-    }
+//    @try {
+//        // See if the system call can be used
+//        if (system(0)) {
+//            // Jailbroken
+//            return KFSystem;
+//        } else
+//            // Not Jailbroken
+//            return NOTJAIL;
+//    }
+//    @catch (NSException *exception) {
+//        // Not Jailbroken
+//        return NOTJAIL;
+//    }
+    return NOTJAIL;
 }
 
 // Symbolic Link available
